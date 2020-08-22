@@ -28,11 +28,17 @@
 	<script type="text/javascript" src="./assets/js/uolkeo.min.js"></script>
 	<script type="text/javascript" src="./assets/js/swiper.min.js"></script>
 	<script type="text/javascript" src="./assets/js/main.js"></script>
+	<script type="text/javascript" src="./assets/js/manySliders.js"></script>
+
+	<script type="text/javascript">
+		window.manySliders = window.manySliders || {};
+		window.manySliders.sliders = ['.post-slider'];
+	</script>
 </head>
 <body>
 	<div id="container">
 		<!-- Header -->
-		<div class="header-container" id="header">
+		<div class="header-container wow rotateInUpLeft" id="header">
 
 			<div class="header-menu">
 				<div class="header-menu-container">
@@ -42,13 +48,13 @@
 					<div class="header-menu-body">
 						<ul class="header-menu-list">
 							<li class="header-menu-list-item">
-								<a class="header-menu-list-item-link selected" href="index.html?index">
+								<a class="header-menu-list-item-link" href="index.html?index">
 									<i class="fa fa-home"></i>
 									<span>Home</span>
 								</a>
 							</li>
 							<li class="header-menu-list-item">
-								<a class="header-menu-list-item-link" href="bio.html?cr7_bio">
+								<a class="header-menu-list-item-link selected" href="bio.html?cr7_bio">
 									<i class="fa fa-home"></i>
 									<span>Biografia</span>
 								</a>
@@ -102,7 +108,7 @@
 					</div>
 				</div>
 				<div class="header-title">
-					Title Here
+					Biografia de CR7
 				</div>
 			</div>
 		</div>
@@ -110,7 +116,6 @@
 
 		
 		<br />
-
 		<!-- Content -->
 		<div class="main container x">
 			<div class="row body">
@@ -122,31 +127,188 @@
 
 					<div class="feed" id="newsfeedbody">
 						<div class="feed-title">
-							<h1>Blog</h1>
+							<h1>2006 - 2010</h1>
 						</div>
 						<div class="feed-body">
 							<div class="post-container">
 								<div class="post-body">
 									<div class="post-image-container">
-										<img src="./assets/img/i/1.jpg" />
+										<div class="swiper-container post-slider">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img src="./assets/img/i/1.jpg" />
+												</div>
+												<div class="swiper-slide">
+													<img src="./assets/img/i/2.jpg" />
+												</div>
+												<div class="swiper-slide">
+													<img src="./assets/img/i/3.jpg" />
+												</div>
+												<div class="swiper-slide">
+													<img src="./assets/img/i/4.jpg" />
+												</div>
+											</div>
+											<div class="swiper-button-next"></div>
+											<div class="swiper-button-prev"></div>
+										</div>
 									</div>
 									<div class="post-content-container">
 										<a class="post-content-container-a" href="#">
 											<div class="post-title">
-												<h3>Cristiano ronaldo Treinando</h3>
+												<h3>Cristiano ronaldo</h3>
 											</div>
 											<div class="post-summary">
 												<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-												quis nostrud exercitation ullamco...</span>
+												quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
 											</div>
 										</a>
 									</div>
 								</div>
 							</div>
 
+							<div class="post-container">
+								<div class="post-body">
+									<div class="post-image-container">
+										<div class="swiper-container post-slider">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img src="./assets/img/i/1.jpg" />
+												</div>
+												<div class="swiper-slide">
+													<img src="./assets/img/i/2.jpg" />
+												</div>
+												<div class="swiper-slide">
+													<img src="./assets/img/i/3.jpg" />
+												</div>
+												<div class="swiper-slide">
+													<img src="./assets/img/i/4.jpg" />
+												</div>
+											</div>
+											<div class="swiper-button-next"></div>
+											<div class="swiper-button-prev"></div>
+										</div>
+									</div>
+									<div class="post-content-container">
+										<a class="post-content-container-a" href="#">
+											<div class="post-title">
+												<h3>Cristiano ronaldo</h3>
+											</div>
+											<div class="post-summary">
+												<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
 
-						</div>	
+
+
+						<div class="feed-title">
+							<h1>2006 - 2010</h1>
+						</div>
+						<div class="feed-body">
+							<div class="post-container">
+								<div class="post-body">
+									<div class="post-image-container">
+										<div class="swiper-container post-slider">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img src="./assets/img/i/1.jpg" />
+												</div>
+												<div class="swiper-slide">
+													<img src="./assets/img/i/2.jpg" />
+												</div>
+												<div class="swiper-slide">
+													<img src="./assets/img/i/3.jpg" />
+												</div>
+												<div class="swiper-slide">
+													<img src="./assets/img/i/4.jpg" />
+												</div>
+											</div>
+											<div class="swiper-button-next"></div>
+											<div class="swiper-button-prev"></div>
+										</div>
+									</div>
+									<div class="post-content-container">
+										<a class="post-content-container-a" href="#">
+											<div class="post-title">
+												<h3>Cristiano ronaldo</h3>
+											</div>
+											<div class="post-summary">
+												<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+												tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+												quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+												consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+												cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+												proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+
+
 					</div>
 
 
@@ -154,59 +316,6 @@
 
 				</div>
 				<!-- End Content -->
-
-
-				<div class="col-md-4">
-					<!-- News Aside -->
-					<div class="aside">
-						<div class="aside-body">
-							<div class="aside-slider">
-								<div class="aside-slider-title">
-									<strong>Notícias</strong>
-								</div>
-								<!-- Slider -->
-								<div class="aside-slider-tags">
-									<ul class="aside-slider-tags-list">
-										<li class="aside-slider-tags-list-item">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</a>
-										</li>
-										<li class="aside-slider-tags-list-item">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</a>
-										</li>
-										<li class="aside-slider-tags-list-item">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</a>
-										</li>
-										<li class="aside-slider-tags-list-item">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</a>
-										</li>
-										<li class="aside-slider-tags-list-item">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</a>
-										</li>
-										<li class="aside-slider-tags-list-item">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</a>
-										</li>
-										<li class="aside-slider-tags-list-item">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</a>
-										</li>
-										<li class="aside-slider-tags-list-item">
-											<a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-											tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</a>
-										</li>
-									</ul>
-								</div>
-								<!-- End Slider -->
-							</div>
-						</div>
-					</div>
-					<!-- End News Aside -->
-				</div>
 			</div>
 		</div>
 		<!-- End Content -->
