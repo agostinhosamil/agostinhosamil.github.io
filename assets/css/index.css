@@ -12,6 +12,7 @@
 .x-page-desc .x-page-desc-body,
 .x-product-details .x-product-details-title,
 .x-product-details .x-product-details-body,
+.x-product-details .x-product-details-body .x-product-detail-body,
 .x-page-desc .x-page-desc-body .x-page-desc-paragraphes {
     width: 100%;
     height: auto;
@@ -193,7 +194,6 @@
 .x-product-details .x-product-details-body .x-product-detail {
     background: #ffffff none repeat scroll 0%;
     border: 1px solid #e0e0e0;
-    padding: 30px;
     margin: .0px .0px 21px;
     border-radius: 4px;
     box-shadow: 0 0 17px 0px rgba(0, 0, 0, 0.13);
@@ -360,4 +360,77 @@
 
 .x-product-wdgt.blue .x-product-wdgt-title {
   color: #ffffff;
+}
+
+
+.x-product-detail-counter-container {
+  width: 100%;
+  margin: .0px .0px 4px;
+  height: 18px;
+  border-bottom: 1px solid #ececed;
+}
+
+.x-product-detail-counter-container .x-product-detail-counter {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  text-align: left;
+  pointer-events: none;
+}
+
+.x-product-detail-counter-container .x-product-detail-counter div {
+  display: inline-block;
+  background-color: #a7c1e3;
+  height: 100%;
+}
+
+.x-product-detail.color.html .x-product-detail-counter-container .x-product-detail-counter div {
+  background-color: #E34C26;
+}
+
+.x-product-detail.color.php .x-product-detail-counter-container .x-product-detail-counter div {
+  background-color: #4F5D95;
+}
+
+.x-product-detail.color.javascript .x-product-detail-counter-container .x-product-detail-counter div {
+  background-color: #F1E05A;
+}
+
+.x-product-detail.color.ruby .x-product-detail-counter-container .x-product-detail-counter div {
+  background-color: #701516;
+}
+
+.x-product-detail.color.csharp .x-product-detail-counter-container .x-product-detail-counter div {
+  background-color: #178600;
+}
+
+
+.x-product-detail.color.html .x-product-detail-counter-container .x-product-detail-counter i,
+.x-product-detail.color.php .x-product-detail-counter-container .x-product-detail-counter i,
+.x-product-detail.color.csharp .x-product-detail-counter-container .x-product-detail-counter i  {
+  color: #ffffff;
+}
+
+.x-product-detail.color.javascript .x-product-detail-counter-container .x-product-detail-counter i,
+.x-product-detail.color.ruby .x-product-detail-counter-container .x-product-detail-counter i {
+  color: #333333;
+}
+
+.x-product-detail.color.html {
+
+}
+
+.x-product-detail-counter-container .x-product-detail-counter i {
+  text-align: center;
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+  display: inline-block;
+  font-size: 12px;
+}
+.x-product-detail-body {
+  padding: 22px 30px 35px;
 }
