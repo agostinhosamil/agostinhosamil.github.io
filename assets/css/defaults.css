@@ -68,9 +68,10 @@ body, html, #container {
 
 	.header-container {
 		border-style: solid;
-		border-color: #dddddd;
-		border-width:  .0px .0px 1px;
-		background-image: url(../img/17160718626229.jpg);
+		border-color: transparent;
+		border-width:  .0px;
+		background-image: url(../img/17160718626229.png);
+		background-color: #ece6e6;
 	}
 
 	.header-container .header-menu {
@@ -172,7 +173,7 @@ body, html, #container {
 	    background: rgba(255, 255, 255, 0.58);
 	    border-top-right-radius: 113%;
 	    border-bottom-right-radius: 113%;
-	    margin: 334px .0px 37px;
+	    margin: 182px .0px 194px;
 	}
 
 	@media (max-width: 940px) {

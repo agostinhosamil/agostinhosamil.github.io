@@ -21,10 +21,16 @@
 }
 
 .x-page-desc, .x-product-wdgt {
-    background: #ffffff;
-    padding: 116px 20px;
+  padding: 116px 20px;
 }
 
+.x-product-wdgt {
+  background: #ffffff;
+}
+
+.x-page-desc {
+  background: #ece6e6;
+}
 .x-page-desc:after, .x-product-wdgt:after {
     pointer-events: none;
     right: 0px;
