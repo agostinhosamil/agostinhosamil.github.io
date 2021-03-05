@@ -46,3 +46,7 @@ div.main.AboutPageContainer .x-about-page-links-list .x-about-page-links-list-it
 	word-break: break-all;
 }
 
+.x-about-page-fixed-links-list {
+	position: fixed !important;
+	top: 10px;
+}

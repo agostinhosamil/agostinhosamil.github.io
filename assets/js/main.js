@@ -14,21 +14,38 @@ window.requestAnimationFrame = (
 	var pageScrollEvent = function () {
 
 		var headerContainerHeight = (jQuery("#header").height()),
-			headerMenu = jQuery ('.header-menu').eq(0);
+				headerMenu = jQuery ('.header-menu').eq(0),
+				aboutPageLinksList = jQuery('.x-about-page-links-list');
 
 		if (window.scrollY >= (headerContainerHeight + 10)) {
 			!headerMenu.hasClass('fixed-header-menu') && (
 				headerMenu.addClass('fixed-header-menu')
 			);
+
+			if (window.innerWidth >= 768) {
+				!aboutPageLinksList.hasClass('x-about-page-fixed-links-list') && (
+					aboutPageLinksList.addClass('x-about-page-fixed-links-list')
+				)
+
+				aboutPageLinksList.css({
+					width: aboutPageLinksList.parent().width() + 'px'
+				})
+			}
+
 		} else {
 			headerMenu.hasClass('fixed-header-menu') && (
 				headerMenu.removeClass('fixed-header-menu')
 			);
+
+
+			aboutPageLinksList.hasClass('x-about-page-fixed-links-list') && (
+				aboutPageLinksList.removeClass('x-about-page-fixed-links-list')
+			)
+
+			aboutPageLinksList.css({ width: '100%' })
 		}
 
-		window.requestAnimationFrame (
-			pageScrollEvent
-		);
+		window.requestAnimationFrame ( pageScrollEvent );
 	};
 
 	function init_js () {
@@ -39,8 +56,6 @@ window.requestAnimationFrame = (
 		uolkeo.$$scut('shift+t', function () {
 			document.body.style.border = "100px solid #daa";
 		});
-
-
 
 		var swiper = new Swiper(".header-slider-self", {
 
