@@ -55,6 +55,22 @@
 	line-height: 37px;
 }
 
+.page .page-sentence .page-sentence-paragraph span a.page-sentence-paragraph-link,
+.page .page-sentence .page-sentence-paragraph span i.page-sentence-paragraph-detail {
+	display: block;
+	width: 100%;
+	padding: 1px .0px .0px;
+	font-size: 20px;
+}
+
+.page .page-sentence .page-sentence-paragraph span i.page-sentence-paragraph-detail {
+	color: #b5b5b5;
+}
+
+.page .page-sentence .page-sentence-paragraph span a.page-sentence-paragraph-link {
+	color: #1c61a4;
+}
+
 /** Colors **/
 .page .page-sentence.red .page-sentence-title:before,
 .page .page-sentence.red .page-sentence-paragraph:before {
