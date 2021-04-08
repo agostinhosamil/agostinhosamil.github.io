@@ -17,6 +17,14 @@ window.requestAnimationFrame = (
 				headerMenu = jQuery ('.header-menu').eq(0),
 				aboutPageLinksList = jQuery('.x-about-page-links-list');
 
+		function removeAboutPageLinksListFixedClass () {
+			aboutPageLinksList.hasClass('x-about-page-fixed-links-list') && (
+				aboutPageLinksList.removeClass('x-about-page-fixed-links-list')
+			)
+
+			aboutPageLinksList.css({ width: '100%' })
+		}
+
 		if (window.scrollY >= (headerContainerHeight + 10)) {
 			!headerMenu.hasClass('fixed-header-menu') && (
 				headerMenu.addClass('fixed-header-menu')
@@ -30,6 +38,8 @@ window.requestAnimationFrame = (
 				aboutPageLinksList.css({
 					width: aboutPageLinksList.parent().width() + 'px'
 				})
+			} else {
+				removeAboutPageLinksListFixedClass()
 			}
 
 		} else {
@@ -38,11 +48,7 @@ window.requestAnimationFrame = (
 			);
 
 
-			aboutPageLinksList.hasClass('x-about-page-fixed-links-list') && (
-				aboutPageLinksList.removeClass('x-about-page-fixed-links-list')
-			)
-
-			aboutPageLinksList.css({ width: '100%' })
+			removeAboutPageLinksListFixedClass()
 		}
 
 		window.requestAnimationFrame ( pageScrollEvent );
