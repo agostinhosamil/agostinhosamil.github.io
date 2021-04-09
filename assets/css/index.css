@@ -124,7 +124,7 @@
 
 .x-product-wdgt .x-product-wdgt-portfolio .x-product-wdgt-portfolio-item-body div[project-thumbnail] .x-product-wdgt-portfolio-item-options .x-product-wdgt-portfolio-item-options-body {
   background: transparent none repeat scroll 0%;
-  width: 115px;
+  width: 140px;
   position: absolute;
   margin: 18px auto .0px;
   left: 0px;
@@ -132,21 +132,20 @@
 }
 
 .x-product-wdgt .x-product-wdgt-portfolio .x-product-wdgt-portfolio-item-body div[project-thumbnail] .x-product-wdgt-portfolio-item-options .x-product-wdgt-portfolio-item-options-body a {
-  border-radius: 45%;
-  -webkit-border-radius: 45%;
-  -moz-border-radius: 45%;
-  -ms-border-radius: 45%;
-  -o-border-radius: 45%;
+  border-radius: 11%;
+  -webkit-border-radius: 11%;
+  -moz-border-radius: 11%;
+  -ms-border-radius: 11%;
+  -o-border-radius: 11%;
 }
 
 .x-product-wdgt .x-product-wdgt-portfolio .x-product-wdgt-portfolio-item-body div[project-thumbnail] .x-product-wdgt-portfolio-item-options .x-product-wdgt-portfolio-item-options-body a {
   display: inline-block;
-  width: 48px;
-  height: 48px;
+  padding: 6px 16px 9px;
   margin: 3px;
   transition: background-color .3s ease-in;
   -webkit-transition: background-color .3s ease-in;
-  background-color: rgba(60, 144, 170, 0.51);
+  background-color: rgb(60 144 170 / 9%);
   border: 1px solid #4281b7;
   color: rgb(255, 255, 255);
   text-align: center;
@@ -179,8 +178,8 @@
 
 .x-product-wdgt-portfolio-link:hover {
   color: #ffffff;
-  box-shadow: rgb(17 47 74) 3px 1px 20px 4px;
-  border-color: #0c385f;
+  box-shadow: rgb(17 47 74 / 19%) 3px 1px 20px 4px;
+  border-color: #d2d4d6;
 }
 
 .x-product-wdgt-portfolio-link span {
