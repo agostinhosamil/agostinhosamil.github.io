@@ -156,7 +156,7 @@ div#container-bg {
 }
 
 .header-container .header-menu {
-    background: rgba(255, 255, 255, 0.55) none repeat scroll 0%;
+    background: rgb(255, 255, 255) none repeat scroll 0%;
     padding: .0px 30px;
     box-shadow: 0px 0px 0px rgba(41, 41, 41, 0.06);
 }

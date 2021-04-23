@@ -89,6 +89,17 @@
   -o-transform: skew(0.9deg, 3.7deg);
 }
 
+@media all and (max-width: 767px) {
+  .x-product-wdgt .x-product-wdgt-portfolio-item-container {
+    margin: 65px .0px;
+  }
+
+  .footer-container .footer-details-copyright {
+    padding: 15px .0px 50px !important;
+    text-align: center;
+  }
+}
+
 .x-product-wdgt .x-product-wdgt-portfolio .x-product-wdgt-portfolio-item-body {
   width: 100%;
   height: 100%;

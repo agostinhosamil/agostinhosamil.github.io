@@ -22,18 +22,18 @@
 	<link rel="stylesheet" type="text/css" href="./assets/css/index.css" />
 	<link rel="stylesheet" type="text/css" href="./assets/css/custom.css" />
 	<link rel="stylesheet" type="text/css" href="./assets/css/defaults.css" />
-	<link rel="stylesheet" type="text/css" href="./assets/css/about-page-styles.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/portfolio-page-styles.css" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/contact-page-styles.css" />
 
 
 	<script type="text/javascript" src="./assets/js/jQuery.min.js"></script>
-	<script type="text/javascript" src="./assets/js/popper.min.js"></script>
-	<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="./assets/js/scrollbot.min.js"></script>
 	<script type="text/javascript" src="./assets/js/wow.min.js"></script>
 	<script type="text/javascript" src="./assets/js/uolkeo.min.js"></script>
 	<script type="text/javascript" src="./assets/js/swiper.min.js"></script>
 	<script type="text/javascript" src="./assets/js/manySliders.js"></script>
 	<script type="text/javascript" src="./assets/js/main.js"></script>
+	<script type="text/javascript" src="./assets/js/elementy.js"></script>
 </head>
 <body>
 	<!-- Container -->
@@ -42,9 +42,6 @@
 		<div class="header-container" id="header">
 			<div class="header-menu">
 				<div class="header-menu-body">
-					<div class="header-menu-logo">
-						SAM
-					</div>
 					<div class="header-menu-list-container">
 						<ul class="header-menu-list">
 							<li class="header-menu-list-item">
@@ -55,23 +52,34 @@
 							</li>
 							<li class="header-menu-list-item">
 								<a class="header-menu-list-item-link" href="/about.html">
-									<i class="fa fa-home"></i>
+									<i class="fa fa-user"></i>
 									<span>About</span>
 								</a>
 							</li>
 							<li class="header-menu-list-item">
-								<a class="header-menu-list-item-link" href="/portfolio.html">
-									<i class="fa fa-home"></i>
+								<a class="header-menu-list-item-link selected" href="/portfolio.html">
+									<i class="fa fa-trophy"></i>
 									<span>Portfolio</span>
 								</a>
 							</li>
 							<li class="header-menu-list-item">
-								<a class="header-menu-list-item-link selected" href="/contact.html?contact_page">
-									<i class="fa fa-home"></i>
+								<a class="header-menu-list-item-link" href="/portfolio.html">
+									<i class="fa fa-feed"></i>
+									<span>Blog</span>
+								</a>
+							</li>
+							<li class="header-menu-list-item">
+								<a class="header-menu-list-item-link" href="/contact.html?contact_page">
+									<i class="fa fa-phone"></i>
 									<span>Contact</span>
 								</a>
 							</li>
 						</ul>
+					</div>
+					<div class="header-menu-button-container">
+						<a class="header-menu-button" href="#menu">
+							<i class="fa fa-bars"></i>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -94,7 +102,130 @@
 
 		<div class="main AboutPageContainer" id="main">
 
-			<h1>About Me</h1>
+			
+
+
+			<div class="x-product-wdgt blue">
+				<div class="container">
+					<div class="row wow bounceInRight">
+						<div class="col-md-12">
+							<span class="x-product-wdgt-title">
+								Contact
+							</span>
+						</div>
+					</div>
+					<br />
+					<div class="x-product-wdgt-row wow bounceInLeft">
+						
+						
+						<div class="row">
+							<div class="col-md-8">
+								
+								<form class="x-contact-form" action="/" method="post">
+									<!-- First and Last name row -->
+									<div class="row">
+										<div class="col-md-6">
+											<div class="textFieldContainer allpar-x" data-label="First Name">
+												<input 
+													class="textField"
+													autocomplete="off"
+													autocapitalize="off"
+													autocorrect="off"
+													spellcheck="false" 
+													type="text" 
+													name="client[name]" 
+												/>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="textFieldContainer allpar-x" data-label="Last Name">
+												<input 
+													class="textField"
+													autocomplete="off"
+													autocapitalize="off"
+													autocorrect="off"
+													spellcheck="false" 
+													type="text" 
+													name="client[name]" 
+												/>
+											</div>
+										</div>
+									</div>
+									<!-- End First and Last name row -->
+									
+									<!-- Email Row -->
+									<div class="row">
+										<div class="col-md-8">
+											<div class="textFieldContainer allpar-x" data-label="Email Address">
+												<input 
+													class="textField"
+													autocomplete="off"
+													autocapitalize="off"
+													autocorrect="off"
+													spellcheck="false" 
+													type="text" 
+													name="client[email]" 
+												/>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="textFieldContainer allpar-x" data-label="Subject">
+												<input 
+													class="textField"
+													autocomplete="off"
+													autocapitalize="off"
+													autocorrect="off"
+													spellcheck="false" 
+													type="text" 
+													name="client[email]" 
+												/>
+											</div>
+										</div>
+									</div>
+									<!-- End Email Row -->
+
+									<!-- Message Row -->
+									<div class="row">
+										<div class="col-md-12">
+											<div class="textFieldContainer allpar-x" data-label="Message">
+												<textarea class="textField" name="client[email]" rows="8"></textarea>
+											</div>
+										</div>
+									</div>
+									<!-- End Message Row -->
+
+									<!-- SubmitButton Row -->
+									<div class="row">
+										<div class="submitContainer allpar-x">
+											<input 
+												class="submit"
+												type="submit" 
+												value="Send Message" 
+												name="send_message" 
+											/>
+										</div>
+									</div>
+									<!-- End SubmitButton Row -->
+								</form>
+
+
+							</div>	
+						</div>
+						
+
+
+
+
+
+					</div>
+					<br />
+				</div>
+			</div>
+			<!-- End Portfolio -->
+
+
+
+
 
 		</div>
 		
@@ -104,30 +235,29 @@
 			<div class="footer-container-a wow bounceInLeft">
 				<div class="footer container">
 					<div class="row">
+						<img width="150" src="/agostinhosamil/assets/img/saml-icon.png" />
+					</div>
+					<br />
+					<br />
+					<div class="row">
 						<div class="footer-col col-md-3">
 							<div class="footer-col-body">
 								<div class="footer-col-title">
-									Páginas
+									Pages
 								</div>
 								<div class="footer-col-list-container">
 									<ul class="footer-col-list">
 										<li>
-											<a href="index.html">Início</a>
+											<a href="/">Home</a>
 										</li>
 										<li>
-											<a href="demos.html">Demostrações</a>
+											<a href="/about.html?XAboutMe">About Me</a>
 										</li>
 										<li>
-											<a href="intro.html">Apresentação</a>
+											<a href="/portfolio.html">Portfolio</a>
 										</li>
 										<li>
-											<a href="about.html">Sobre</a>
-										</li>
-										<li>
-											<a href="plans.html">Planos</a>
-										</li>
-										<li>
-											<a href="features.html">Recursos</a>
+											<a href="/contact.html">Contact</a>
 										</li>
 									</ul>
 								</div>
@@ -136,21 +266,21 @@
 						<div class="footer-col col-md-3">
 							<div class="footer-col-body">
 								<div class="footer-col-title">
-									Sobre
+									About Me
 								</div>
 								<div class="footer-col-list-container">
 									<ul class="footer-col-list">
 										<li>
-											<a href="">Sobre o sistema</a>
+											<a href="/about.html?XAboutMe#SelfIntro">Self Introduction</a>
 										</li>
 										<li>
-											<a href="">Sobre a nossa empresa</a>
+											<a href="/about.html?XAboutMe#ExperienceDescription">Experience Description</a>
 										</li>
 										<li>
-											<a href="">Apoiadores</a>
+											<a href="/about.html?XAboutMe#WhereFindingMe">Where Finding Me</a>
 										</li>
 										<li>
-											<a href="">Histórico de alterações</a>
+											<a href="/about.html?XAboutMe#Languages">Languages</a>
 										</li>
 									</ul>
 								</div>
@@ -159,25 +289,27 @@
 						<div class="footer-col col-md-3">
 							<div class="footer-col-body">
 								<div class="footer-col-title">
-									Ajuda
+									Get in Touch
 								</div>
 								<div class="footer-col-list-container">
 									<ul class="footer-col-list">
 										<li>
-											<a href="">Central de ajuda</a>
+											<a href="mailto:agostinhosaml832@gmail.com">
+												Send email
+											</a>
 										</li>
 										<li>
-											<a href="">Guia de utilização</a>
+											<a href="https://wa.me/j">
+												WhatsApp
+											</a>
 										</li>
 										<li>
-											<a href="">Estrutura & Funcionalidades</a>
+											<a href="tel:923285171">
+												Call
+											</a>
 										</li>
 										<li>
-											<a href="">Pedir ajuda</a>
-										</li>
-										<hr />
-										<li>
-											<a href="">Reportar BUG no sistema</a>
+											<a href="/contact.html">Contact</a>
 										</li>
 									</ul>
 								</div>
@@ -186,21 +318,21 @@
 						<div class="footer-col col-md-3">
 							<div class="footer-col-body">
 								<div class="footer-col-title">
-									Contacto
+									References
 								</div>
 								<div class="footer-col-list-container">
 									<ul class="footer-col-list">
 										<li>
-											<a href="">Entre em contacto connosco</a>
+											<a href="">Send Feedback</a>
 										</li>
 										<li>
-											<a href="">Assine nossa news latter (Receba sempre atualizações)</a>
+											<a href="">My Blog</a>
 										</li>
 										<li>
-											<a href="">Visitar site oficial da empresa</a>
+											<a href="">View my Resume</a>
 										</li>
 										<li>
-											<a href="">Acessar comunidade olnine</a>
+											<a href="">Visit my YOUTUBE channel</a>
 										</li>
 									</ul>
 								</div>
@@ -210,7 +342,9 @@
 					<hr />
 					<div class="row footer-details">
 						<div class="col-md-8">
-							UPLace, &copy;2020. Todos os direitos reservados
+							<span class="footer-details-copyright">
+								Agostinho Lopes, &copy;2020. Todos os direitos reservados
+							</span>
 						</div>
 						<div class="col-md-4">
 							<!-- Social Media Ions -->

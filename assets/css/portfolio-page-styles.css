@@ -22,3 +22,11 @@ div.main.PortfolioPageContainer {
 .x-product-wdgt.blue .x-product-wdgt-title {
 	color: #0b4679;
 }
+
+.x-product-wdgt .x-product-wdgt-portfolio .x-product-wdgt-portfolio-item-body div[project-thumbnail] .x-product-wdgt-portfolio-item-options .x-product-wdgt-portfolio-item-options-body a {
+	color: rgb(67, 141, 193) !important;
+}
+
+.x-product-wdgt .x-product-wdgt-portfolio .x-product-wdgt-portfolio-item-body div[project-thumbnail] .x-product-wdgt-portfolio-item-options .x-product-wdgt-portfolio-item-options-body a:hover {
+	color: rgb(255, 255, 255) !important;
+}
