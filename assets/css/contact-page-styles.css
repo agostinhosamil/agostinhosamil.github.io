@@ -1,0 +1,32 @@
+.x-product-wdgt {
+	padding-bottom: 133px !important;
+}
+
+.x-product-wdgt-title {
+	padding: .0px .0px 16px !important;
+}
+
+form.x-contact-form {
+	width: 100% !important;
+	display: inline-block;
+	position: relative;
+}
+
+form.x-contact-form .row {
+	margin-bottom: +29px;
+}
+
+form.x-contact-form .row input.textField, 
+form.x-contact-form .row textarea.textField {
+	padding: 4px .0px;
+}
+
+form.x-contact-form .row .submitContainer {
+	padding: 15px 10px .0px;
+}
+
+form.x-contact-form .row .submitContainer input[type="submit"] {
+	padding: 19px 39px;
+  background: #4095ca;
+  border-color: #1f587b;
+}

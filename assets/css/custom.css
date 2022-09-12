@@ -1,0 +1,8 @@
+@keyframes PageSLoaded {
+	0% {
+		transform: rotate(45deg) skewY(120deg);
+	}
+	100% {
+		transform: rotate(0deg) skewY(0deg);
+	}
+}

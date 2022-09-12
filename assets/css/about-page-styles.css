@@ -1,0 +1,52 @@
+.header-container, div.main.AboutPageContainer {
+	background-color: rgb(255, 255, 255) !important;
+}
+
+div.main.AboutPageContainer {
+	width: 100%;
+	display: block;
+	min-height: 400px;
+	padding: .0px .0px 136px;
+}
+
+div.main.AboutPageContainer .x-about-page-links-list,
+div.main.AboutPageContainer .x-about-page-links-list {
+	list-style: none;
+	list-style-type: none;
+	padding: .0px !important;
+}
+
+div.main.AboutPageContainer .x-about-page-links-list {
+	width: 100%;
+}
+
+div.main.AboutPageContainer .x-about-page-links-list .x-about-page-links-list-item a.x-about-page-link {
+	display: block;
+	width: 100%;
+	padding: 15px 17px 17px;
+	background-color: rgb(114 190 234 / 15%);
+	transition: background-color .5s linear;
+	-webkit-transition: background-color .5s linear;
+	-moz-transition: background-color .5s linear;
+	-ms-transition: background-color .5s linear;
+	-o-transition: background-color .5s linear;
+	margin: 12px .0px;
+	color: #195275;
+	font-weight: 600;
+}
+
+div.main.AboutPageContainer .x-about-page-links-list .x-about-page-links-list-item a.x-about-page-link:hover {
+	background-color: #a9c5d0;
+}
+
+div.main.AboutPageContainer .x-about-page-links-list .x-about-page-links-list-item a.x-about-page-link span {
+	pointer-events: none;
+	width: 100%;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.x-about-page-fixed-links-list {
+	position: fixed !important;
+	top: 105px;
+}

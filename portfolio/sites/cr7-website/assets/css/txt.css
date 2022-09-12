@@ -1,0 +1,112 @@
+.page, .page-sentence, .page .page-sentence .page-sentence-title, .page .page-sentence .page-sentence-paragraph, .page .page-block, .page .page-wrapper { 
+	width: 100%; 
+	height: auto;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+}
+
+.page-sentence {
+	padding: .0px .0px 45px;
+}
+
+.page .page-sentence .page-sentence-title,
+.page .page-sentence .page-sentence-paragraph {
+	display: block;
+}
+
+.page .page-sentence .page-sentence-title:before,
+.page .page-sentence .page-sentence-paragraph:before {
+	content: "";
+    position: absolute;
+    width: 7px;
+    height: 47px;
+    background: #496a6e;
+    left: 0px;
+    top: 16px;
+    border-radius: 40px;
+}
+
+.page .page-sentence .page-sentence-title {
+	margin: .0px .0px 20px;
+}
+
+.page .page-sentence .page-sentence-paragraph {
+	margin: .0px .0px 40px;
+}
+
+.page .page-sentence .page-sentence-title,
+.page .page-sentence .page-sentence-paragraph {
+	padding: .0px .0px .0px 33px;
+}
+
+.page .page-sentence .page-sentence-title strong {
+    font-size: 45px;
+    font-weight: 900;
+    color: #496a6e;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.32);
+}
+
+.page .page-sentence .page-sentence-paragraph span {
+	font-size: 22px;
+    font-family: "Trebuchet MS", "Arial", helvetica, sans-serif;
+    word-spacing: 3px;
+    letter-spacing: 2px;
+    line-height: 37px;
+}
+
+/** Colors **/
+	.page .page-sentence.red .page-sentence-title:before,
+	.page .page-sentence.red .page-sentence-paragraph:before {
+		background: #fd8f8f !important;
+	}
+	.page .page-sentence.red .page-sentence-title strong {
+		color: #fd8f8f;
+	}
+
+	.page .page-sentence.yellow .page-sentence-title:before,
+	.page .page-sentence.yellow .page-sentence-paragraph:before {
+		background: #ecec95 !important;
+	}
+	.page .page-sentence.yellow .page-sentence-title strong {
+		color: #ecec95;
+	}
+
+	.page .page-sentence.blue .page-sentence-title:before,
+	.page .page-sentence.blue .page-sentence-paragraph:before {
+		background: #a2dbf1 !important;
+	}
+	.page .page-sentence.blue .page-sentence-title strong {
+		color: #a2dbf1;
+	}
+
+	.page .page-sentence.golden .page-sentence-title:before,
+	.page .page-sentence.golden .page-sentence-paragraph:before {
+		background: #e4c577 !important;
+	}
+	.page .page-sentence.golden .page-sentence-title strong {
+		color: #e4c577;
+	}
+
+	.page .page-sentence.green .page-sentence-title:before,
+	.page .page-sentence.green .page-sentence-paragraph:before {
+		background: #62ce62 !important;
+	}
+	.page .page-sentence.green .page-sentence-title strong {
+		color: #62ce62;
+	}
+/** end colors **/
+
+.page .page-wrapper {
+	padding: .0px 33px;
+}
+
+.page .page-block {
+    width: 100%;
+    height: auto;
+    background: transparent none repeat;
+    border: 1px solid #e4e4e4;
+    padding: 30px;
+    border-radius: 4px;
+    box-shadow: 0 0 6px 0px rgba(0, 0, 0, 0.12156862745098039);
+}

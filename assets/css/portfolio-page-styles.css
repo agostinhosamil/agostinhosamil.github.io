@@ -1,0 +1,32 @@
+.header-container, div.main.PortfolioPageContainer {
+	background-color: rgb(255, 255, 255) !important;
+}
+
+div.main.PortfolioPageContainer {
+	width: 100%;
+	display: block;
+	min-height: 400px;
+	padding: .0px .0px 136px;
+}
+
+.x-product-wdgt {
+	background-color: transparent !important;
+}
+
+.x-product-wdgt {
+	border-style: none !important;
+	border-width: 0px !important;
+	padding: 0px !important;
+}
+
+.x-product-wdgt.blue .x-product-wdgt-title {
+	color: #0b4679;
+}
+
+.x-product-wdgt .x-product-wdgt-portfolio .x-product-wdgt-portfolio-item-body div[project-thumbnail] .x-product-wdgt-portfolio-item-options .x-product-wdgt-portfolio-item-options-body a {
+	color: rgb(67, 141, 193) !important;
+}
+
+.x-product-wdgt .x-product-wdgt-portfolio .x-product-wdgt-portfolio-item-body div[project-thumbnail] .x-product-wdgt-portfolio-item-options .x-product-wdgt-portfolio-item-options-body a:hover {
+	color: rgb(255, 255, 255) !important;
+}
