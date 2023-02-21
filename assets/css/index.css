@@ -67,11 +67,11 @@
 }
 
 .x-product-wdgt .x-product-wdgt-portfolio .x-product-wdgt-portfolio-item:before {
-  background-image: linear-gradient(#2a6D9a, #1e5686, #0b4271);
-  background-image: -webkit-linear-gradient(#2a6D9a, #1e5686, #0b4271);
-  background-image: -moz-linear-gradient(#2a6D9a, #1e5686, #0b4271);
-  background-image: -ms-linear-gradient(#2a6D9a, #1e5686, #0b4271);
-  background-image: -o-linear-gradient(#2a6D9a, #1e5686, #0b4271);
+  background-image: linear-gradient(#ffffff, #d3e6f7, #ffffff);
+  background-image: -webkit-linear-gradient(#ffffff, #d3e6f7, #ffffff);
+  background-image: -moz-linear-gradient(#ffffff, #d3e6f7, #ffffff);
+  background-image: -ms-linear-gradient(#ffffff, #d3e6f7, #ffffff);
+  background-image: -o-linear-gradient(#ffffff, #d3e6f7, #ffffff);
 }
 
 .x-product-wdgt .x-product-wdgt-portfolio .x-product-wdgt-portfolio-item:before {
@@ -137,7 +137,7 @@
   background: transparent none repeat scroll 0%;
   width: 140px;
   position: absolute;
-  margin: 18px auto .0px;
+  margin: 37px auto .0px;
   left: 0px;
   right: 0px;
 }
@@ -156,15 +156,16 @@
   margin: 3px;
   transition: background-color .3s ease-in;
   -webkit-transition: background-color .3s ease-in;
-  background-color: rgb(60 144 170 / 9%);
-  border: 1px solid #4281b7;
+  background-color: rgb(57 98 122);
+  border: 1px solid #223648;
   color: rgb(255, 255, 255);
   text-align: center;
   font-size: 29px;
+  box-shadow: rgb(0 0 0 / 22%) -1px 1px 10px;
 }
 
 .x-product-wdgt .x-product-wdgt-portfolio .x-product-wdgt-portfolio-item-body div[project-thumbnail] .x-product-wdgt-portfolio-item-options .x-product-wdgt-portfolio-item-options-body a:hover {
-  background-color: rgba(32, 95, 115, 0.51);
+  background-color: rgb(31, 58, 74);
 }
 
 .x-product-wdgt .x-product-wdgt-portfolio .x-product-wdgt-portfolio-item-body div[project-thumbnail] .x-product-wdgt-portfolio-item-options .x-product-wdgt-portfolio-item-options-body a i {
@@ -175,9 +176,9 @@
 .x-product-wdgt-portfolio-link {
   display: inline-block;
   padding: 12px 43px;
-  border: 1px solid #ffffff;
-  color: #ffffff;
-  background-color: rgb(35 113 179 / 49%);
+  border: 3px solid #39627a;
+  color: #39627a;
+  /* background-color: rgb(57 98 122); */
   transition: box-shadow .5s linear;
   border-radius: 59px;
   text-align: center;
@@ -185,12 +186,13 @@
   max-width: 100%;
   font-size: 20px;
   margin: .0px .0px .0px 13px;
+  font-weight: 700;
 }
 
 .x-product-wdgt-portfolio-link:hover {
-  color: #ffffff;
+  color: #305469;
   box-shadow: rgb(17 47 74 / 19%) 3px 1px 20px 4px;
-  border-color: #d2d4d6;
+  border-color: #39627a;
 }
 
 .x-product-wdgt-portfolio-link span {
@@ -500,7 +502,7 @@
 }
 
 .x-product-wdgt.blue {
-  background-color: #114B7D;
+  background-color: rgba(203, 203, 203, .26);
   border-style: solid;
   border-width: 56px;
   border-color: #fff transparent;
@@ -508,7 +510,7 @@
 }
 
 .x-product-wdgt.blue .x-product-wdgt-title {
-  color: #ffffff;
+  color: #345a70;
 }
 
 
