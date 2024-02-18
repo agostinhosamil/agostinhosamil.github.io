@@ -1,0 +1,38 @@
+Container {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+h2.Title {
+  width: 100%;
+  display: block;
+  padding: 80px 6% 60px;
+  font-size: 80px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: capitalize;
+
+  @media (max-width: 800px) {
+    font-size: 30px;
+  }
+
+  span {
+    background-image: -webkit-linear-gradient(#1954d9, #52dfed);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+}
+
+PlanCardListContainer(Container) {
+  padding: 30px 0px 80px;
+  max-width: 1340px;
+  margin: auto;
+}
+
+PlanCardRow(Container) {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px 0px;
+}

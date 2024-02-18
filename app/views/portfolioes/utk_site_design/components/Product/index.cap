@@ -1,0 +1,36 @@
+@import Image from 'capsule'
+
+@from './styles.css' import (
+  Bullet,
+  Container,
+  ImageWrapper,
+  ImageContainer,
+  DataWrapper
+)
+
+@def Product $color, $title, $description, $style, $image
+  <Container>
+    <ImageWrapper>
+      <ImageContainer color=%{ $color }>
+        <Image src=%{ $image } alt=%{ $title } />
+      </ImageContainer>
+    </ImageWrapper>
+    <DataWrapper>
+      <h4>%{ $title }</h4>
+      <ul>
+        <Bullet color="orange" />
+        <Bullet color="red" />
+        <Bullet color="teal" />
+        <Bullet color="blue" />
+        <Bullet color="yellow" />
+      </ul>
+      <p>%{ $description }</p>
+      <div>
+        <button>
+          <i class="fa fa-cart-plus" />
+          <span>Adicionar ao carrinho</span>
+        </button>
+      </div>
+    </DataWrapper>
+  </Container>
+@end

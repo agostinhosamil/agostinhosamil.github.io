@@ -1,0 +1,14 @@
+@import { PortfolioPreview } from '@components/PortfolioPreview'
+
+@def Portfolio ({ ...$props })
+  <Fragment>
+    <PortfolioPreview
+      portfolioProjects=%{ $this->portfolioProjects }
+      paddingTop="0"
+      paddingBottom="0"
+      background="#ffffff"
+      />
+  </Fragment>
+@end
+
+@export default Portfolio

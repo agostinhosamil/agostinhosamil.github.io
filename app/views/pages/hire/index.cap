@@ -1,0 +1,7 @@
+@import { PlanCardList } from '@components/PlanCardList'
+
+@def Hire
+  <PlanCardList plans=%{ $this->hirePlans }/>
+@end
+
+@export default Hire

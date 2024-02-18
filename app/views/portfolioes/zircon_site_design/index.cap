@@ -1,0 +1,265 @@
+@import Image  from 'capsule'
+@import Header from './components/Header'
+@import Footer from './components/Footer'
+
+@from './styles.css' import (
+  Styles,
+  Container,
+  InfoCard,
+  InfoCardsWrapper,
+  InfoCardIcon,
+  FeaturesListContainer,
+  FeaturesListsWrapper,
+  FeaturesList,
+  FeaturesPreview,
+  FeaturesListBody,
+  AppOverViewDetailsContainer,
+  AppOverViewDetailsTitleWrapper,
+  AppOverViewDetailsBody,
+  AppOverViewDetailsImageWrapper,
+  AppOverViewDetailsContent,
+  AppOverViewDetailsList,
+  AppOverViewDetail,
+  AppOverViewCtaWrapper,
+  PlanCardsListContainer,
+  PlanCardsListTitle,
+  PlanCardsListBody,
+  PlanCard,
+  AppDownloadAdContainer,
+  AppDownloadAd,
+  AppDownloadAdImageWrapper,
+  AppDownloadAdBody
+)
+
+@def ZirconSiteDesign
+  <Container>
+    <Styles />
+    <Header />
+    <InfoCardsWrapper>
+      @for $i in range(1, 3)
+        <InfoCard>
+          <InfoCardIcon>
+            <Image src="icon-plan-m.svg" />
+          </InfoCardIcon>
+          <h3>
+            Pricing Guide
+          </h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <div class="button-wrapper">
+            <a role="button" href="#">
+              <span>Learn more</span>
+              <i class="fa fa-arrow-right" />
+            </a>
+          </div>
+        </InfoCard>
+      @end
+    </InfoCardsWrapper>
+
+    <FeaturesListContainer>
+      <FeaturesListBody>
+        <div class="features-list-title-wrapper">
+          <h1>Featues</h1>
+          <h3>User friendly easy</h3>
+        </div>
+
+        <FeaturesListsWrapper>
+          <FeaturesList>
+            @for $i in range(1, 5)
+              <li>
+                <div class="icon-container">
+                  <div>
+                    <i class="fa fa-cubes" />
+                  </div>
+                </div>
+                <div class="feature-details-content">
+                  <strong>Featues %{ $i }</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                </div>
+              </li>
+            @end
+          </FeaturesList>
+          <FeaturesPreview>
+            <div>
+              <Image src="phone-prev.png" alt="App Featues" />
+            </div>
+          </FeaturesPreview>
+          <FeaturesList>
+            @for $i in range(1, 5)
+              <li>
+                <div class="icon-container">
+                  <div>
+                    <i class="fa fa-cubes" />
+                  </div>
+                </div>
+                <div class="feature-details-content">
+                  <strong>Featues %{ $i }</strong>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+                </div>
+              </li>
+            @end
+          </FeaturesList>
+        </FeaturesListsWrapper>
+      </FeaturesListBody>
+    </FeaturesListContainer>
+
+    <AppOverViewDetailsContainer>
+      <AppOverViewDetailsTitleWrapper>
+        <h1>App overview</h1>
+        <h3>Our App Featues</h3>
+      </AppOverViewDetailsTitleWrapper>
+      <AppOverViewDetailsBody>
+        <AppOverViewDetailsImageWrapper>
+          <div>
+            <Image src="app-overview-image.png" alt="App overview" />
+          </div>
+        </AppOverViewDetailsImageWrapper>
+        <AppOverViewDetailsContent>
+          <AppOverViewDetailsList>
+            @for $i in range(1, 4)
+              <AppOverViewDetail>
+                <div class="icon-wrapper">
+                  <div>
+                    <i class="fa fa-check" />
+                  </div>
+                </div>
+                <div class="data-wrapper">
+                  <strong>AppOverViewDetailsBody</strong>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+                  </p>
+                </div>
+              </AppOverViewDetail>
+            @end
+          </AppOverViewDetailsList>
+          <AppOverViewCtaWrapper>
+            <a href="#" role="button">
+              <span>Get started now</span>
+              <i class="fa fa-arrow-right" />
+            </a>
+          </AppOverViewCtaWrapper>
+        </AppOverViewDetailsContent>
+      </AppOverViewDetailsBody>
+    </AppOverViewDetailsContainer>
+
+    <PlanCardsListContainer>
+      <PlanCardsListTitle>
+        <h1>Pricing Plans</h1>
+        <h4>App subscription plan</h4>
+      </PlanCardsListTitle>
+      <PlanCardsListBody>
+        <PlanCard>
+          <h3>Standard Edition</h3>
+          <div class="icon-wrapper">
+            <div>
+              <i class="fa fa-suitcase" />
+            </div>
+          </div>
+          <h5>$ 2,340 / month</h5>
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li class="disabled">Lorem ipsum</li>
+            <li class="disabled">Lorem Laks Ans</li>
+            <li class="disabled">Lorem Nams</li>
+          </ul>
+          <div class="cta-wrapper">
+            <div>
+              <button type="button">
+                <span>Purchase</span>
+                <i class="fa fa-arrow-right" />
+              </button>
+            </div>
+          </div>
+        </PlanCard>
+        <PlanCard class="highlight">
+          <h3>Business Edition</h3>
+          <div class="icon-wrapper">
+            <div>
+              <i class="fa fa-suitcase" />
+            </div>
+          </div>
+          <h5>$ 2,340 / month</h5>
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ul>
+          <div class="cta-wrapper">
+            <div>
+              <button type="button">
+                <span>Purchase</span>
+                <i class="fa fa-arrow-right" />
+              </button>
+            </div>
+          </div>
+        </PlanCard>
+        <PlanCard>
+          <h3>Premium Edition</h3>
+          <div class="icon-wrapper">
+            <div>
+              <i class="fa fa-suitcase" />
+            </div>
+          </div>
+          <h5>$ 2,340 / month</h5>
+          <ul>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+            <li>Lorem ipsum dolor sit amet</li>
+          </ul>
+          <div class="cta-wrapper">
+            <div>
+              <button type="button">
+                <span>Purchase</span>
+                <i class="fa fa-arrow-right" />
+              </button>
+            </div>
+          </div>
+        </PlanCard>
+      </PlanCardsListBody>
+    </PlanCardsListContainer>
+
+    <AppDownloadAdContainer>
+      <AppDownloadAd>
+        <AppDownloadAdImageWrapper>
+          <div>
+            <Image src="phone-ad-mockup.png" alt="Download our app" />
+          </div>
+        </AppDownloadAdImageWrapper>
+        <AppDownloadAdBody>
+          <h1>Download our App</h1>
+          <h3>Product review App</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div>
+            <ul>
+              <li>
+                <a href="#" title="Download at app store">
+                  <i class="fa fa-apple" />
+                  <span>Download IOS</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" title="Download at playstore">
+                  <i class="fa fa-google" />
+                  <span>Download Android</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </AppDownloadAdBody>
+      </AppDownloadAd>
+    </AppDownloadAdContainer>
+  </Container>
+@end
+
+@export default ZirconSiteDesign

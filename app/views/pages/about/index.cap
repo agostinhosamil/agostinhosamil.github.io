@@ -1,0 +1,19 @@
+@import { TextSets } from '@components/TextSets'
+@import { TextSetsLinks } from '@components/TextSetsLinks'
+
+@import { Container } from './styles.css'
+
+@def About
+  <Container>
+    <div class="row">
+      <div class="col-md-3">
+        <TextSetsLinks sets=%{ $this->textSets } />
+      </div>
+      <div class="col-md-7">
+        <TextSets sets=%{ $this->textSets } />
+      </div>
+    </div>
+  </Container>
+@end
+
+@export default About

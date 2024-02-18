@@ -1,0 +1,148 @@
+HomePageDescriptionContainer {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  background-color: #ffffff;
+
+  .x-page-desc-body {
+    padding: .0px;
+  }
+
+  .x-page-desc-title, .x-page-desc-title code {
+    font-size: 52px;
+    font-weight: 700;
+    padding: .0px .0px 73px;
+  }
+}
+
+h1.HomePageDescriptionTitle {
+  position: relative;
+  text-align: center;
+  max-width: 640px;
+  margin: auto;
+  display: block !important;
+  font-size: 52px;
+  font-weight: 700;
+  padding: .0px .0px 73px;
+  transition: font-size .4s ease;
+  color: #bdbdbd;
+
+  @media (max-width: 500px) {
+    font-size: 37px;
+  }
+
+  span {
+    font-size: inherit;
+    font-weight: inherit;
+    padding: inherit;
+    color: #ffffff;
+    background: #d81b60 none repeat scroll 0%;
+    padding: 7px 28px;
+    border-radius: 51px;
+    transition: inherit;
+    margin-top: 38px;
+    display: inline-block;
+
+    @media (max-width: 1000px) {
+      font-size: 43px;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 23px;
+    }
+  }
+}
+
+HomePageDescriptionParagraphes(HomePageDescriptionTitle) {
+  padding: 0px 0px 28px;
+}
+
+HomePageDescriptionParagraph {
+  position: relative;
+  z-index: 1;
+  color: #7b7a7a;
+  font-size: 26px;
+  font-weight: 400;
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  padding: 20px 20px 51px;
+
+  @media (max-width: 610px) {
+    font-size: 16px;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    background: #ebeced;
+    width: 90px;
+    height: 12px;
+    border-radius: 45px;
+  }
+}
+
+HomePageDescriptionButton {
+  text-align: center;
+  padding: 5px .0px .0px;
+
+  a {
+    position: relative;
+    z-index: 2;
+    color: #225676;
+    background: rgb(255 255 255 / 0%);
+    padding: 10px 22px 9px;
+    border: 4px solid #2a678d;
+    font-size: 33px;
+    border-radius: 73px;
+    text-transform: uppercase;
+
+    &:hover {
+      background: rgb(239 239 239) none repeat 0% 0%;
+    }
+
+    @media (max-width: 550px) {
+      font-size: 22px;
+    }
+  }
+}
+
+ul.HomePageDescriptionLinksWrapper {
+  width: 100%;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px 0px -30px;
+  position: relative;
+  z-index: 5;
+
+  li {
+    list-style: none;
+    margin: 0px 7px;
+    display: inline-block;
+
+    a {
+      font-size: 35px;
+      color: #d81b60;
+      display: flex;
+      width: 40px;
+      height: 40px;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      transition: font-size .3s ease-in;
+
+      &:hover {
+        font-size: 48px;
+      }
+
+      i {
+        font-size: inherit;
+      }
+    }
+  }
+}

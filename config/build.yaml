@@ -1,0 +1,9 @@
+outDir: <?= path('~/docs') ?>
+
+files:
+  default_sufix: /index
+  default_prefix: /
+
+# implementation soon
+plugins:
+  - plugin: samils-plugin-gzip

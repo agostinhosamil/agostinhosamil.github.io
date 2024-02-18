@@ -1,0 +1,99 @@
+#newfeedbody, div.post-container, .feed .feed-title,
+div.post-container .post-body .post-content-container,
+div.post-container .post-body .post-content-container-a,
+div.post-container .post-body .post-content-container-a .post-title,
+div.post-container .post-body .post-content-container-a .post-summary {
+	width: 100%;
+	height: auto;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+}
+
+.feed {}
+
+.feed .feed-title {
+	padding: .0px .0px 32px;
+}
+
+.feed .feed-title h1 {
+	font-size: 46px;
+	font-weight: 900;
+	text-shadow: 0 0 6px rgba(0, 0, 0, 0.43);
+	color: #ffffff;
+}
+
+div.post-container {
+	opacity: .8;
+}
+
+div.post-container {
+	border: 1px solid #c7c3c3;
+	background: #ffffff none repeat scroll 0% 0%;
+	margin: .0px .0px 61px;
+	box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.18);
+	border-radius: 4px;
+}
+
+div.post-container img {
+	width: 100%;
+}
+
+div.post-container .post-body .post-content-container,
+div.post-container .post-body .post-content-container-a {
+	cursor: pointer;
+}
+
+div.post-container .post-body .post-content-container-a {
+	padding: 40px 35px;
+}
+
+div.post-container .post-body .post-content-container-a:before {
+	content: "";
+	position: absolute;
+	left: 0px;
+	right: 0px;
+}
+
+div.post-container .post-body .post-content-container-a:before {
+	top: 0px;
+    bottom: 0px;
+    margin: auto;
+    width: 0%;
+    height: 0%;
+}
+
+div.post-container .post-body .post-content-container-a:hover:before {
+	width: 100%;
+	height: 100%;
+}
+
+div.post-container .post-body .post-content-container-a:before {
+	background: linear-gradient(45deg, rgba(222, 249, 255, 0.35), rgba(222, 249, 255, 0.09));
+	background: -webkit-linear-gradient(45deg, rgba(222, 249, 255, 0.35), rgba(222, 249, 255, 0.09));
+	background: -moz-linear-gradient(45deg, rgba(222, 249, 255, 0.35), rgba(222, 249, 255, 0.09));
+	background: -ms-linear-gradient(45deg, rgba(222, 249, 255, 0.35), rgba(222, 249, 255, 0.09));
+	background: -o-linear-gradient(45deg, rgba(222, 249, 255, 0.35), rgba(222, 249, 255, 0.09));
+	transition: width .7s ease-out, height 1s ease-in;
+}
+
+div.post-container .post-body .post-content-container-a .post-title {
+	padding: .0px .0px 15px;
+}
+
+div.post-container .post-body .post-content-container-a .post-title h3 {
+	margin: .0px;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+div.post-container .post-body .post-content-container-a .post-summary {
+	margin: .0px;
+}
+
+div.post-container .post-body .post-content-container-a .post-summary span {
+	font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 30px;
+}

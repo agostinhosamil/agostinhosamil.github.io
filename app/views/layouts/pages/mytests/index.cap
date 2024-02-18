@@ -1,0 +1,11 @@
+@import { Application } from '@views/.dist/layouts/application'
+
+@def MyTest
+  <Application>
+    <div style=%{[ 'backgroundColor' => 'red' ]}>
+      <Yield />
+    </div>
+  </Application>
+@end
+
+@export default MyTest

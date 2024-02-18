@@ -1,0 +1,58 @@
+@from './styles.css' import {
+  ProductDetailDesc,
+  ProductDetailBody,
+  ProductDetailTitle,
+  ProductDetailCounter,
+  ProductDetailDescList,
+  ProductDetailContainer,
+  ProductDetailCounterContainer
+}
+
+/**
+ * @param string title
+ * @param number level
+ * @param string color
+ * @param array paragraphs
+ */
+
+@def ProductDetail $skill
+  <div class="col-md-4">
+    <ProductDetailContainer class="color">
+      <ProductDetailCounterContainer>
+        <ProductDetailCounter>
+          <div
+            style=%{[
+              :width => join ('', [$skill->level, '%']),
+              :backgroundColor => $skill->color
+            ]}
+            >
+          </div>
+          @if $skill->level >= 60
+            <i>%{ $skill->level }%</i>
+          @end
+
+          @if $skill->level < 60
+            <i style=%{[ :color => '#333333' ]}>%{ $skill->level }%</i>
+          @end
+        </ProductDetailCounter>
+      </ProductDetailCounterContainer>
+      <ProductDetailBody>
+        <ProductDetailTitle>
+          <span>%{ $skill->title }</span>
+        </ProductDetailTitle>
+        <ProductDetailDesc>
+          <ProductDetailDescList>
+            @for $paragraph in $skill->getDetails ()
+              <li>
+                <span>
+                  <i style=%{[ :backgroundColor => $skill->color ]} />
+                  %{ $paragraph }
+                </span>
+              </li>
+            @end
+          </ProductDetailDescList>
+        </ProductDetailDesc>
+      </ProductDetailBody>
+    </ProductDetailContainer>
+  </div>
+@end

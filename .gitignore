@@ -1,0 +1,31 @@
+# File to ignore when pushing the
+# project files to a git repository
+.history
+vendor
+.env
+.env.local
+.env.development.local
+.env.production.local
+.env.test.local
+
+storage/*/*
+!storage/.keep
+
+desktop.ini
+project.yaml
+
+log/*/*
+!log/test/.keep
+
+.DS_Store
+*.pem
+
+# Ignore whole the .xphp files
+# on condition that they was already
+# compiled into common php files and
+# should now be used for production
+*.xphp
+*.php.lock
+
+
+autoload-dev.php

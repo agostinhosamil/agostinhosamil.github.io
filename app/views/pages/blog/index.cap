@@ -1,0 +1,14 @@
+@import { Container, Title, ImageWrapper } from './styles.css'
+
+@import $undrawBlogingRe from './undraw_blogging_re_kl0d.svg'
+
+@def Blog $props
+  <Container>
+    <ImageWrapper>
+      <img src=%{ $undrawBlogingRe } />
+    </ImageWrapper>
+    <Title>Blog available soon :)</Title>
+  </Container>
+@end
+
+@export default Blog

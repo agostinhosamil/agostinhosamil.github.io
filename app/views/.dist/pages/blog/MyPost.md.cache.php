@@ -1,0 +1,9 @@
+<?php namespace App\View; use Saml; use Sami;use Sammy\Packs\Samils\Capsule\CapsuleScopeContext; use Sammy\Packs\CapsuleHelper; use Sammy\Packs\CapsuleHelper\ArrayHelper; use Sammy\Packs\CapsuleHelper\ObjectHelper;
+# Capsule Body
+?>
+<?php Capsule::Def ('MdCapsule311501708293429', function ($args, CapsuleScopeContext $scope) {
+?>
+<?php  Capsule::PartialRender ('Fragment', [], Capsule::CreateElement ('h1', [], 'My First Post'), Capsule::CreateElement ('p', [], "this is a pretty way for creating a component here"), Capsule::CreateElement ('p', [], "Another line here"), Capsule::CreateElement ('h3', [], 'Wow'), Capsule::CreateElement ('h2', [], 'MANS'), Capsule::CreateElement ('h4', [], 'Mais'), Capsule::CreateElement ('div', [], Capsule::CreateElement ('table', [], Capsule::CreateElement ('thead', [], Capsule::CreateElement ('th', [], "Name")), Capsule::CreateElement ('tbody', [], Capsule::CreateElement ('tr', [], Capsule::CreateElement ('td', [], "Sam")), Capsule::CreateElement ('tr', [], Capsule::CreateElement ('td', [], "Lopes")), Capsule::CreateElement ('tr', [], Capsule::CreateElement ('td', [], "Delopes")), Capsule::CreateElement ('tr', [], Capsule::CreateElement ('td', [], "Rocky")), Capsule::CreateElement ('tr', [], Capsule::CreateElement ('td', [], "Agostinho")), Capsule::CreateElement ('tr', [], Capsule::CreateElement ('td', [], "# annssssss"))))), Capsule::CreateElement ('p', [], "lakks")); ?>
+<?php }); ?>
+<?php Capsule::Export ('MdCapsule311501708293429'); ?>
+<?php $module->exports = Capsule::Element ('MdCapsule311501708293429'); ?><?php if (!(is_object ($module->exports) && $module->exports instanceof Capsule)) { $module->exports = Capsule::Create (function () {}); }?>

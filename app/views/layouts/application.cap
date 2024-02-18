@@ -1,0 +1,51 @@
+@import ApplicationMetaDatas from 'capsule'
+@import { CapsuleThemeProvider } from 'capsule'
+@from 'capsule' import (
+  Styles,
+  Scripts,
+  Style
+)
+
+@from '@components/Footer' import { Footer }
+@from '@components/Header' import { Header }
+
+@import $theme from '@views/config/theme'
+
+@def Application ({ $data, $children })
+  <html lang="pt-BR">
+    <head>
+     <title>Agostinho Saml - Fullstack Developer</title>
+     // mansmmsnd
+     // annsm
+     /**
+      * Application Metadatas
+      * - To edit this datas open your
+      * - metadatas inside the
+      * - 'app/assets/meta' directory
+      */
+     <ApplicationMetaDatas />
+
+     <Style href="font-awesome.css" />
+     <Style href="bootstrap.css"   />
+     <Style href="animated.css"   />
+     <Style href="swipper.css"   />
+     <Style href="styles.css"   />
+     /**
+      * Import Styles And Scripts
+      */
+     <Scripts />
+     <Styles />
+    </head>
+    <body>
+      <CapsuleThemeProvider theme=%{ $theme }>
+        <Header />
+        <div>
+          <Yield data=%{ $data } />
+        </div>
+        <Footer />
+      </CapsuleThemeProvider>
+    </body>
+  </html>
+@end
+
+@export default Application

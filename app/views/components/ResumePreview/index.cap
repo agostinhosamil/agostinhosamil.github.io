@@ -1,0 +1,13 @@
+@import { Image } from 'capsule'
+
+@from './styles.css' import {
+  ResumePreviewContainer
+}
+
+@def ResumePreview ({ ...$props })
+  <ResumePreviewContainer>
+    <Image src="agostinho-lopes-resume-preview.png" />
+  </ResumePreviewContainer>
+@end
+
+@export ResumePreview

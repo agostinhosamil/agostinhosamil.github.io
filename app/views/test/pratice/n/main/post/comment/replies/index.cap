@@ -1,0 +1,7 @@
+@def Replies ({ ...$props })
+  <Fragment>
+    <h1>Replies view works..!</h1>
+  </Fragment>
+@end
+
+@export default Replies

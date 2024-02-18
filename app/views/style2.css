@@ -1,0 +1,18 @@
+global.GlobalStyles {
+  * {
+    box-sizing: border-box;
+  }
+
+  div {
+    margin: 0px;
+    padding: 0px;
+
+    span {
+      color: red;
+    }
+  }
+
+  h1 {
+    font-family: Arial;
+  }
+}

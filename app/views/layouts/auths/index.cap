@@ -1,0 +1,10 @@
+@import { GlobalStyles } from './styles.css'
+
+@def Auths ...$props
+  <body>
+    <GlobalStyles />
+    <Yield %{$props} />
+  </body>
+@end
+
+@export default Auths

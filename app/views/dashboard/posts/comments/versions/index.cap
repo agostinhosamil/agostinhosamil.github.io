@@ -1,0 +1,7 @@
+@def Versions ({ ...$props })
+  <Fragment>
+    <h1>Versions view works..!</h1>
+  </Fragment>
+@end
+
+@export default Versions

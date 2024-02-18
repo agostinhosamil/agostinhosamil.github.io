@@ -1,0 +1,13 @@
+@from './styles.css' import { PortfolioProjectLinkContainer }
+
+@def PortfolioProjectLink $title, $icon, $href = '#'
+  <PortfolioProjectLinkContainer
+    href=%{ $href }
+    target="_new"
+    title=%{ $title }
+    >
+    <content>
+      <i class=%{ join ('', ["fa fa-", $icon]) }></i>
+    </content>
+  </PortfolioProjectLinkContainer>
+@end

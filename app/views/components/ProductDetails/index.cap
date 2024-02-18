@@ -1,0 +1,31 @@
+@from './styles.css' import {
+  ProductDetailsContainer,
+  ProductDetailsTitle,
+  ProductDetailsBody
+}
+
+@import { ProductDetailsRow } from './ProductDetailsRow'
+@import { ProductDetail } from './ProductDetail'
+
+@def ProductDetails $productDetails = []
+  <ProductDetailsContainer>
+    <div class="container">
+      <ProductDetailsTitle>
+        Skills & Abilities
+      </ProductDetailsTitle>
+      <ProductDetailsBody>
+
+        @if is_array ($productDetails)
+          @each $line in $productDetails
+            <ProductDetailsRow>
+              @each $productDetail in $line
+                <ProductDetail skill=%{ $productDetail } />
+              @end
+            </ProductDetailsRow>
+          @end
+        @end
+
+      </ProductDetailsBody>
+    </div>
+  </ProductDetailsContainer>
+@end

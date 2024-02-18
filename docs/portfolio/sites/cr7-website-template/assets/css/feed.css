@@ -1,0 +1,73 @@
+#newfeedbody,
+div.post-container,
+.feed .feed-title,
+div.post-container .post-body .post-content-container,
+div.post-container .post-body .post-content-container-a,
+div.post-container .post-body .post-content-container-a .post-title,
+div.post-container .post-body .post-content-container-a .post-summary {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.feed {}
+
+.feed .feed-title {
+  padding: .0px .0px 32px;
+}
+
+.feed .feed-title h1 {
+  font-size: 57px;
+  font-weight: 300;
+  color: #5a5a5a;
+}
+
+div.post-container {
+  opacity: .8;
+}
+
+div.post-container {
+  border: 1px solid #c7c3c3;
+  background: #ffffff none repeat scroll 0% 0%;
+  margin: .0px .0px 61px;
+  box-shadow: 0 0 3px 2px rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+}
+
+div.post-container img {
+  width: 100%;
+}
+
+div.post-container .post-body .post-content-container,
+div.post-container .post-body .post-content-container-a {
+  cursor: pointer;
+}
+
+div.post-container .post-body .post-content-container-a {
+  padding: 40px 35px;
+}
+
+div.post-container .post-body .post-content-container-a .post-title {
+  padding: .0px .0px 15px;
+}
+
+div.post-container .post-body .post-content-container-a .post-title h3 {
+  margin: .0px;
+  font-size: 28px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #333333;
+}
+
+div.post-container .post-body .post-content-container-a .post-summary {
+  margin: .0px;
+}
+
+div.post-container .post-body .post-content-container-a .post-summary span {
+  font-size: 17px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  color: #444444;
+}

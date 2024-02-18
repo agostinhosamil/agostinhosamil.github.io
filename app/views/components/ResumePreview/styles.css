@@ -1,0 +1,14 @@
+ResumePreviewContainer {
+  width: 100%;
+  max-width: 1340px;
+  margin: auto;
+  height: auto;
+  padding: 10px 0px;
+  text-align: center;
+
+  img {
+    cursor: none;
+    pointer-events: none;
+    width: 96%;
+  }
+}

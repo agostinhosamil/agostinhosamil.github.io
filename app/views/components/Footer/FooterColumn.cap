@@ -1,0 +1,24 @@
+@from './styles.css' import {
+  FooterColumnList,
+  FooterColumnTitle,
+  FooterColumnListContainer
+}
+
+@def FooterColumn $title, $links = []
+  <div class="col-md-3">
+    <div class="footer-col-body">
+      <FooterColumnTitle>
+        %{ $title }
+      </FooterColumnTitle>
+      <FooterColumnListContainer>
+        <FooterColumnList>
+          @each $link in $links
+            <li>
+              <a href=%{ $link[:href] }>%{ $link[:label] }</a>
+            </li>
+          @end
+        </FooterColumnList>
+      </FooterColumnListContainer>
+    </div>
+  </div>
+@end

@@ -1,0 +1,7 @@
+@def Reactions ({ ...$props })
+  <Fragment>
+    <h1>Reactions view works..!</h1>
+  </Fragment>
+@end
+
+@export default Reactions

@@ -1,0 +1,50 @@
+@import { Image } from 'capsule'
+
+@from './styles.css' import {
+  DisabledPlanCardDetail,
+  PlanCardContainer,
+  PlanCardWrapper,
+  PlanCardButton,
+  PlanCardPrice,
+  PlanCardTitle,
+  PlanCardBody
+}
+
+@def PlanCard $title, $icon, $color, $price, $href = '#', $details = []
+  <div class="col-lg-4">
+    <PlanCardContainer color=%{ $color }>
+      <PlanCardWrapper>
+        <PlanCardTitle>
+          <Image src=%{ $icon } />
+          <br />
+          <span>
+            %{ $title }
+          </span>
+        </PlanCardTitle>
+        <PlanCardBody>
+          @if is_array ($details) && $details
+            <ul>
+              @for $detail in $details
+                @if $detail ['enabled']
+                  <li>%{join (' ', [$detail ['value'], $detail ['label']])}</li>
+                @end
+
+                @if !$detail ['enabled']
+                  <DisabledPlanCardDetail>
+                    %{join (' ', [$detail ['value'], $detail ['label']])}
+                  </DisabledPlanCardDetail>
+                @end
+              @end
+            </ul>
+          @end
+          <PlanCardPrice>
+            $ %{ $price }
+          </PlanCardPrice>
+        </PlanCardBody>
+        <PlanCardButton>
+          <a target="_blank" href="https://www.workana.com/freelancer/a3937be9f1ea53a68b7166207ae70eeb#hire-a3937be9f1ea53a68b7166207ae70eeb">Hire Now</a>
+        </PlanCardButton>
+      </PlanCardWrapper>
+    </PlanCardContainer>
+  </div>
+@end

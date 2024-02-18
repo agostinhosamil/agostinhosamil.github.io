@@ -1,0 +1,28 @@
+@import { PlanCard } from '../PlanCard'
+
+@from './styles.css' import { Title, PlanCardListContainer, PlanCardRow }
+
+@def PlanCardList $plans = []
+  <PlanCardListContainer>
+    <div class="container">
+      <div class="x-product-wdgt">
+        <div class="container">
+          <Title>
+            <span>Available plans if you wanna get in touch to talk about your project</span>
+            <br />
+            👨🏾‍💻
+          </Title>
+          <div class="x-product-wdgt-row row wow bounceInLeft">
+            @for $line in $plans
+              <PlanCardRow>
+                @for $plan in $line
+                  <PlanCard %{ $plan } />
+                @end
+              </PlanCardRow>
+            @end
+          </div>
+        </div>
+      </div>
+    </div>
+  </PlanCardListContainer>
+@end

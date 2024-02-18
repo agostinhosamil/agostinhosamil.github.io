@@ -1,0 +1,47 @@
+@import { PortfolioProject } from './PortfolioProject'
+
+@from './styles.css' import {
+  PortfolioPreviewContainer,
+  PortfolioPreviewTitle,
+  PortfolioPreviewLink,
+  PortfolioPreviewBody,
+  PortfolioPreviewRow
+}
+
+@def PortfolioPreview $portfolioProjects = [], $maxLines, ...$rest
+  <Fragment>
+    <PortfolioPreviewContainer %{$rest}>
+      <div class="container">
+        <div class="row wow bounceInRight">
+          <div class="col-md-12">
+            <PortfolioPreviewTitle>
+              Projects
+            </PortfolioPreviewTitle>
+          </div>
+        </div>
+        <br />
+        <PortfolioPreviewBody class="wow bounceInLeft">
+          @if is_array($portfolioProjects) && $portfolioProjects
+            @for $line in array_slice ($portfolioProjects, 0, is_numeric($maxLines) ? (int)$maxLines : count($portfolioProjects))
+              <PortfolioPreviewRow class="row">
+                @for $project in $line
+                  <PortfolioProject %{ $project } />
+                @end
+              </PortfolioPreviewRow>
+            @end
+          @end
+        </PortfolioPreviewBody>
+        <br />
+        @if !!(is_numeric($maxLines) && $maxLines >= 1)
+          <div class="row wow bounceInRight">
+            <div class="col-md-12">
+              <PortfolioPreviewLink href="/portfolio">
+                <span>View More Projects</span>
+              </PortfolioPreviewLink>
+            </div>
+          </div>
+        @end
+      </div>
+    </PortfolioPreviewContainer>
+  </Fragment>
+@end

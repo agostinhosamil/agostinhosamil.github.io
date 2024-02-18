@@ -1,0 +1,5 @@
+@def MyHomeComponent
+  <div>I am great!!</div>
+@end
+
+@export default MyHomeComponent

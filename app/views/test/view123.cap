@@ -1,0 +1,204 @@
+@import { useState, useRef } from 'npm:react'
+
+@def MyApp
+
+  [formError, setFormError] = useState({})
+  
+  function buttonClickHandler ()
+  {
+    console.log('Hey man, I am sending these data from the form')
+  }
+
+  formSubmitHandler = () => {
+    console.info('Form submited')
+
+    return {
+      data: []
+    }
+  }
+
+  const formSubmitHandler1 = () => {
+    console.info('Form submited')
+
+    return {
+      data: []
+    }
+  }
+
+  const someHandler = event => {
+    alert('I will never be handled!!')
+  }
+
+  let formSubmitHandler2 = () => {
+    console.info('Form submited')
+
+    const name = useRef('nameField')
+    const email = useRef('emailField')
+
+    const formData = {
+      data: {
+        name,
+        email
+      }
+    }
+
+    console.log(formData)
+  }
+
+  var formSubmitHandler3 = () => {
+    console.info('Form submited')
+
+    return {
+      data: []
+    }
+  }
+
+  HomeTitle = () => (
+    <div>
+      <h1>Home Page</h1>
+    </div>
+  )
+
+  isUserAuthenticated = async user => await validateToken(user.token)
+
+  SomePostTitle = async props => <h1>Post Title</h1>
+
+  const tryConnectingSomeDatabaseFromAPI = async function ()
+  {
+    'use server'
+
+    console.log('Connect to database!!')
+  }
+
+  authDone = async done =>
+    login()
+    && admin() ||
+    thinkAboutIt()
+
+  numberIsEqualOne = number =>
+    number
+    ==
+    1
+    &&
+    number
+    >=
+    0
+    &&
+    number
+    <=
+    10
+    ||
+    number
+    >
+    55
+    &&
+    number
+    <
+    12
+
+  makeSomeLog = text => console.log('Log Data: ', text)
+
+  setName = name => {}
+
+  const createUser = async () => {
+    'use server'
+
+    const user = params('user')
+
+    const user = App.Models.User.create(user)
+
+    return user
+  }
+
+  let doSomeAction = async data => [...data, { type: :action, name: 'Hello, Word' }]
+
+  registerData = async function ({ data }) {
+    registerStatus = await Data.register (data)
+
+    return registerStatus
+  }
+
+
+  const createMessage = async function createMyMessage (data) {
+    'use server'
+
+    const task = await App.Models.Task.create({
+      type: :create,
+      actionType: :message,
+      data: {
+        ...data,
+        id: Math.random()
+      }
+    })
+
+    return task
+  }
+
+  async function createEntity (entityData) {
+    'use server'
+
+    return {
+      type: :user,
+      data: {
+        name: 'Sam',
+        email: 'sam@bo.net'
+      }
+    }
+  }
+
+  const createSomeGreatData = async function createSomeGreatData () {
+    'use server'
+
+    const User = use('App.Models.User')
+    const Task = use('App.Models.Task')
+
+    const user = await User.create({
+      name: 'Sam',
+      role: :admin
+    })
+
+    return user
+  }
+
+  submitLogin = async ({ request, response }) => {
+    'use server'
+
+    const { password, email } = request.only([ :password, :email ])
+
+    const Auth = use('App.Services.Auth');
+
+    const authenticated = Auth.attempt({ password, email })
+
+    if (authenticated) {
+      return response.redirect('/dashboard')
+    }
+
+    setFormError({
+      type: :unauthorized,
+      message: 'Wrong credentials!!'
+    })
+  }
+
+  <div>
+    <form method="post" action={ submitLogin }>
+
+      @if isset($formError[ :type ])
+        <div>
+          %{ $formError[ :message ] }
+        </div>
+      @end
+
+      <input type="text" name="email" />
+      <input type="password" name="password" />
+      <button onClick={ buttonClickHandler }>Register</button>
+    </form>
+
+    @if Auth::isAdmin()
+      <h1>Admin</h1>
+    @elseif Auth::isEditor()
+      <h1>Editor</h1>
+    @else
+      <h1>Guest</h1>
+    @end
+  </div>
+@end

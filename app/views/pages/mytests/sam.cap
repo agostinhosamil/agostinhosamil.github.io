@@ -1,0 +1,7 @@
+@def Sam ({ ...$props })
+  <Fragment>
+    <h1>Sam view works..!</h1>
+  </Fragment>
+@end
+
+@export default Sam

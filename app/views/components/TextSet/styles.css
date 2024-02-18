@@ -1,0 +1,57 @@
+Container {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+TextSetSentence(Container)[color] {
+  position: relative;
+
+  h1 {
+    width: 100%;
+    display: block;
+    color: var(--theme.$color.400);
+    font-size: 47px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    -webkit-text-stroke-color: var(--theme.$color.600);
+    -webkit-text-stroke-width: thin;
+
+    @media (max-width: 767px) {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+
+  div {
+    width: 100%;
+    height: auto;
+    position: relative;
+
+    span {
+      display: block;
+      width: 100%;
+      font-size: 22px;
+      font-family: "Trebuchet MS", "Arial", helvetica, sans-serif;
+      word-spacing: 3px;
+      letter-spacing: 2px;
+      line-height: 37px;
+      text-align: justify-all;
+      padding: 0px 0px 0px 15px;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 9px;
+        width: 8px;
+        height: 17px;
+        background-color: var(--theme.$color.300);
+        border-radius: 8px;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+@import { Fragment } from 'capsule'
+
+@from './styles.css' import {
+  HeaderContainer
+}
+
+@import HeaderMenuItem from './HeaderMenuItem'
+
+@def Header
+  <HeaderContainer class="header-container" id="header">
+    <div class="header-menu">
+      <div class="header-menu-body">
+        <div class="header-menu-list-container">
+          <ul class="header-menu-list">
+            <HeaderMenuItem link="/" iconName="home" selected=%{ $this->selected }>Home</HeaderMenuItem>
+            <HeaderMenuItem link="/about" iconName="user">About</HeaderMenuItem>
+            <HeaderMenuItem link="/portfolio" iconName="trophy">Portfolio</HeaderMenuItem>
+            <HeaderMenuItem link="/blog" iconName="feed">Blog</HeaderMenuItem>
+            <HeaderMenuItem link="/contact" iconName="phone">Contact</HeaderMenuItem>
+          </ul>
+        </div>
+        <div class="header-menu-button-container">
+          <a class="header-menu-button" href="#menu">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="header-details wow hinge">
+      <div class="header-details-body">
+        <div class="header-details-title">
+          Agostinho (Sam)
+        </div>
+        <div class="header-details-desc">
+          Trying to know what else I have to. <br />
+        </div>
+        <div class="header-details-action">
+          <a href="/about.html">About</a>
+        </div>
+      </div>
+    </div>
+  </HeaderContainer>
+@end
+
+@export Header

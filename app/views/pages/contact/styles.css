@@ -1,0 +1,50 @@
+Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 50px 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+ImageWrapper {
+  width: 100%;
+  height: auto;
+
+  svg {
+    width: 100%;
+  }
+}
+
+FormWrapper {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 0px 25px 0px 0px;
+
+  @media (max-width: 767px) {
+    padding: 0px;
+  }
+}
+
+h1.Title {
+  font-size: 42px;
+  color: #404040;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+h4.SubTitle {
+  font-size: 21px;
+  color: #909090;
+  font-weight: 500;
+}
+
+button.Button {
+  background: #63dbff none;
+  border-radius: 8px;
+  border: 2px solid #41adcd;
+  color: #ffffff;
+  font-size: 25px;
+  padding: 7px 15px;
+}

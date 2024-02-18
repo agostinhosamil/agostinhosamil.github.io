@@ -1,0 +1,99 @@
+@import { useState, useRef } from 'npm:react'
+
+@def MyApp
+
+  [formError, setFormError] = useState({})
+  
+  getFormData = async ([name = 'Sam', email, [[[da, propTe, [[someProp], otherProp]]]], { role, permitions: userPeritions } = { role: :admin, permitions: [ :create, :edit, :show ] }]) => {
+    'use server'
+
+    const FormData = use('App.Utils.FormData');
+
+    const { username, password } = FormData.getFormData()
+
+    return {
+      action: :store,
+      username,
+      password
+    }
+  }
+
+  handleUserRegister = async data => {
+    'use server'
+
+    const User = use('App.Models.User')
+
+    const user = await User.create({
+      data
+    })
+
+    return user
+  }
+
+  async function makeMeThink () {
+    'use server'
+
+    const Post = use('App.Models.Post')
+
+    const post = await Post.create({
+      category: :sales,
+      title: 'How to sell more'
+    })
+
+    return post
+  }
+
+  s = async () => {
+    'use server'
+  }
+
+  const d = async () => {
+    'use server'
+
+    return {
+      action: :read
+    }
+  }
+
+  submitLogin = async ({ request, response }, name) => {
+    'use server'
+
+    const { password, email } = request.only([ :password, :email ])
+
+    const Auth = use('App.Services.Auth');
+
+    const authenticated = Auth.attempt({ password, email })
+
+    if (authenticated) {
+      return response.redirect('/dashboard')
+    }
+
+    setFormError({
+      type: :unauthorized,
+      message: 'Wrong credentials!!'
+    })
+  }
+
+  <div>
+    <form method="post" action={ submitLogin }>
+
+      @if isset($formError[ :type ])
+        <div>
+          %{ $formError[ :message ] }
+        </div>
+      @end
+
+      <input type="text" name="email" />
+      <input type="password" name="password" />
+      <button onClick={ buttonClickHandler }>Register</button>
+    </form>
+
+    @if Auth::isAdmin()
+      <h1>Admin</h1>
+    @elseif Auth::isEditor()
+      <h1>Editor</h1>
+    @else
+      <h1>Guest</h1>
+    @end
+  </div>
+@end

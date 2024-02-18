@@ -1,0 +1,34 @@
+@import ApplicationMetaDatas from 'capsule'
+@import { CapsuleThemeProvider } from 'capsule'
+@from 'capsule' import (
+  Styles,
+  Scripts,
+  Style
+)
+
+@import $theme from 'capsule/theme'
+
+@def MyPortfolioPagesLayout
+  <html>
+    <head>
+      <title>Portfolio Page</title>
+
+      <ApplicationMetaDatas />
+
+      <Style href="font-awesome.css" />
+      <Style href="bootstrap.css"   />
+      <Style href="animated.css"   />
+      <Style href="swipper.css"   />
+
+      <Scripts />
+      <Styles />
+    </head>
+    <body>
+      <CapsuleThemeProvider theme=%{$theme}>
+        <yield />
+      </CapsuleThemeProvider>
+    </body>
+  </html>
+@end
+
+@export default MyPortfolioPagesLayout

@@ -1,0 +1,77 @@
+@import { FooterColumn } from './FooterColumn'
+@import { SocialMediaLink } from './SocialMediaLink'
+
+@from './styles.css' import {
+  FooterContainer,
+  FooterBody
+}
+
+@def Footer
+  <FooterContainer>
+    <FooterBody>
+      <div class="container">
+        <div class="row">
+          <FooterColumn
+            title="Pages"
+            links=%{[
+              ['label' => 'Home', 'href' => '/'],
+              ['label' => 'About', 'href' => '/about'],
+              ['label' => 'Portfolio', 'href' => '/portfolio'],
+              ['label' => 'Contact', 'href' => '/contact']
+            ]}
+            />
+          <FooterColumn
+            title="About Me"
+            links=%{[
+              ['label' => 'Self Introduction', 'href' => '/about?XAboutMe#SelfIntro'],
+              ['label' => 'Experience Description', 'href' => '/about?XAboutMe#ExperienceDescription'],
+              ['label' => 'Where Finding Me', 'href' => '/about?XAboutMe#WhereFindingMe'],
+              ['label' => 'Languages', 'href' => '/about?XAboutMe#Languages']
+            ]}
+            />
+          <FooterColumn
+            title="Get in Touch"
+            links=%{[
+              ['label' => 'Send email', 'href' => 'mailto:agostinhosaml832@gmail.com'],
+              ['label' => 'WhatsApp', 'href' => 'https://wa.me/923285171'],
+              ['label' => 'Give a call', 'href' => 'tel:923285171'],
+              ['label' => 'Hire me', 'href' => '/hire'],
+              ['label' => 'Contact', 'href' => '/contact']
+            ]}
+            />
+          <FooterColumn
+            title="References"
+            links=%{[
+              ['label' => 'Send Feedback', 'href' => '/'],
+              ['label' => 'My Blog', 'href' => '/about'],
+              ['label' => 'View my Resume', 'href' => '/portfolio'],
+              ['label' => 'Visit my YOUTUBE channel', 'href' => '/contact']
+            ]}
+            />
+        </div>
+        <hr />
+        <div class="row footer-details">
+          <div class="col-md-8">
+            <span class="footer-details-copyright">
+              Agostinho Lopes, ©2024. All rights reserved
+            </span>
+          </div>
+          <div class="col-md-4">
+
+            <div class="footer-details-icons">
+              <ul>
+                <SocialMediaLink icon="facebook" href="https://facebook.com/agostinhosaml" />
+                <SocialMediaLink icon="twitter" href="https://twitter.com/agostinhosaml" />
+                <SocialMediaLink icon="github" href="https://github.com/agostinhosamil" />
+                <SocialMediaLink icon="linkedin" href="https://linkedin.com/in/agostinhosaml" />
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </FooterBody>
+  </FooterContainer>
+@end
+
+@export Footer

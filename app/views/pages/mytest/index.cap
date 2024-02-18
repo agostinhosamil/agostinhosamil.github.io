@@ -1,0 +1,7 @@
+@def Test
+  <div>
+    <h1>This is my test</h1>
+  </div>
+@end
+
+@export default Test

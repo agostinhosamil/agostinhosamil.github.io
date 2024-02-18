@@ -1,0 +1,16 @@
+@import { TextSet } from '@components/TextSet'
+
+@def TextSets $sets
+  <Fragment>
+    @if is_array ($sets) && $sets
+      @for $set in $sets
+        <Fragment>
+          <TextSet %{ $set } />
+          <br />
+        </Fragment>
+      @end
+    @end
+  </Fragment>
+@end
+
+@export TextSets

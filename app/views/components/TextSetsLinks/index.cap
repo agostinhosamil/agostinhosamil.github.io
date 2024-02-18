@@ -1,0 +1,18 @@
+@from './styles.css' import {
+  Container,
+  Link
+}
+
+@def TextSetsLinks $sets
+  <Container>
+    @for $set in $sets
+      <Link>
+        <a href=%{ join ('', ['#', base64_encode($set['title'])]) }>
+          <span>%{ $set['title'] }</span>
+        </a>
+      </Link>
+    @end
+  </Container>
+@end
+
+@export TextSetsLinks

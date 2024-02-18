@@ -1,0 +1,105 @@
+Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 30px 80px;
+
+  @media (max-width: 1000px) {
+    justify-content: center;
+    padding: 0px;
+  }
+
+  @media (max-width: 530px) {
+    align-items: flex-start;
+  }
+}
+
+Text {
+  font-family: "Roboto thin", "Arial Narrow", "Trebuchet MS", sans-serif;
+}
+
+LoginBox {
+  width: 100%;
+  max-width: 520px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, .23) 2px 2px 3px 0px;
+
+  @media (max-width: 530px) {
+    border: 0px;
+    box-shadow: none;
+  }
+}
+
+TextBox(Text) {
+  width: 100%;
+  margin: 0px 0px 18px;
+  background-color: inherit;
+  border: 1px solid #cdcdcd;
+  border-radius: 8px;
+  padding: 9px;
+
+  span {
+    display: block;
+    margin: 2px 0px 8px;
+    font-weight: 600;
+  }
+
+  input {
+    width: 100%;
+    border: 0px;
+    outline: 0px;
+    font-size: 25px;
+    background: transparent none;
+  }
+
+  textarea {
+    width: 100%;
+    border: 0px;
+    outline: 0px;
+    font-size: 25px;
+    background: transparent none;
+    resize: none;
+  }
+}
+
+h1.Title(Text) {
+  width: 100%;
+  font-size: 43px;
+  color: #444444;
+  text-transform: uppercase;
+  margin: 0px 0px 18px;
+}
+
+button.Button {
+  font-size: 32px;
+  border: 1px solid #0664AC;
+  background-color: #279EFA;
+  color: #ffffff;
+  border-radius: 8px;
+  padding: 9px 30px;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover {
+    background-color: #1483D9;
+  }
+}
+
+ButtonContainer {
+  width: 100%;
+  height: auto;
+  padding: 10px 0px 0px;
+}
+
+h3.SubTitle(Text) {
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  color: #494949;
+  margin: 0px 0px 30px;
+}

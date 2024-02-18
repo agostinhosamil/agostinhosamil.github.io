@@ -1,0 +1,5 @@
+@def ProductDetailsRow
+  <div class="row wow lightSpeedIn">
+    <Yield />
+  </div>
+@end

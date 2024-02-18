@@ -1,0 +1,26 @@
+@import { HomePageDescription } from '@components/HomePageDescription'
+@import { PortfolioPreview } from '@components/PortfolioPreview'
+@import { ProductDetails } from '@components/ProductDetails'
+@import { ResumePreview } from '@components/ResumePreview'
+@import { PlanCardList } from '@components/PlanCardList'
+@import { ContactForm } from '@components/ContactForm'
+
+@def Index
+  <Fragment>
+    <HomePageDescription />
+    <ProductDetails
+      productDetails=%{ $this->skills }
+      />
+    <PortfolioPreview
+      portfolioProjects=%{ $this->portfolioProjects }
+      maxLines=%{ 2 }
+      />
+    <ResumePreview />
+    <ContactForm />
+    <PlanCardList
+      plans=%{ $this->hirePlans }
+      />
+  </Fragment>
+@end
+
+@export default Index

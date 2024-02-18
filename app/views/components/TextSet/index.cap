@@ -1,0 +1,25 @@
+@from './styles.css' import {
+  Container,
+  TextSetSentence
+}
+
+@def TextSet $title, $paragraphs, ...$rest
+  <Container>
+    <TextSetSentence %{ $rest } id=%{base64_encode($title)}>
+      <h1>%{ $title }</h1>
+      <div>
+        @for $paragraph in $paragraphs
+          <span>
+            <Fragment>
+              %{ $paragraph }
+              <br />
+              <br />
+            </Fragment>
+          </span>
+        @end
+      </div>
+    </TextSetSentence>
+  </Container>
+@end
+
+@export TextSet

@@ -1,0 +1,35 @@
+@import { FlatImage } from 'capsule'
+
+@from './PortfolioProjectLink' import { PortfolioProjectLink }
+
+@from './styles.css' import {
+  PortfolioProjectContainer,
+  PortfolioProjectWrapper,
+  PortfolioProjectButtons,
+  PortfolioProjectBody
+}
+
+@def PortfolioProject $url, $githubUrl, $thumbnail = ''
+  <PortfolioProjectContainer class="col-lg-6">
+    <PortfolioProjectBody>
+      <PortfolioProjectWrapper>
+        <FlatImage class="thumb" src=%{ join ('/', ['portfolio', $thumbnail]) }>
+          <PortfolioProjectButtons>
+            <div>
+              <PortfolioProjectLink
+                title="View Project"
+                icon="eye"
+                href=%{ $url }
+                />
+              <PortfolioProjectLink
+                title="View Project on Github"
+                icon="github"
+                href=%{ $githubUrl }
+                />
+            </div>
+          </PortfolioProjectButtons>
+        </FlatImage>
+      </PortfolioProjectWrapper>
+    </PortfolioProjectBody>
+  </PortfolioProjectContainer>
+@end

@@ -1,0 +1,7 @@
+@def Comments ({ ...$props })
+  <Fragment>
+    <h1>Comments view works..!</h1>
+  </Fragment>
+@end
+
+@export default Comments

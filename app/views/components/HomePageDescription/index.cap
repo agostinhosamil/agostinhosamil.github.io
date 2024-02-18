@@ -1,0 +1,48 @@
+@from './styles.css' import {
+  HomePageDescriptionContainer,
+  HomePageDescriptionTitle,
+  HomePageDescriptionParagraphes,
+  HomePageDescriptionParagraph,
+  HomePageDescriptionButton,
+  HomePageDescriptionLinksWrapper
+}
+
+@def HomePageDescriptionLink $icon, $href
+  <li>
+    <a title=%{'visit my ' . $icon . ' profile'} href=%{ $href } target="_new">
+      <i class=%{join(' ', ['fa', 'fa-' . $icon])} />
+    </a>
+  </li>
+@end
+
+@def HomePageDescription
+  <HomePageDescriptionContainer>
+    <div class="container">
+      <div class="x-page-desc-body">
+        <HomePageDescriptionTitle class="wow bounceInLeft">
+          Website, API and Desktop Application development
+          <HomePageDescriptionLinksWrapper>
+            <HomePageDescriptionLink icon="facebook" href="https://facebook.com/agostinhosaml" />
+            <HomePageDescriptionLink icon="twitter" href="https://twitter.com/agostinhosaml" />
+            <HomePageDescriptionLink icon="github" href="https://github.com/agostinhosamil" />
+            <HomePageDescriptionLink icon="linkedin" href="https://linkedin.com/in/agostinhosaml" />
+          </HomePageDescriptionLinksWrapper>
+          <span>Fullstack Developer</span>
+        </HomePageDescriptionTitle>
+        <HomePageDescriptionParagraphes>
+          <HomePageDescriptionParagraph class="wow bounceInRight">
+            Hello..! I am Sam and I would like saying that I am really very glad to have you here [at my web site].<br />
+            As I have sayd before, I am a fullstack web developer working about six years with some of the monst used programming languages in the web.<br />
+            I would would be wonderfull helping you as I can do; and... Please, do not miss letting a message or a feedback about my work and what I have done for you.
+          </HomePageDescriptionParagraph>
+          <HomePageDescriptionParagraph>
+            Trying to know  what else I have to. ✅
+          </HomePageDescriptionParagraph>
+        </HomePageDescriptionParagraphes>
+        <HomePageDescriptionButton>
+          <a href="/assets/files/sam-cv.pdf" target="_new">View Resume</a>
+        </HomePageDescriptionButton>
+      </div>
+    </div>
+  </HomePageDescriptionContainer>
+@end

@@ -1,0 +1,114 @@
+Container {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+}
+
+PlanCardContainer {
+  background: rgba(255, 255, 255, 0.3) none repeat scroll 0% 0%;
+  border: 6px solid var(--theme.$color.200);
+  border-radius: 7px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.21);
+  padding: 68px 35px 35px;
+  margin: 0px 0px 25px;
+}
+
+PlanCardWrapper(Container) {
+  margin: .0px;
+}
+
+PlanCardTitle(Container) {
+  text-align: center;
+  padding: .0px .0px 29px;
+
+  span {
+    font-size: 27px;
+    color: var(--theme.$color.400);
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    padding: 10px .0px .0px;
+  }
+}
+
+PlanCardBody(Container) {
+  padding: .0px .0px 10px;
+
+  ul {
+    padding: 0px;
+    list-style: none;
+    list-style-type: none;
+
+    @media (max-width: 991px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    li {
+      margin: 5px .0px;
+      font-size: 17px;
+      position: relative;
+      padding: .0px .0px .0px 24px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 11px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color: var(--theme.$color.400);
+      }
+    }
+  }
+}
+
+PlanCardButton(Container) {
+  padding: 5px 0px 0px;
+  text-align: center;
+
+  a {
+    background-color: var(--theme.$color.100);
+    color: var(--theme.$color.400);
+    border: 1px solid #b1b1b1;
+    padding: 11px 30px 14px;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.23);
+    font-size: 21px;
+    font-weight: 400;
+    transition: all .1s linear;
+
+    &:hover {
+      background-color: var(--theme.$color.300);
+      color: var(--theme.$color.600);
+    }
+
+    &:active {
+      background-color: var(--theme.$color.500);
+      color: var(--theme.$color.900);
+    }
+  }
+}
+
+li.DisabledPlanCardDetail {
+  color: #cfcfcf;
+
+  &:before {
+    background-color: transparent !important;
+    border: 1px solid var(--theme.$color.400);
+  }
+}
+
+h3.PlanCardPrice(Container) {
+  pointer-events: none;
+  cursor: none;
+  font-size: 47px;
+  font-weight: 900;
+  color: var(--theme.$color.600);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+}

@@ -1,0 +1,98 @@
+@from 'capsule' import Image
+
+@from './styles.css' import (
+  Body,
+  Container,
+  TopContainer,
+  LogoWrapper,
+  MenuContainer,
+  HeaderLinksWrapper,
+  VideoContainer,
+  KeywordList,
+  Content,
+  Menu,
+  Title
+)
+
+@def Header
+  <Container>
+    <VideoContainer>
+      <video src="/assets/videos/pexels-kampus-production.mp4" autoplay loop />
+    </VideoContainer>
+    <Content>
+      <TopContainer>
+        <LogoWrapper>
+          <div>
+            <Image src="kwanza-burro-logo.png" alt="Company Logo" />
+          </div>
+        </LogoWrapper>
+        <MenuContainer>
+          <HeaderLinksWrapper>
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter" />
+              </a>
+            </li>
+          </HeaderLinksWrapper>
+          <Menu>
+            <li>
+              <a href="#">
+                <i class="fa fa-home" />
+                <span>Página inicial</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-shopping-bag" />
+                <span>Produtos</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-bullhorn" />
+                <span>Promoções</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-shopping-cart" />
+                <span>Meu Carrinho</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-user" />
+                <span>Minha conta</span>
+              </a>
+            </li>
+          </Menu>
+        </MenuContainer>
+      </TopContainer>
+      <Body>
+        <KeywordList>
+          <li>Technology</li>
+          <li>Leadership</li>
+          <li>Material</li>
+          <li>Economy</li>
+          <li>Inovation</li>
+        </KeywordList>
+        <Title>Universo tecnológico Kapemba</Title>
+      </Body>
+    </Content>
+  </Container>
+@end

@@ -1,0 +1,7 @@
+@def SocialMediaLink $icon, $href = '#'
+  <li>
+    <a target="_blank" href=%{ $href }>
+      <i class=%{ "fa fa-" . $icon }></i>
+    </a>
+  </li>
+@end

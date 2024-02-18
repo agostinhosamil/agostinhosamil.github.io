@@ -1,0 +1,403 @@
+PageContainer {
+  width: 100%;
+  position: relative;
+}
+
+h1.HomePageHeadLineTitle {
+  font-size: 58px;
+  color: rgb(0 113 189);
+  line-height: 52px;
+  position: relative;
+  font-weight: 900;
+  transition: all .3s ease;
+
+  &:before {
+    content: "";
+    width: 60px;
+    height: 8px;
+    position: absolute;
+    top: -25px;
+    left: 0px;
+    background-color: rgb(0 113 189);
+  }
+
+  @media (max-width: 730px) {
+    font-size: 35px;
+    line-height: 32px;
+  }
+}
+
+ul.HomePageBulletPointsWrapper {
+  width: 100%;
+  margin: 40px 0px 0px;
+  padding: 0px;
+
+  li {
+    list-style: none;
+    font-size: 17px;
+    position: relative;
+    display: block;
+    width: 65%;
+    padding: 0px 0px 32px 15px;
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0px;
+      top: 5px;
+      background-color: #cdcdcd;
+      width: 5px;
+      height: 22px;
+      border-radius: 22px;
+    }
+
+    @media (max-width: 930px) {
+      width: 100%;
+
+      &:before {
+        height: 12px
+      }
+    }
+  }
+}
+
+HomePageHeadLineWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 140px 70px 110px;
+
+  @media (max-width: 930px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 890px) {
+    padding-top: 80px;
+  }
+
+  @media (max-width: 410px) {
+    padding: 80px 30px 110px;
+  }
+}
+
+HomePageHeadLineCol {
+  width: 100%;
+
+  .headline-images-wrapper {
+    width: 100%;
+
+    @media (max-width: 930px) {
+      display: flex;
+      flex-direction: row;
+      padding: 41px 0px 170px;
+    }
+
+    @media (max-width: 750px) {
+      flex-direction: column;
+    }
+
+    @media (max-width: 620px) {
+      padding-bottom: 75px;
+    }
+  }
+}
+
+HomePageHeadLineImage {
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  margin: auto;
+  padding-bottom: 55px;
+
+  img {
+    width: 100%;
+  }
+}
+
+HomePageBannerWrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+
+  div.banner-background-image {
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+}
+
+HomePageBanner {
+  background-color: rgb(227 165 160 / 92%);
+  height: 850px;
+  color: #ffffff;
+  position: relative;
+
+  &:after {
+    content: "";
+    width: 100%;
+    background-color: #ffffff;
+    height: 180px;
+    transform: skewY(6deg);
+    position: absolute;
+    top: -90px;
+    left: 0px;
+    right: 0px;
+  }
+
+  &:before {
+    content: "";
+    width: 100%;
+    background-color: #ffffff;
+    height: 180px;
+    transform: skewY(-6deg);
+    position: absolute;
+    bottom: -90px;
+    left: 0px;
+    right: 0px;
+  }
+}
+
+HomePageBannerContent {
+  width: 100%;
+  height: 100%;
+  padding: 120px 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+HomePageBannerImageWrapper {
+  width: 100%;
+  display: inline-flex;
+  text-align: left;
+  flex-direction: column;
+  position: relative;
+  transition: all .4s ease-in-out;
+
+  * {
+    transition: all .4s ease-in-out;
+  }
+
+  div {
+    position: relative;
+    width: 100%;
+    max-width: 250px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  div.image1 {}
+
+  div.image2 {
+    position: absolute;
+    left: 190px;
+
+    @media (max-width: 1040px) {
+      left: 60px;
+    }
+  }
+
+  @media (max-width: 1150px) {
+    div {
+      max-width: 170px;
+    }
+  }
+
+  @media (max-width: 870px) {
+    position: absolute;
+    bottom: 0px;
+    margin-bottom: -52px;
+    left: 63px;
+    width: unset;
+  }
+}
+
+HomePageBannerTitleWrapper {
+  width: 100%;
+  max-width: 430px;
+  text-align: right;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  h1 {
+    font-size: 64px;
+    font-weight: 900;
+    color: #ffffff;
+    line-height: 48px;
+    text-transform: uppercase;
+
+    i {
+      display: block;
+      font-size: 45px;
+    }
+  }
+
+  p {
+    font-size: 22px;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 20px;
+    margin: 0px;
+    padding: 20px 0px 0px;
+  }
+
+  @media (max-width: 870px) {
+    max-width: unset;
+    align-items: center;
+    text-align: center;
+  }
+
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 48px;
+
+      i {
+        font-size: 31px;
+      }
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+}
+
+HomePageBannerFloatingImage {
+  width: 100%;
+  max-width: 411px;
+  position: absolute;
+  top: 0px;
+  right: 80px;
+  pointer-events: none;
+  z-index: 2;
+  transition: all .4s ease-in-out;
+
+  div {
+    width: inherit;
+    transform: skewY(6deg);
+    margin-top: -53%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 910px) {
+    max-width: 485px;
+
+    div {
+      margin-top: -60%;
+    }
+  }
+
+  @media (max-width: 610px) {
+    max-width: 348px;
+
+    div {
+      margin-top: -56%;
+    }
+  }
+}
+
+StoreAdsMessage {
+  width: 100%;
+  position: relative;
+  z-index: 5;
+  padding: 120px;
+  display: flex;
+  flex-direction: row;
+
+  * {
+    transition: all .4s ease-in-out;
+  }
+
+  div {
+    position: relative;
+    width: 100%;
+  }
+
+  div.message-content {
+    max-width: 550px;
+
+    p {
+      font-size: 20px;
+      color: #8f8f8f;
+      font-family: "Roboto Regular";
+    }
+
+    h1 {
+      font-size: 60px;
+      font-weight: 400;
+      line-height: 79px;
+      text-transform: uppercase;
+      color: #af756c;
+      font-family: "Roboto Thin";
+      margin-top: 5px;
+    }
+
+    h2 {
+      font-size: 45px;
+      margin-top: 55px;
+      position: relative;
+      font-weight: 900;
+      line-height: 50px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0px;
+        top: -20px;
+        width: 100%;
+        max-width: 124px;
+        height: 7px;
+        background-color: #455a64;
+        border-radius: 40px;
+      }
+    }
+  }
+
+  div.message-image {
+    max-width: 450px;
+
+    img {
+      width: 100%;
+      margin-top: -85%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding: 120px 70px;
+
+    div.message-image {
+      display: none;
+    }
+  }
+
+  @media (max-width: 930px) {
+    div.message-content {
+      max-width: unset;
+
+      h1 {
+        font-size: 32px;
+        line-height: 35px;
+      }
+
+      h2 {
+        font-size: 26px;
+      }
+    }
+  }
+}
+
+ProductFeed {
+  width: 100%;
+  padding: 10px 120px;
+
+  @media (max-width: 410px) {
+    padding: 10px 30px;
+  }
+}

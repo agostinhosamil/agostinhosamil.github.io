@@ -1,0 +1,95 @@
+@import { useState } from 'npm:react'
+
+@def MyApp
+
+  [formError, setFormError] = useState({})
+  
+  getFormData = async (
+    [
+      name,
+      email = 'sam@bo',
+      [
+        number,
+        otherNumber = 2,
+        [
+          message,
+          messageBody = null,
+          [
+            text,
+            textContent = 'lorem ipsum dolor it'
+          ] = ['lorem'],
+
+          messageTitle = :to_title
+        ]
+      ] = [1]
+    ] = ['Sam'],
+    someData
+    ) => {
+    'use server'
+
+    const FormData = use('App.Utils.FormData');
+
+    const { username, password } = FormData.getFormData()
+
+    return {
+      action: :store,
+      username,
+      password
+    }
+  }
+
+  submitLogin = async ({ body: { username, password, roles: { name: roleName = :no_role} = {} }, request, response: res = { data: :no_data } }, [user] = [null]) => {
+    'use server'
+  }
+
+  handleSomeData = async function ({ type, data: { propName } = { propName: :none }, stores: [baseStore] } = { type: :node }) {
+    'use server'
+
+    return {
+      data: {
+        type
+      }
+    }
+  }
+
+  testData = async ({ data, tries: [ firstTry, secondTry, { someTry, anotherTry: [try0, try1, try3, { thinkAboutIt }] } ] }) => {
+    'use server'
+  }
+
+  handleMe = async ([ name, email, password, [role, roleType, ...restOfRoleData], ...rest ]) => {
+    'use server'
+
+    { type: :handle }
+  }
+
+  handleSo = async ({ name, email, password, otherData: { someData, anotherData, ...restOfData }, ...rest }) => {
+    'use server'
+  }
+
+  handleDo = async (username, password, ...props, maman, nama = 5) => {
+    'use server'
+  }
+
+  <div>
+    <form method="post" action=%{ submitLogin }>
+
+      @if isset($formError[ :type ])
+        <div>
+          %{ $formError[ :message ] }
+        </div>
+      @end
+
+      <input type="text" name="email" />
+      <input type="password" name="password" />
+      <button onClick={ buttonClickHandler }>Register</button>
+    </form>
+
+    @if Auth::isAdmin()
+      <h1>Admin</h1>
+    @elseif Auth::isEditor()
+      <h1>Editor</h1>
+    @else
+      <h1>Guest</h1>
+    @end
+  </div>
+@end

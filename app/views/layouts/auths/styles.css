@@ -1,0 +1,12 @@
+global.GlobalStyles {
+  body, html {
+    height: 100%;
+    background-color: #f9f9f9;
+  }
+
+  * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+}

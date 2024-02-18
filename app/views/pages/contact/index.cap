@@ -1,0 +1,61 @@
+@import {
+  Container,
+  ImageWrapper,
+  FormWrapper,
+  Title,
+  SubTitle,
+  Button
+} from './styles.css'
+
+@import { TextBox } from '../../auths/styles.css'
+
+@import $undrawContactUs from './undraw_contact_us_re_4qqt.svg'
+
+@def Contact
+  <Container>
+    <div class="row">
+      <div class="col-md-6">
+        <FormWrapper>
+          <Title>Contact Me ✉️</Title>
+          <SubTitle>Let a message or a feedback about my work and what I have done for you.</SubTitle>
+
+          <br />
+
+          <form method="post" action="">
+            <TextBox>
+              <span>Your Name</span>
+              <input type="text" name="message[userName]" />
+            </TextBox>
+
+            <TextBox>
+              <span>Your Email</span>
+              <input type="text" name="message[userEmail]" />
+            </TextBox>
+
+            <TextBox>
+              <span>Subject</span>
+              <input type="text" name="message[subject]" />
+            </TextBox>
+
+            <TextBox>
+              <span>Message</span>
+              <textarea type="text" name="message[body]" rows="4"></textarea>
+            </TextBox>
+            <br />
+            <Button type="submit">
+              <span>Send Message</span>
+            </Button>
+          </form>
+
+        </FormWrapper>
+      </div>
+      <div class="col-md-6">
+        <ImageWrapper>
+          <img src=%{ $undrawContactUs } />
+        </ImageWrapper>
+      </div>
+    </div>
+  </Container>
+@end
+
+@export default Contact

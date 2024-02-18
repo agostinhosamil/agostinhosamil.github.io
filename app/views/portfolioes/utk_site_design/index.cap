@@ -1,0 +1,126 @@
+@import Image, FlatImage from 'capsule'
+@import Header from './components/Header'
+@import Footer from './components/Footer'
+@import Product from './components/Product'
+
+@from './components/styles.css' import (
+  ProductFeed,
+  HomePageBanner,
+  PageContainer,
+  StoreAdsMessage,
+  HomePageHeadLineCol,
+  HomePageBannerWrapper,
+  HomePageHeadLineTitle,
+  HomePageHeadLineImage,
+  HomePageBannerContent,
+  HomePageBulletPointsWrapper,
+  HomePageBannerTitleWrapper,
+  HomePageBannerImageWrapper,
+  HomePageBannerFloatingImage,
+  HomePageHeadLineWrapper
+)
+
+@def KwanzaBurroDesign
+  <PageContainer>
+    <Header />
+
+    /**
+     * Home Page headline
+     */
+    <HomePageHeadLineWrapper>
+      <HomePageHeadLineCol>
+        <HomePageHeadLineTitle>
+          Temos para si o melhor e o que há de mais novo no mundo tecnológico
+        </HomePageHeadLineTitle>
+        <HomePageBulletPointsWrapper>
+          @for $i in range(1, 10)
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</li>
+          @end
+        </HomePageBulletPointsWrapper>
+      </HomePageHeadLineCol>
+      <HomePageHeadLineCol>
+        <div class="headline-images-wrapper">
+          <HomePageHeadLineImage>
+            <Image
+              src="computer-0001.png"
+              alt="Desktop Computer"
+            />
+          </HomePageHeadLineImage>
+          <HomePageHeadLineImage>
+            <Image
+              style=%{[:width => '77%']}
+              src="phone-0001.png"
+              alt="Desktop Computer"
+            />
+          </HomePageHeadLineImage>
+        </div>
+      </HomePageHeadLineCol>
+    </HomePageHeadLineWrapper>
+
+    /**
+     * Home Page Banner
+     */
+    <HomePageBannerWrapper>
+      <FlatImage class="banner-background-image" src="../images/apple-store.jpg">
+        <HomePageBanner>
+          <HomePageBannerContent>
+            <HomePageBannerImageWrapper>
+              <div class="image1">
+                <Image src="phone-0003.png" alt="Floating Image" />
+              </div>
+              <div class="image2">
+                <Image src="phone-0002.png" alt="Floating Image" />
+              </div>
+            </HomePageBannerImageWrapper>
+            <HomePageBannerTitleWrapper>
+              <h1>
+                Tenha o Iphone
+                <i>dos seus</i>
+                sonhos
+              </h1>
+              <p>O Iphone da mais última geração lhe proporcionará uma experiência inesquecível</p>
+            </HomePageBannerTitleWrapper>
+            <HomePageBannerFloatingImage>
+              <div>
+                <Image src="computer-0002.png" alt="Floating Image" />
+              </div>
+            </HomePageBannerFloatingImage>
+          </HomePageBannerContent>
+        </HomePageBanner>
+      </FlatImage>
+    </HomePageBannerWrapper>
+
+    /**
+     * Home Page Ads Message
+     */
+    <StoreAdsMessage>
+      <div class="message-content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+        <h1>Tudo o que precisas... Do bom e do melhor preço, é na UTEK.</h1>
+        <h2>Veja abaixo os destaques da semana</h2>
+      </div>
+      <div class="message-image">
+        <Image src="man-holding-pc.png" alt="Store Ads" />
+      </div>
+    </StoreAdsMessage>
+
+    <ProductFeed>
+      <div class="row">
+        @for $n in range(1, 14)
+          <div class="col-lg-6">
+            <Product
+              color=%{$this->colors[rand(0, -1 + count ($this->colors))]}
+              title=%{'Product ' . $n}
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+              image=%{'computer-0000' . ($n <= 7 ? $n : round($n / 2)) . '.png'}
+            />
+          </div>
+        @end
+      </div>
+    </ProductFeed>
+
+    <Footer />
+  </PageContainer>
+@end
+
+@export default KwanzaBurroDesign

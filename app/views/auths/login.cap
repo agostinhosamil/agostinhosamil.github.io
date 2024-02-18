@@ -1,0 +1,35 @@
+@from './styles.css' import {
+  Container,
+  LoginBox,
+  TextBox,
+  Button,
+  Title,
+  SubTitle,
+  ButtonContainer
+}
+
+@def Login
+  <Container>
+    <LoginBox>
+      <Title>Login</Title>
+      <SubTitle>Login to manage the application</SubTitle>
+      <form method="post" action="/auth/login">
+        <TextBox>
+          <span>Email or Username</span>
+          <input type="text" name="user[username]" />
+        </TextBox>
+
+        <TextBox>
+          <span>Password</span>
+          <input type="password" name="user[password]" />
+        </TextBox>
+
+        <ButtonContainer>
+          <Button type="submit">Login</Button>
+        </ButtonContainer>
+      </form>
+    </LoginBox>
+  </Container>
+@end
+
+@export default Login

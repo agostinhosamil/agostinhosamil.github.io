@@ -1,0 +1,3 @@
+@def Footer
+  <footer>Footer</footer>
+@end

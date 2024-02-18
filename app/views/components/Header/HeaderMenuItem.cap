@@ -1,0 +1,10 @@
+@def HeaderMenuItem $link, $iconName, $selected = false
+  <li class="header-menu-list-item">
+    <a class=%{ "header-menu-list-item-link" . ($selected ? ' selected' : '') } href=%{ $link }>
+      <i class=%{ "fa fa-" . $iconName }></i>
+      <span>
+        <Yield />
+      </span>
+    </a>
+  </li>
+@end
