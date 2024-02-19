@@ -13,4 +13,6 @@ class PortfolioesController extends SamiController {
   }
 
   function zircon_site_design () {}
+
+  function banking_site_design () {}
 }

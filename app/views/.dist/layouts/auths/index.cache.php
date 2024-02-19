@@ -9,7 +9,7 @@
 <?php Capsule::Def ('Auths', function ($args, CapsuleScopeContext $scope) {
 $scope->props = ArrayHelper::PropsBeyond (['children'], $args);
 ?>
-<?php  Capsule::PartialRender ('body', [], Capsule::CreateElement ('GlobalStyles', []), Capsule::Yield (null, array_merge ((is_array ($ref10570718024093e = $scope->props) ? $ref10570718024093e : []), []))); ?>
+<?php  Capsule::PartialRender ('body', [], Capsule::CreateElement ('GlobalStyles', []), Capsule::Yield (null, array_merge ((is_array ($ref06021919024304e = $scope->props) ? $ref06021919024304e : []), []))); ?>
 <?php }); ?>
 <?php Capsule::Export ('Auths'); ?>
 

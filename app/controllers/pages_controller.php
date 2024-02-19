@@ -96,14 +96,21 @@ class PagesController extends SamiController {
       ],
       [
         [
-          'url' => '/portfolio/sites/cr7-website-template/index.html',
+          'url' => '/portfolio/sites/banking_site_design/index.html',
           'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io',
-          'thumbnail' => 'cr7-site.png'
+          'thumbnail' => 'banking-website-template.png'
         ],
         [
           'url' => '/portfolio/sites/zircon_site_design/index.html',
           'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io',
           'thumbnail' => 'zircon-website-template.png'
+        ]
+      ],
+      [
+        [
+          'url' => '/portfolio/sites/cr7-website-template/index.html',
+          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io',
+          'thumbnail' => 'cr7-site.png'
         ]
       ]
     ];

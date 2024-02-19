@@ -1,0 +1,248 @@
+Container {
+  box-sizing: border-box;
+
+  * {
+    list-style: none;
+  }
+}
+
+AppDetailsContainer {
+  width: 100%;
+  padding: 90px 120px;
+  position: relative;
+  text-align: center;
+
+  h1 {
+    font-size: 55px;
+    font-family: "Trebuchet MS", "Arial Narraw", "Roboto Regular", "Verdana", sans-serif;
+    color: #262626;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    max-width: 730px;
+    margin: 0px auto 30px;
+    line-height: 47px;
+  }
+
+  h4 {
+    font-size: 19px;
+    color: #d0d0d0;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    max-width: 730px;
+    margin: 0px auto;
+  }
+
+  @media (max-width: 1100px) {
+    padding: 90px 20px;
+  }
+
+  @media (max-width: 850px) {
+    padding: 30px 5%;
+
+    h1 {
+      font-size: 35px;
+      line-height: 38px;
+    }
+  }
+}
+
+AppDetailsCardsWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 70px 0px 0px;
+
+  div.data-card {
+    width: 100%;
+    height: auto;
+    background: #ffffff;
+    box-shadow: rgb(0 0 0 / 13%) 0px 0px 3px;
+    padding: 60px 40px;
+    margin: 0px 10px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      width: 85px;
+      height: 85px;
+      border-radius: 5px;
+      background-color: #00956B;
+      color: #ffffff;
+      font-size: 27px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin: 0px auto 35px;
+    }
+
+    div.yellow {
+      background-color: #FCD04B;
+    }
+
+    div.red {
+      background-color: #FE0525;
+    }
+
+    strong {
+      font-size: 27px;
+      color: #303030;
+      font-weight: 600;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      color: #161616;
+      display: block;
+      padding-top: 25px;
+    }
+  }
+
+  div.data-card.highlight {
+    box-shadow: rgb(0 0 0 / 13%) 0px 0px 15px;
+  }
+
+  @media (max-width: 850px) {
+    flex-direction: column;
+    padding: 30px 5% 0px;
+
+    div.data-card {
+      margin: 10px 0px;
+    }
+  }
+}
+
+PageSection {
+  width: 100%;
+  height: auto;
+  padding: 0px 120px 90px;
+
+  div.data-section-img {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h1 {
+    font-size: 46px;
+    font-family: "Trebuchet MS", "Arial Narraw", "Roboto Regular", "Verdana", sans-serif;
+    color: #262626;
+    font-weight: 900;
+    display: block;
+    width: 100%;
+    max-width: 730px;
+    margin: 0px auto;
+    line-height: 57px;
+  }
+
+  p {
+    font-size: 19px;
+    color: #4c4c4c;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    max-width: 730px;
+    margin: 20px auto 0px;
+  }
+
+  .col-md-6 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .col-md-7 {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+  }
+
+  div.action-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 35px 0px 0px;
+
+    a {
+      white-space: nowrap;
+      background-color: #E3FF53;
+      color: #363636;
+      font-weight: 600;
+      padding: 13px 34px;
+      border-radius: 7px;
+      -webkit-border-radius: 7px;
+      -moz-border-radius: 7px;
+      -o-border-radius: 7px;
+      -ms-border-radius: 7px;
+      display: inline-flex;
+    }
+  }
+
+  ul {
+    padding: 35px 0px 0px;
+    margin: 0px;
+    width: 100%;
+
+    li {
+      width: 100%;
+      text-align: left;
+      margin: 0px 0px 16px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      i {
+        color: #191919;
+        font-weight: 700;
+        font-size: 25px;
+      }
+
+      span {
+        margin-left: 21px;
+        font-size: 17px;
+        font-weight: 400;
+        color: #666666;
+      }
+    }
+  }
+
+  @media (max-width: 1100px) {
+    padding: 0px 80px 40px;
+  }
+
+  @media (max-width: 767px) {
+    .col-md-7 {
+      padding: 40px 0px 0px;
+    }
+
+    .col-md-5 {
+      padding: 0px 0px 40px;
+    }
+
+    div.data-section-img {
+      padding: 40px 0px 0px;
+      width: 95%;
+      margin: auto;
+    }
+  }
+
+  @media (max-width: 410px) {
+    padding: 0px 20px 40px;
+
+    div.data-section-img {
+      width: 75%;
+    }
+  }
+}

@@ -1,0 +1,116 @@
+@import Image, Script from 'capsule'
+
+@import Header from './components/Header'
+@import Footer from './components/Footer'
+@import AppDownloadAd from './components/AppDownloadAd'
+
+@from './styles.css' import (
+  Container,
+  PageSection,
+  AppDetailsContainer,
+  AppDetailsCardsWrapper
+)
+
+@def BankingSiteDesign
+  <Container>
+    <Header />
+
+    <head>
+      <title>Smart Banking</title>
+      <Script src="banking_site_design/main.js" />
+    </head>
+
+    <AppDetailsContainer>
+      <h1>Get the best services</h1>
+      <h4>Get the best services from out online banking platform and make a dayly life bank activity more easier and faster</h4>
+
+      <AppDetailsCardsWrapper>
+        <div class="data-card">
+          <div>
+            <i class="fa fa-music" />
+          </div>
+          <strong>
+            24/7 Services
+          </strong>
+          <p>We are giving our costumer to 27/7 services for their needs. We are very determind about that</p>
+        </div>
+        <div class="data-card highlight">
+          <div class="yellow">
+            <i class="fa fa-shield" />
+          </div>
+          <strong>
+            Sercure Money
+          </strong>
+          <p>
+            Sending money faster and easier with end to end encryption by us. Sending and receiving is secure.
+          </p>
+        </div>
+        <div class="data-card">
+          <div class="red">
+            <i class="fa fa-credit-card" />
+          </div>
+          <strong>
+            Add cards
+          </strong>
+          <p>
+            Add multiple cards and track your dayly expense with quality interdace that suit for your dayly life
+          </p>
+        </div>
+      </AppDetailsCardsWrapper>
+    </AppDetailsContainer>
+
+    <PageSection>
+      <div class="row">
+        <div class="col-md-6">
+          <h1>We provide a digital payment system</h1>
+          <p>Our app allows to connect banks with their clients, providing a very easy and secure way of managing the costumers finances</p>
+          <div class="action-wrapper">
+            <a href="#">Get started</a>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="data-section-img">
+            <Image src="banking_site_design/card-data.png" alt="Card data" />
+          </div>
+        </div>
+      </div>
+    </PageSection>
+
+    <PageSection>
+      <div class="row">
+        <div class="col-md-5">
+          <div class="data-section-img">
+            <Image src="banking_site_design/app-data.png" alt="App data" />
+          </div>
+        </div>
+        <div class="col-md-7">
+          <h1>We provide a digital payment system</h1>
+          <ul>
+            <li>
+              <i class="fa fa-credit-card" />
+              <span>The personal account</span>
+            </li>
+            <li>
+              <i class="fa fa-bank" />
+              <span>A joint bank account</span>
+            </li>
+            <li>
+              <i class="fa fa-money" />
+              <span>Multi currency account</span>
+            </li>
+          </ul>
+          <div class="action-wrapper">
+            <a href="#">Get started</a>
+          </div>
+        </div>
+      </div>
+    </PageSection>
+
+    <AppDownloadAd />
+
+    <Footer />
+  </Container>
+@end
+
+@export default BankingSiteDesign

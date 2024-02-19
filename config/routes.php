@@ -29,6 +29,7 @@ namespace Application\Routes\Drawing {
   group('/portfolio/sites', '@portfolios', function () {
     get('utk_site_design');
     get('zircon_site_design');
+    get('banking_site_design');
   });
 
   // get ('/mytest', '@pages/mytest');

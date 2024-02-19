@@ -1,0 +1,157 @@
+footer.Container {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  position: relative;
+  padding: 0px 120px;
+
+  @media (max-width: 990px) {
+    padding: 0px 20px;
+  }
+}
+
+NewsLatterFormWrapper {
+  width: 100%;
+  max-width: 320px;
+  padding: 0px 0px 50px;
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    div.logo-wrapper {
+      padding: 0px 0px 30px;
+    }
+
+    h1 {
+      color: #292929;
+      font-size: 32px;
+      font-family: "Trebuchet MS", "Arial Narraw", "Roboto Regular", "Arial", "Helvetica", sans-serif;
+      font-weight: 700;
+      line-height: 34px;
+    }
+
+    div.input-wrapper {
+      width: 100%;
+      border: 1px solid #e7e7e7;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 10px;
+      margin-top: 35px;
+
+      input {
+        width: 100%;
+        border: 0px;
+        outline: 0px;
+        font-size: 18px;
+        padding-left: 15px;
+        color: #a0a0a0;
+      }
+
+      div {
+        margin-left: 10px;
+
+        button {
+          border: 0px;
+          outline: 0px;
+          background: rgb(0 149 107);
+          color: #ffffff;
+          font-weight: 400;
+          padding: 9px 20px;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    max-width: 100%;
+  }
+}
+
+MenuListWrapper {
+  width: 100%;
+  padding: 20px 0px 0px;
+
+  h1 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #101010;
+  }
+
+  ul {
+    padding: 5px 0px 0px;
+    margin: 0px;
+
+    li {
+      margin: 16px 0px;
+
+      a {
+        color: #303030;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      display: flex;
+      flex-direction: row;
+
+      li {
+        margin: 8px 16px 8px 0px;
+      }
+    }
+  }
+}
+
+FooterDetailsContainer {
+  width: 100%;
+  padding: 0px;
+  border-top: 1px solid #cdcdcd;
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0px;
+  justify-content: center;
+  align-items: center;
+
+  div.copy-data {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  div.list-wrapper {
+    width: auto;
+
+    ul {
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      flex-direction: row;
+
+      li {
+        margin: 0px 0px 0px 25px;
+
+        a {
+          display: block;
+          width: 38px;
+          height: 38px;
+          font-size: 17px;
+          background: rgb(0 23 55);
+          color: #ffffff;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          font-weight: 700;
+          border-radius: 6px;
+        }
+      }
+    }
+  }
+}

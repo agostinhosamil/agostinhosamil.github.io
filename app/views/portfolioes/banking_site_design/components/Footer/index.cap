@@ -1,0 +1,120 @@
+@import Image from 'capsule'
+
+@from './styles.css' import (
+  Container,
+  MenuListWrapper,
+  NewsLatterFormWrapper,
+  FooterDetailsContainer
+)
+
+@def Footer
+  <Container>
+    <div class="row">
+      <div class="col-lg-6">
+        <NewsLatterFormWrapper>
+          <form action="/news-latter/asign" method="post">
+            <div class="logo-wrapper">
+              <Image src="banking_site_design/logo.png" alt="Banking site design" />
+            </div>
+            <h1>Get latest updates about us</h1>
+            <div class="input-wrapper">
+              <input type="text" />
+              <div>
+                <button type="submit">
+                  <span>Send</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </NewsLatterFormWrapper>
+      </div>
+      <div class="col-lg-6">
+        <div class="row">
+          <div class="col-md-4">
+            <MenuListWrapper>
+              <h1>About us</h1>
+              <ul>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Carreers</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+              </ul>
+            </MenuListWrapper>
+          </div>
+          <div class="col-md-4">
+            <MenuListWrapper>
+              <h1>Resources</h1>
+              <ul>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Carreers</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+              </ul>
+            </MenuListWrapper>
+          </div>
+          <div class="col-md-4">
+            <MenuListWrapper>
+              <h1>Press articles</h1>
+              <ul>
+                <li>
+                  <a href="#">About</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Carreers</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+              </ul>
+            </MenuListWrapper>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <FooterDetailsContainer>
+        <div class="copy-data">
+          <span>Copyright 2024, all rights reserved</span>
+        </div>
+        <div class="list-wrapper">
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-linkedin" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </FooterDetailsContainer>
+    </div>
+  </Container>
+@end

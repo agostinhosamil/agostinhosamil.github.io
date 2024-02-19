@@ -4,8 +4,8 @@
 <?php Capsule::Def ('Skills', function ($args, CapsuleScopeContext $scope) {
 $scope->skills = !(isset ($args ['data'])) ? null : $args ['data'];
 ?>
-<?php  Capsule::PartialRender ('ul', [], function ($args, CapsuleScopeContext $scope) {$arr6673225715ay = $scope->skills; for ( $i6673225715terator = 0; $i6673225715terator < count (is_array ($arr6673225715ay) ? $arr6673225715ay : []); $i6673225715terator++ ) {
-	$scope->skill = \Saml::Array2Object ($arr6673225715ay[ $i6673225715terator ]);
+<?php  Capsule::PartialRender ('ul', [], function ($args, CapsuleScopeContext $scope) {$arr6632060224ay = $scope->skills; for ( $i6632060224terator = 0; $i6632060224terator < count (is_array ($arr6632060224ay) ? $arr6632060224ay : []); $i6632060224terator++ ) {
+	$scope->skill = \Saml::Array2Object ($arr6632060224ay[ $i6632060224terator ]);
 
       
 

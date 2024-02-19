@@ -1,0 +1,37 @@
+@from './styles.css' import {
+  Container,
+  ContentWrapper
+}
+
+@def AppDownloadAd
+  <Container>
+    <ContentWrapper>
+      <h1>Discover our mobile app</h1>
+      <p>Discover our mobile app and get the best outcome of online banking enjoy your everyday transaction</p>
+      <ul>
+        <li>
+          <a href="#" role="button">
+            <div class="icon-wrapper">
+              <i class="fa fa-android" />
+            </div>
+            <div>
+              <span>Get it on</span>
+              <strong>Play Store</strong>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="white" href="#" role="button">
+            <div class="icon-wrapper">
+              <i class="fa fa-apple" />
+            </div>
+            <div>
+              <span>Download on the</span>
+              <strong>App Store</strong>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </ContentWrapper>
+  </Container>
+@end

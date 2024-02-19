@@ -1,0 +1,93 @@
+@import Image from 'capsule'
+
+@from './styles.css' import (
+  Styles,
+  Container,
+  MenuContainer,
+  LogoWrapper,
+  MenuListWrapper,
+  MenuCtaWrappper,
+  HeaderBody,
+  MenuList,
+  HeaderContentWrapper,
+  HeaderCtaWrapper,
+  AppStatsWrapper,
+  HeaderImageWrapper
+)
+
+@def Header
+  <Container>
+    <Styles />
+    <MenuContainer>
+      <LogoWrapper>
+        <div>
+          <Image src="banking_site_design/logo.png" alt="Banking site design" />
+        </div>
+      </LogoWrapper>
+      <MenuListWrapper>
+        <MenuList>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Company</a>
+          </li>
+          <li>
+            <a href="#">Features</a>
+          </li>
+          <li>
+            <a href="#">Contacts</a>
+          </li>
+          <li class="menu-button">
+            <a href="#">
+              <i class="fa fa-bars" />
+            </a>
+          </li>
+        </MenuList>
+      </MenuListWrapper>
+      <MenuCtaWrappper>
+        <div>
+          <a href="#">Get card</a>
+        </div>
+      </MenuCtaWrappper>
+    </MenuContainer>
+    <HeaderBody>
+      <HeaderContentWrapper>
+        <h1>Smart Banking for your transaction</h1>
+        <p>a new way to make payments, easy reliable and secure. You can manage all your transactions from your mobile phone.</p>
+        <HeaderCtaWrapper>
+          <li>
+            <a href="#">Get started</a>
+          </li>
+          <li>
+            <a class="outlined" href="#">Download app</a>
+          </li>
+        </HeaderCtaWrapper>
+        <AppStatsWrapper>
+          <li>
+            <div>
+              <i class="fa fa-shield" />
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>$12M+</strong>
+              <span>Transactions</span>
+            </div>
+          </li>
+          <li>
+            <div>
+              <strong>12000+</strong>
+              <span>Active users</span>
+            </div>
+          </li>
+        </AppStatsWrapper>
+      </HeaderContentWrapper>
+      <HeaderImageWrapper>
+        <div>
+          <Image src="banking_site_design/cards.png" />
+        </div>
+      </HeaderImageWrapper>
+    </HeaderBody>
+  </Container>
+@end

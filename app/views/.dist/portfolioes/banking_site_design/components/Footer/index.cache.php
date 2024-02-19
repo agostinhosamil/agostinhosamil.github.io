@@ -1,0 +1,22 @@
+<?php namespace App\View; use Saml; use Sami;use Sammy\Packs\Samils\Capsule\CapsuleScopeContext; use Sammy\Packs\CapsuleHelper; use Sammy\Packs\CapsuleHelper\ArrayHelper; use Sammy\Packs\CapsuleHelper\ObjectHelper;
+# Capsule Body
+?>
+<?php
+	Capsule::Import ('Image', Capsule::RelativePathDecode (path ('capsule')));
+
+?>
+
+
+<?php
+	Capsule::Import ('Container', Capsule::RelativePathDecode (path ('./styles.css')));
+	Capsule::Import ('MenuListWrapper', Capsule::RelativePathDecode (path ('./styles.css')));
+	Capsule::Import ('NewsLatterFormWrapper', Capsule::RelativePathDecode (path ('./styles.css')));
+	Capsule::Import ('FooterDetailsContainer', Capsule::RelativePathDecode (path ('./styles.css')));
+
+?>
+
+<?php Capsule::Def ('Footer', function ($args, CapsuleScopeContext $scope) {
+?>
+<?php  Capsule::PartialRender ('Container', [], Capsule::CreateElement ('div', ['class' => "row"], Capsule::CreateElement ('div', ['class' => "col-lg-6"], Capsule::CreateElement ('NewsLatterFormWrapper', [], Capsule::CreateElement ('form', ['action' => "/news-latter/asign", 'method' => "post"], Capsule::CreateElement ('div', ['class' => "logo-wrapper"], Capsule::CreateElement ('Image', ['src' => "banking_site_design/logo.png", 'alt' => "Banking site design"])), Capsule::CreateElement ('h1', [], 'Get latest updates about us'), Capsule::CreateElement ('div', ['class' => "input-wrapper"], Capsule::CreateElement ('input', ['type' => "text"]), Capsule::CreateElement ('div', [], Capsule::CreateElement ('button', ['type' => "submit"], Capsule::CreateElement ('span', [], 'Send'))))))), Capsule::CreateElement ('div', ['class' => "col-lg-6"], Capsule::CreateElement ('div', ['class' => "row"], Capsule::CreateElement ('div', ['class' => "col-md-4"], Capsule::CreateElement ('MenuListWrapper', [], Capsule::CreateElement ('h1', [], 'About us'), Capsule::CreateElement ('ul', [], Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'About')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Blog')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Carreers')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Contact us'))))), Capsule::CreateElement ('div', ['class' => "col-md-4"], Capsule::CreateElement ('MenuListWrapper', [], Capsule::CreateElement ('h1', [], 'Resources'), Capsule::CreateElement ('ul', [], Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'About')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Blog')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Carreers')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Contact us'))))), Capsule::CreateElement ('div', ['class' => "col-md-4"], Capsule::CreateElement ('MenuListWrapper', [], Capsule::CreateElement ('h1', [], 'Press articles'), Capsule::CreateElement ('ul', [], Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'About')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Blog')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Carreers')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Contact us')))))))), Capsule::CreateElement ('div', ['class' => "row"], Capsule::CreateElement ('FooterDetailsContainer', [], Capsule::CreateElement ('div', ['class' => "copy-data"], Capsule::CreateElement ('span', [], 'Copyright 2024, all rights reserved')), Capsule::CreateElement ('div', ['class' => "list-wrapper"], Capsule::CreateElement ('ul', [], Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], Capsule::CreateElement ('i', ['class' => "fa fa-facebook"]))), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], Capsule::CreateElement ('i', ['class' => "fa fa-linkedin"]))), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], Capsule::CreateElement ('i', ['class' => "fa fa-twitter"])))))))); ?>
+<?php }); ?>
+<?php Capsule::Export ('Footer'); ?><?php if (!(is_object ($module->exports) && $module->exports instanceof Capsule)) { $module->exports = Capsule::Create (function () {}); }?>
