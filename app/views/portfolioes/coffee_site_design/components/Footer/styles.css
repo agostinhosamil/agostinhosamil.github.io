@@ -1,0 +1,250 @@
+footer.FooterContainer {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: #d7cfc2;
+  padding: 60px 5% 20px;
+}
+
+NewsletterFormContainer {
+  width: 100%;
+  padding-left: 40px;
+
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      font-size: 27px;
+      font-weight: 800;
+      display: block;
+      padding: 0px 0px 8px;
+      margin: 0px 0px 25px;
+      color: #320200;
+    }
+
+    div {
+      width: 100%;
+      background-color: #ffffff;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-left: 20px;
+
+      input {
+        width: 100%;
+        font-size: 18px;
+        outline: 0px;
+        border: 0px;
+        background-color: transparent;
+        color: #320200;
+      }
+
+      button {
+        display: flex;
+        background-color: #320200;
+        outline: 0px;
+        border: 0px;
+        padding: 15px 25px 17px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        color: #ffffff;
+        font-weight: 700;
+        margin-left: 20px;
+        font-size: 18px;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    padding: 40px 0px 0px;
+  }
+}
+
+FooterMenuListsWrapper {
+  width: 100%;
+  padding-right: 50px;
+
+  h4 {
+    font-size: 19px;
+    font-weight: 800;
+    display: block;
+    padding: 0px 0px 8px;
+    margin: 0px;
+    color: #320200;
+  }
+
+  ul {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      margin: 8px 0px;
+      color: #320200;
+      display: inline-flex;
+      align-items: flex-start;
+
+      a {
+        font-size: 14px;
+        font-weight: 500;
+        color: inherit;
+        display: inline-flex;
+        flex-direction: row;
+        align-items: center;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        color: inherit;
+        display: inline-flex;
+        margin-top: -4px;
+      }
+
+      i {
+        font-size: 19px;
+        margin-right: 8px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      li {
+        margin: 0px 8px 8px 0px;
+      }
+    }
+  }
+
+  ol {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      margin: 8px 0px;
+      color: #320200;
+      display: inline-flex;
+      align-items: flex-start;
+
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        color: inherit;
+        display: inline-flex;
+        margin-top: -4px;
+      }
+
+      i {
+        font-size: 19px;
+        margin-right: 8px;
+      }
+    }
+  }
+}
+
+CompanyDataWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-top: 1px solid #b9b1a6;
+  margin: 50px 0px 0px;
+  padding: 35px 0px 10px;
+
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+  }
+}
+
+LogoWrapper {
+  width: 100%;
+  max-width: 130px;
+
+  div {
+    width: 100%;
+
+    svg {
+      width: 100%;
+    }
+  }
+}
+
+CopyData {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  span {
+    font-weight: 400;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #320200;
+  }
+
+  @media (max-width: 767px) {
+    margin: 0px 0px 30px;
+  }
+}
+
+LinksWrapper {
+  width: max-content;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+
+    li {
+      margin-left: 20px;
+
+      a {
+        display: flex;
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        color: #ffffff;
+        background-color: #320200;
+        transition: unset;
+
+        i {
+          transition: unset;
+        }
+
+        &:hover {
+          background-color: #ffffff;
+          color: #320200;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    margin: 0px 0px 30px;
+  }
+}

@@ -1,0 +1,198 @@
+section.Container {
+  width: 100%;
+  background-color: #d5dffd;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+
+  * {
+    transition: all .3s ease-in-out;
+  }
+}
+
+Body {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  padding: 10px 120px;
+
+  @media (max-width: 990px) {
+    padding: 10px 30px;
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgb(213 223 253 / 74%);
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+  }
+}
+
+DataWrapper {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  strong {
+    font-size: 15px;
+    font-weight: 400;
+    color: #d98b13;
+    text-transform: uppercase;
+    display: block;
+    font-family: serif;
+  }
+
+  h1 {
+    font-size: 33px;
+    font-family: serif;
+    color: #0A0B21;
+    line-height: 42px;
+    display: block;
+    padding: 20px 0px 2px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 14px;
+    color: #5d657e;
+    padding: 0px;
+    margin: 0px 0px 25px;
+  }
+
+  a {
+    background-color: #d98b13;
+    display: inline-flex;
+    color: #ffffff;
+    padding: 8px 18px 7px;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+
+    span {
+      margin-right: 15px;
+      display: inline-block;
+      transition: all .3s ease-in-out;
+    }
+
+    i {
+      font-size: 26px;
+    }
+
+    &:hover {
+      background-color: #C37F18;
+
+      span {
+        margin-right: 25px;
+      }
+    }
+  }
+
+  @media (max-width: 870px) {
+    h1 {
+      font-size: 23px;
+      line-height: 24px;
+    }
+
+    p {
+      font-size: 11px;
+    }
+
+    a {
+      font-size: 12px;
+      padding: 6px 18px 5px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    text-align: center;
+    align-items: center;
+
+    strong {
+      font-weight: 700;
+      color: #101010;
+    }
+
+    a i {
+      font-size: 18px;
+    }
+  }
+}
+
+Poster {
+  width: 50%;
+
+  div {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    width: 100%;
+  }
+}
+
+button.PlayerButton {
+  background-color: #d98b13;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-radius: 50%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 0px;
+  outline: 0px;
+
+  span {
+    font-size: 30px;
+    color: inherit;
+
+    i {
+      margin: 9px -9px 0px 0px;
+    }
+  }
+
+  &:hover {
+    background-color: #C37F18;
+  }
+
+  @media (max-width: 640px) {
+    span {
+      font-size: 15px;
+
+      i {
+        margin: 6px -6px 0px 0px;
+      }
+    }
+  }
+}
+
+PlayerButtonWrapper {
+  width: 64px;
+  height: 64px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -32px 0px 0px -32px;
+
+  @media (max-width: 640px) {
+    top: unset;
+    bottom: 20px;
+    width: 34px;
+    height: 34px;
+    margin: 0px 0px 0px -17px;
+  }
+}

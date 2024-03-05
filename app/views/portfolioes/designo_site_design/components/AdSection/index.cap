@@ -1,0 +1,35 @@
+@import Image from 'capsule'
+
+@from './styles.css' import (
+  AdSectionContainer,
+  AdSectionBody,
+  AdSectionTimer,
+  AdSectionWrapper,
+  AdSectionContentWrapper,
+  AdSectionImageWrapper
+)
+
+@def AdSection
+  <AdSectionContainer>
+    <AdSectionWrapper>
+      <AdSectionContentWrapper>
+        <AdSectionBody>
+          <strong>Summer 2023</strong>
+          <h1>Spring <i>Collection</i></h1>
+          <a href="#" role="button">
+            <span>Shop now</span>
+          </a>
+        </AdSectionBody>
+        <AdSectionTimer>
+          <strong>06 : 07 : 09 : 03</strong>
+          <span>Days Hour Min Sec</span>
+        </AdSectionTimer>
+      </AdSectionContentWrapper>
+      <AdSectionImageWrapper>
+        <div>
+          <Image src="designo_site_design/model5.png" alt="ad" />
+        </div>
+      </AdSectionImageWrapper>
+    </AdSectionWrapper>
+  </AdSectionContainer>
+@end

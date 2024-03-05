@@ -1,0 +1,113 @@
+section.BlogPreviewSectionContainer {
+  width: 100%;
+  padding: 0px 30px;
+  transition: all .3s ease-in-out;
+
+  * {
+    transition: inherit;
+  }
+}
+
+BlogPreviewSectionBody {
+  width: 100%;
+  background-color: #f4ecdf;
+  padding: 50px 104px;
+  border-radius: 15px;
+
+  @media (max-width: 1150px) {
+    padding: 0px 0px 50px;
+    background-color: transparent;
+  }
+}
+
+ListWraper {
+  width: 100%;
+
+  ul {
+    padding: 20px 0px 0px;
+    margin: 0px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    li {
+      width: calc(100% / 4);
+      padding: 8px;
+
+      a {
+        display: block;
+        background-color: #ffffff;
+        border-radius: 9px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0px 0px 15px;
+
+        div {
+          width: 100%;
+          height: 160px;
+          background-attachment: scroll;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          background-color: #e0e0e0;
+          border-top-left-radius: inherit;
+          border-top-right-radius: inherit;
+        }
+
+        span {
+          display: inline-flex;
+          width: 50%;
+          padding: 15px 0px;
+          justify-content: center;
+          text-align: center;
+          color: #a0a0a0;
+        }
+
+        p {
+          width: 100%;
+          display: -webkit-box;
+          padding: 0px 20px 20px;
+          font-size: 13px;
+          line-height: 14px;
+          color: #504c4c;
+          text-align: center;
+          max-height: 43px;
+          overflow: hidden;
+          -webkit-box-orient: vertical;
+          -webkit-line-clamp: 3;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    ul li {
+      width: calc(100% / 3);
+    }
+  }
+
+  @media (max-width: 650px) {
+    ul li {
+      width: calc(100% / 2);
+    }
+  }
+
+  @media (max-width: 650px) {
+    ul li {
+      width: 100%;
+
+      a div {
+        height: 300px;
+      }
+    }
+  }
+
+  @media (max-width: 370px) {
+    ul li a div {
+      height: 170px;
+    }
+  }
+}

@@ -1,0 +1,130 @@
+@import Image from 'capsule'
+
+@from './styles.css' import {
+  FooterContainer,
+  NewsletterFormContainer,
+  FooterMenuListsWrapper,
+  CompanyDataWrapper,
+  LogoWrapper,
+  CopyData,
+  LinksWrapper
+}
+
+@def Footer
+  <FooterContainer>
+    <div class="row">
+      <div class="col-lg-8">
+        <FooterMenuListsWrapper>
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Links</h4>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Menu</a>
+                </li>
+                <li>
+                  <a href="#">Promotions</a>
+                </li>
+                <li>
+                  <a href="#">About us</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Comunity</h4>
+              <ul>
+                <li>
+                  <a href="#">Home</a>
+                </li>
+                <li>
+                  <a href="#">Menu</a>
+                </li>
+                <li>
+                  <a href="#">Promotions</a>
+                </li>
+                <li>
+                  <a href="#">About us</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Contact us</h4>
+              <ol>
+                <li>
+                  <i class="fa fa-map-marker" />
+                  <span>Locaiton of our, street Number, Tokyo</span>
+                </li>
+                <li>
+                  <i class="fa fa-google-plus" />
+                  <span>anteiku@gmail.com</span>
+                </li>
+                <li>
+                  <i class="fa fa-phone" />
+                  <span>+244 923-285-171</span>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </FooterMenuListsWrapper>
+      </div>
+      <div class="col-lg-4">
+        <NewsletterFormContainer>
+          <form method="post" action="/newsletter/subscribe">
+            <h2>Subscribe our newsletter</h2>
+            <div>
+              <input name="mail-address" placeholder="Enter your email" autocomplete="off" spellcheck="false" />
+              <button type="submit">
+                <i class="fa fa-send" />
+              </button>
+            </div>
+          </form>
+        </NewsletterFormContainer>
+      </div>
+    </div>
+    <div class="row">
+      <CompanyDataWrapper>
+        <LogoWrapper>
+          <div>
+            <Image src="coffee_site_design/logo-primary.svg" />
+          </div>
+        </LogoWrapper>
+        <CopyData>
+          <span>2024 Anteiku - All rights reserved</span>
+        </CopyData>
+        <LinksWrapper>
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/anteiku">
+                <i class="fa fa-facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.twitter.com/anteiku">
+                <i class="fa fa-twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/anteiku">
+                <i class="fa fa-youtube" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/anteiku">
+                <i class="fa fa-instagram" />
+              </a>
+            </li>
+          </ul>
+        </LinksWrapper>
+      </CompanyDataWrapper>
+    </div>
+  </FooterContainer>
+@end

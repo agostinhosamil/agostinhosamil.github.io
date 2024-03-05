@@ -77,39 +77,75 @@ class PagesController extends SamiController {
           'thumbnail' => 'sounya-website-template.png'
         ],
         [
-          'url' => '/portfolio/sites/belonistore/index.html',
-          'githubUrl' => 'https://github.com/agostinhosamil/belonistore',
-          'thumbnail' => 'beloni-site.png'
+          'url' => '/portfolio/sites/designo_site_design',
+          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io/tree/main/docs/portfolio/sites/designo_site_design',
+          'thumbnail' => 'designo-website-template.png'
         ]
       ],
       [
         [
-          'url' => '/portfolio/sites/utk_site_design/index.html',
-          'githubUrl' => 'https://github.com/agostinhosamil/utk_site_design',
+          'url' => '/portfolio/sites/gym_site_design',
+          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io/tree/main/docs/portfolio/sites/gym_site_design',
+          'thumbnail' => 'gym-website-template.png'
+        ],
+        [
+          'url' => '/portfolio/sites/coffee_site_design',
+          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io/tree/main/docs/portfolio/sites/coffee_site_design',
+          'thumbnail' => 'anteiku-website-template.png'
+        ]
+      ],
+      [
+        [
+          'url' => '/portfolio/sites/utk_site_design',
+          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io/tree/main/docs/portfolio/sites/utk_site_design',
           'thumbnail' => 'utk-site.png'
         ],
         [
-          'url' => '/portfolio/sites/axell-website-template/index.html',
-          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io/docs/portfolio/sites/axell-website-template',
-          'thumbnail' => 'axell-website-template.png'
+          'url' => '/portfolio/sites/ubbio_site_design',
+          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io/tree/main/docs/portfolio/sites/ubbio_site_design',
+          'thumbnail' => 'ubbio-website-template.png'
         ]
       ],
       [
         [
-          'url' => '/portfolio/sites/banking_site_design/index.html',
-          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io',
+          'url' => '/portfolio/sites/banking_site_design',
+          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io/tree/main/docs/portfolio/sites/banking_site_design',
           'thumbnail' => 'banking-website-template.png'
         ],
         [
-          'url' => '/portfolio/sites/zircon_site_design/index.html',
-          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io',
+          'url' => '/portfolio/sites/zircon_site_design',
+          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io/tree/main/docs/portfolio/sites/zircon_site_design',
           'thumbnail' => 'zircon-website-template.png'
         ]
       ],
       [
         [
-          'url' => '/portfolio/sites/cr7-website-template/index.html',
-          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io',
+          'url' => '/portfolio/sites/fax_estate_site_design',
+          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io/tree/main/docs/portfolio/sites/fax_estate_site_design',
+          'thumbnail' => 'fax-estate-website-template.png'
+        ],
+        [
+          'url' => '/portfolio/sites/belonistore',
+          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io/tree/main/docs/portfolio/sites/belonistore',
+          'thumbnail' => 'beloni-site.png'
+        ]
+      ],
+      [
+        [
+          'url' => '/portfolio/sites/kear_site_design',
+          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io/tree/main/docs/portfolio/sites/kear_site_design',
+          'thumbnail' => 'kear-website-template.png'
+        ],
+        [
+          'url' => '/portfolio/sites/axell-website-template',
+          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io/tree/main/docs/portfolio/sites/axell-website-template',
+          'thumbnail' => 'axell-website-template.png'
+        ]
+      ],
+      [
+        [
+          'url' => '/portfolio/sites/cr7-website-template',
+          'githubUrl' => 'https://github.com/agostinhosamil/agostinhosamil.github.io/tree/main/docs/portfolio/sites/cr7-website-template',
           'thumbnail' => 'cr7-site.png'
         ]
       ]

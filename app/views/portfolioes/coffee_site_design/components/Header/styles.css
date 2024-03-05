@@ -1,0 +1,273 @@
+HeaderContainer {
+  width: 100%;
+  background-color: #d7cfc2;
+  position: relative;
+}
+
+MenuContainer {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 35px 5%;
+}
+
+LogoWrapper {
+  width: 100%;
+  max-width: 140px;
+
+  div {
+    width: 100%;
+
+    svg {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+MenuBody {
+  width: 100%;
+
+  ul {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+
+    li {
+      margin: 0px 12px;
+
+      a {
+        color: #320200;
+        font-weight: 500;
+        font-size: 13px;
+        white-space: nowrap;
+        position: relative;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      a.selected:after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        display: block;
+        position: absolute;
+        bottom: -4px;
+        left: 0px;
+        right: 0px;
+        background-color: #320200;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+CtaWrapper {
+  width: max-content;
+
+  ul {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+
+    li {
+      margin: 0px 7px;
+
+      a {
+        color: #ffffff;
+        background-color: #320200;
+        font-weight: 500;
+        font-size: 13px;
+        display: block;
+        padding: 11px 22px;
+        border: 1px solid #320200;
+        white-space: nowrap;
+        border-radius: 25px;
+
+        &:hover {
+          background-color: #ffffff;
+          color: #320200;
+        }
+
+        @media (max-width: 550px) {
+          padding: 5px 11px 4px;
+          font-size: 10px;
+        }
+      }
+
+      a.outlined {
+        background-color: transparent;
+        color: #320200;
+
+        &:hover {
+          background-color: #f1f1f1;
+        }
+      }
+    }
+
+    li.menu-button-wrapper {
+      position: relative;
+      display: none;
+
+      a {
+        border: 0px;
+        color: #320200;
+        background-color: transparent;
+        font-size: 20px;
+        padding: 11px 0px;
+      }
+
+      button {
+        border: 0px;
+        outline: 0px;
+        color: #320200;
+        cursor: pointer;
+        background-color: transparent;
+        font-size: 20px;
+      }
+
+      @media (max-width: 900px) {
+        display: inline-flex;
+      }
+    }
+
+    @media (max-width: 400px) {
+      li {
+        display: none;
+      }
+
+      li.menu-button-wrapper {
+        display: inline-flex;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+HeaderBody {
+  width: 100%;
+  height: 570px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 5%;
+}
+
+Content {
+  width: 100%;
+  padding-right: 80px;
+
+  h1 {
+    color: #320200;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 70px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #320200;
+    display: block;
+    padding: 12px 0px 25px;
+  }
+
+  a {
+    display: inline-block;
+    padding: 15px 35px;
+    border-radius: 35px;
+    background-color: #320200;
+    color: #ffffff;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #320200;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    padding-right: 60px;
+
+    h1 {
+      font-size: 56px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    * {
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 400px) {
+    padding: 10px;
+
+    h1 {
+      font-size: 35px;
+      line-height: 36px;
+    }
+
+    a {
+      padding: 7px 15px 6px;
+    }
+  }
+}
+
+ImageWrapper {
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+
+  div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    img {
+      width: 100%;
+      max-width: 480px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    display: none;
+  }
+}

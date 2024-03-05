@@ -1,0 +1,221 @@
+@import Image, FlatImage from 'capsule'
+
+@import Ad from './components/Ad'
+@import Header from './components/Header'
+@import Footer from './components/Footer'
+
+@from './styles.css' import (
+  Title,
+  Container,
+  HomeCtaBanner,
+  CategoryListCol,
+  CategoryListRow,
+  AboutWorkSectionBody,
+  AboutSectionContainer,
+  HomeCtaBannerContainer,
+  PartnersSectionContainer,
+  AboutSectionImageWrapper,
+  AboutWorkSectionContainer,
+  AboutSectionContentWrapper,
+  QuickGuideSectionContainer,
+  CategoryListSectionContainer
+)
+
+@def FaxEstateSiteDesign
+  <Container>
+    <Header />
+
+    <AboutSectionContainer>
+      <AboutSectionImageWrapper>
+        <div>
+          <Image src="fax_estate_site_design/room.jpg" alt="Room" />
+        </div>
+      </AboutSectionImageWrapper>
+      <AboutSectionContentWrapper>
+        <div class="about-section-content-wrapper">
+          <h6>About Us</h6>
+          <h1>Deram living spaces setting new build</h1>
+          <h4>Handpicked properties by our team</h4>
+          <ul>
+            <li>
+              <div class="icon-wrapper">
+                <div>
+                  <i class="fa fa-home" />
+                </div>
+              </div>
+              <div class="content-wrapper">
+                <span>The perfect residency</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="icon-wrapper">
+                <div>
+                  <i class="fa fa-home" />
+                </div>
+              </div>
+              <div class="content-wrapper">
+                <span>The perfect residency</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                </p>
+              </div>
+            </li>
+            <li>
+              <div class="icon-wrapper">
+                <div>
+                  <i class="fa fa-home" />
+                </div>
+              </div>
+              <div class="content-wrapper">
+                <span>The perfect residency</span>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </AboutSectionContentWrapper>
+    </AboutSectionContainer>
+
+    <Ad
+      subject="Explore neighborhood"
+      title="Whats in neighborhood? Explore bellow"
+      description="Single family residential property means a developed property which serves the primary purpose of providing a permanent."
+      link="/property/092"
+      videoPoster="fax_estate_site_design/home1.jpg"
+      />
+
+    <QuickGuideSectionContainer>
+      <Title>
+        <h1>Find your dream home in a minute</h1>
+        <p>Handpicked properties by our team</p>
+      </Title>
+      <ul>
+        <li>
+          <span>1</span>
+          <h4>Find a property you love</h4>
+          <p>Browse through our different homes and properties, save your favorite and contact us for a free tour.</p>
+        </li>
+        <li>
+          <span>2</span>
+          <h4>Meet an agent</h4>
+          <p>We connect to agents and property owners for a tour around your preffered home.</p>
+        </li>
+        <li>
+          <span>3</span>
+          <h4>Make it official</h4>
+          <p>Sign official documents and make payments so your can claim your new property or home.</p>
+        </li>
+      </ul>
+    </QuickGuideSectionContainer>
+
+    <CategoryListSectionContainer>
+      <Title>
+        <h1>Our most popular categories</h1>
+        <p>Handpicked properties by our team.</p>
+      </Title>
+      <CategoryListRow>
+        <CategoryListCol class="expanded">
+          <div class="col-content">
+            <FlatImage src="fax_estate_site_design/room1.jpg">
+              <span>Condos & Vilas</span>
+            </FlatImage>
+          </div>
+        </CategoryListCol>
+        <CategoryListCol>
+          <div class="col-content">
+            <FlatImage src="fax_estate_site_design/room2.jpg">
+              <span>Cozy Homes</span>
+            </FlatImage>
+          </div>
+        </CategoryListCol>
+      </CategoryListRow>
+
+      <CategoryListRow>
+        <CategoryListCol>
+          <div class="col-content">
+            <FlatImage src="fax_estate_site_design/room2.jpg">
+              <span>Family Homes</span>
+            </FlatImage>
+          </div>
+        </CategoryListCol>
+        <CategoryListCol class="expanded">
+          <div class="col-content">
+            <FlatImage src="fax_estate_site_design/room1.jpg">
+              <span>Waterfront homes</span>
+            </FlatImage>
+          </div>
+        </CategoryListCol>
+      </CategoryListRow>
+    </CategoryListSectionContainer>
+
+    <AboutWorkSectionContainer>
+      <Title>
+        <h1>Our work process</h1>
+        <p>Construction of itself, because it is pain, but because some proper style design occur in tail and pain pleasure we have expert team.</p>
+      </Title>
+      <AboutWorkSectionBody>
+        <ul>
+          <li>
+            <div>
+              <Image src="fax_estate_site_design/1.jpg" alt="Meeting with our clients" />
+            </div>
+            <h5>Meeting with our clients</h5>
+            <p>
+              Meeting with our clients for all requirements for this project we start now
+            </p>
+          </li>
+          <li>
+            <div>
+              <Image src="fax_estate_site_design/2.jpg" alt="Project planning" />
+            </div>
+            <h5>Project planning</h5>
+            <p>
+              Meeting with our clients for all requirements for this project we start now
+            </p>
+          </li>
+          <li>
+            <div>
+              <Image src="fax_estate_site_design/3.jpg" alt="Construction & Finalize" />
+            </div>
+            <h5>Construction & Finalize</h5>
+            <p>
+              Meeting with our clients for all requirements for this project we start now
+            </p>
+          </li>
+        </ul>
+      </AboutWorkSectionBody>
+    </AboutWorkSectionContainer>
+
+    <HomeCtaBannerContainer>
+      <FlatImage src="fax_estate_site_design/home.jpg" class="banner-image" />
+      <HomeCtaBanner>
+        <div>
+          <h3>Looking for a dream home?</h3>
+          <p>
+            Construction of itself, because it is pain, but because some proper style design occur in tail
+          </p>
+          <a href="#" role="button">Explore more</a>
+        </div>
+      </HomeCtaBanner>
+    </HomeCtaBannerContainer>
+
+    <PartnersSectionContainer>
+      <ul>
+        @for $id in range(1, 6)
+          <li>
+            <Image src=%{ 'fax_estate_site_design/company' . $id . '.png' } alt="Partner" />
+          </li>
+        @end
+      </ul>
+    </PartnersSectionContainer>
+
+    <Footer />
+  </Container>
+@end
+
+@export default FaxEstateSiteDesign

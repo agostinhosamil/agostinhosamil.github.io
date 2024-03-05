@@ -29,8 +29,8 @@ $scope->details = !isset ($args['details']) ? [] : $args [ 'details' ];
 <?php  Capsule::PartialRender ('div', ['class' => "col-lg-4"], Capsule::CreateElement ('PlanCardContainer', ['color' => $scope->color], Capsule::CreateElement ('PlanCardWrapper', [], Capsule::CreateElement ('PlanCardTitle', [], Capsule::CreateElement ('Image', ['src' => $scope->icon]), Capsule::CreateElement ('br', []), Capsule::CreateElement ('span', [], function($args, CapsuleScopeContext $scope){return $scope->title;})), Capsule::CreateElement ('PlanCardBody', [], function ($args, CapsuleScopeContext $scope) {if ( is_array ($scope->details) && $scope->details ) {
             
 
- Capsule::PartialRender ('ul', [], function ($args, CapsuleScopeContext $scope) {$arr3956060215ay = $scope->details; for ( $i3956060215terator = 0; $i3956060215terator < count (is_array ($arr3956060215ay) ? $arr3956060215ay : []); $i3956060215terator++ ) {
-	$scope->detail = \Saml::Array2Object ($arr3956060215ay[ $i3956060215terator ]);
+ Capsule::PartialRender ('ul', [], function ($args, CapsuleScopeContext $scope) {$arr916203538ay = $scope->details; for ( $i916203538terator = 0; $i916203538terator < count (is_array ($arr916203538ay) ? $arr916203538ay : []); $i916203538terator++ ) {
+	$scope->detail = \Saml::Array2Object ($arr916203538ay[ $i916203538terator ]);
 
 Capsule::PartialRender ('Fragment', [], function ($args, CapsuleScopeContext $scope) {if ( $scope->detail ['enabled'] ) {
                   

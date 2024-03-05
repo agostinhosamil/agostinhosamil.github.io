@@ -1,0 +1,299 @@
+section.AdSectionContainer {
+  width: 100%;
+  height: 480px;
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+  position: relative;
+  transition: all .3s ease-in-out;
+
+  * {
+    transition: inherit;
+  }
+
+  @media (max-width: 1150px) {
+    margin-top: 0px;
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
+AdSectionWrapper {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  border-radius: 15px;
+  padding: 0px 120px;
+
+  @media (max-width: 900px) {
+    padding: 0px 50px;
+  }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    overflow: hidden;
+  }
+}
+
+AdSectionBody {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  strong {
+    display: block;
+    position: relative;
+    font-weight: 600;
+    color: #cf2443;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding-left: 30px;
+
+    &:before {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 19px;
+      background-color: #cf2443;
+      left: 0px;
+      top: 50%;
+      position: absolute;
+      margin-top: -1px;
+    }
+  }
+
+  h1 {
+    color: #000000;
+    font-weight: 900;
+    font-size: 34px;
+    text-transform: uppercase;
+    margin: 12px 0px 18px;
+
+    i {
+      font-style: normal;
+      font-weight: 400;
+      padding-left: 16px;
+    }
+  }
+
+  a {
+    display: inline-flex;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 7px 17px 7px 44px;
+    font-size: 13px;
+    position: relative;
+    align-items: center;
+    width: fit-content;
+
+    &:before {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 19px;
+      background-color: #ffffff;
+      left: 15px;
+      top: 50%;
+      position: absolute;
+      margin-top: -1px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    strong {
+      font-size: 11px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    a {
+      font-size: 11px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    padding-bottom: 15px;
+    justify-content: center;
+
+    strong {
+      width: max-content;
+      margin: auto;
+    }
+
+    h1 {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    a {
+      margin: auto;
+    }
+  }
+}
+
+AdSectionTimer {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+
+  strong {
+    font-weight: 400;
+    font-size: 26px;
+    word-spacing: 14px;
+    text-transform: uppercase;
+  }
+
+  span {
+    text-transform: uppercase;
+    font-weight: 500;
+    word-spacing: 39px;
+  }
+
+  @media (max-width: 800px) {
+    strong {
+      font-size: 17px;
+      word-spacing: 5px;
+    }
+
+    span {
+      font-size: 10px;
+      word-spacing: 14px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    margin: 20px auto 0px;
+  }
+
+  @media (max-width: 350px) {
+    transform: scale(0.6);
+  }
+}
+
+AdSectionContentWrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 70px 0px;
+  position: relative;
+  overflow-y: clip;
+  overflow-x: visible;
+
+  &:before {
+    content: '';
+    width: 205px;
+    height: 205px;
+    position: absolute;
+    top: -95px;
+    right: 50%;
+    margin-right: -172px;
+    background-color: rgb(0 0 0 / 3%);
+    display: block;
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 10%)0px 0px 15px;
+  }
+
+  &:after {
+    content: '';
+    width: 156px;
+    height: 156px;
+    position: absolute;
+    top: -70px;
+    right: 50%;
+    margin-right: -147px;
+    background-color: rgb(0 0 0 / 0%);
+    display: block;
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 10%)0px 0px 15px;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+
+AdSectionImageWrapper {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+
+  div {
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    z-index: 1;
+
+    img {
+      width: 100%;
+      margin-left: +94px;
+
+      @media (max-width: 900px) {
+        margin-left: 0px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      text-align: right;
+
+      img {
+        width: 70%;
+      }
+    }
+  }
+
+  &:before {
+    content: '';
+    width: 205px;
+    height: 205px;
+    position: absolute;
+    bottom: 70px;
+    left: 153px;
+    margin-left: -172px;
+    background-color: rgb(0 0 0 / 3%);
+    display: block;
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 10%)0px 0px 15px;
+  }
+
+  &:after {
+    content: '';
+    width: 156px;
+    height: 156px;
+    position: absolute;
+    bottom: 94px;
+    left: 8px;
+    margin-right: -147px;
+    background-color: rgb(0 0 0 / 0%);
+    display: block;
+    border-radius: 50%;
+    box-shadow: rgb(0 0 0 / 10%)0px 0px 15px;
+  }
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}

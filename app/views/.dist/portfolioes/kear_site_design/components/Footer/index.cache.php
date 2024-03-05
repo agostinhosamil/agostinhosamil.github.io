@@ -1,0 +1,21 @@
+<?php namespace App\View; use Saml; use Sami;use Sammy\Packs\Samils\Capsule\CapsuleScopeContext; use Sammy\Packs\CapsuleHelper; use Sammy\Packs\CapsuleHelper\ArrayHelper; use Sammy\Packs\CapsuleHelper\ObjectHelper;
+# Capsule Body
+?>
+<?php
+	Capsule::Import ('Image', Capsule::RelativePathDecode (path ('capsule')));
+
+?>
+
+
+<?php
+	Capsule::Import ('Container', Capsule::RelativePathDecode (path ('./styles.css')));
+	Capsule::Import ('FooterBody', Capsule::RelativePathDecode (path ('./styles.css')));
+	Capsule::Import ('FooterDetails', Capsule::RelativePathDecode (path ('./styles.css')));
+
+?>
+
+<?php Capsule::Def ('Footer', function ($args, CapsuleScopeContext $scope) {
+?>
+<?php  Capsule::PartialRender ('Container', [], Capsule::CreateElement ('FooterBody', [], Capsule::CreateElement ('div', ['class' => "row"], Capsule::CreateElement ('div', ['class' => "col-lg-5"], Capsule::CreateElement ('div', ['class' => "company-data"], Capsule::CreateElement ('div', [], Capsule::CreateElement ('Image', ['src' => "kear_site_design/logo-light.svg"])), Capsule::CreateElement ('p', [], 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod', 'tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,', 'quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo'))), Capsule::CreateElement ('div', ['class' => "col-lg-7"], Capsule::CreateElement ('div', ['class' => "menu-lists-wrapper"], Capsule::CreateElement ('div', ['class' => "row"], Capsule::CreateElement ('div', ['class' => "col-md-4"], Capsule::CreateElement ('h1', [], 'Company'), Capsule::CreateElement ('ul', [], Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Home')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'About')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Service')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Contact us')))), Capsule::CreateElement ('div', ['class' => "col-md-4"], Capsule::CreateElement ('h1', [], 'Services'), Capsule::CreateElement ('ul', [], Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Dental Care')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Orat Surgery')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Oral Hygiesrst')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Teeth Cleaning')))), Capsule::CreateElement ('div', ['class' => "col-md-4"], Capsule::CreateElement ('h1', [], 'Follow us'), Capsule::CreateElement ('ol', [], Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], Capsule::CreateElement ('i', ['class' => "fa fa-facebook"]))), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], Capsule::CreateElement ('i', ['class' => "fa fa-instagram"]))), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], Capsule::CreateElement ('i', ['class' => "fa fa-twitter"]))), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], Capsule::CreateElement ('i', ['class' => "fa fa-pinterest"]))))))))), Capsule::CreateElement ('FooterDetails', [], Capsule::CreateElement ('div', [], Capsule::CreateElement ('h3', [], 'Follow us')), Capsule::CreateElement ('div', [], Capsule::CreateElement ('span', [], Capsule::CreateElement ('i', ['class' => "fa fa-ambulance"])), Capsule::CreateElement ('data', [], Capsule::CreateElement ('strong', [], '24 hours emergency'), Capsule::CreateElement ('p', [], '2-012-109'))), Capsule::CreateElement ('div', [], Capsule::CreateElement ('span', [], Capsule::CreateElement ('i', ['class' => "fa fa-medkit"])), Capsule::CreateElement ('data', [], Capsule::CreateElement ('strong', [], 'Costumer services'), Capsule::CreateElement ('p', [], '3-112-109')))))); ?>
+<?php }); ?>
+<?php Capsule::Export ('Footer'); ?><?php if (!(is_object ($module->exports) && $module->exports instanceof Capsule)) { $module->exports = Capsule::Create (function () {}); }?>

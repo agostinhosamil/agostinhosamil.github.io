@@ -1,0 +1,44 @@
+@from '../../styles.css' import {
+  PageSectionContainer,
+  PageSectionBody,
+  PageSectionTitle
+}
+
+@from './styles.css' import {
+  SliderContainer,
+  SliderListWrapper,
+  SliderNavigation,
+  SliderList
+}
+
+@def SliderSection $title, $subTitle
+  <PageSectionContainer>
+    <PageSectionBody>
+      @if $title
+        <PageSectionTitle>
+          <h1>%{ $title }</h1>
+          @if $subTitle
+            <p>
+              %{ $subTitle }
+            </p>
+          @end
+        </PageSectionTitle>
+      @end
+      <SliderContainer>
+        <SliderListWrapper>
+          <SliderList>
+            <Yield />
+          </SliderList>
+        </SliderListWrapper>
+        <SliderNavigation>
+          <button class="btn-prev">
+            <i class="fa fa-angle-left" />
+          </button>
+          <button class="btn-next">
+            <i class="fa fa-angle-right" />
+          </button>
+        </SliderNavigation>
+      </SliderContainer>
+    </PageSectionBody>
+  </PageSectionContainer>
+@end

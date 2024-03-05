@@ -16,13 +16,13 @@
 
 <?php Capsule::Def ('Footer', function ($args, CapsuleScopeContext $scope) {
 ?>
-<?php  Capsule::PartialRender ('Container', [], Capsule::CreateElement ('Body', [], Capsule::CreateElement ('div', ['class' => "row"], function ($args, CapsuleScopeContext $scope) {$arr4117060222ay = range(1, 4); for ( $i4117060222terator = 0; $i4117060222terator < count (is_array ($arr4117060222ay) ? $arr4117060222ay : []); $i4117060222terator++ ) {
-	$scope->i = \Saml::Array2Object ($arr4117060222ay[ $i4117060222terator ]);
+<?php  Capsule::PartialRender ('Container', [], Capsule::CreateElement ('Body', [], Capsule::CreateElement ('div', ['class' => "row"], function ($args, CapsuleScopeContext $scope) {$arr362203557ay = range(1, 4); for ( $i362203557terator = 0; $i362203557terator < count (is_array ($arr362203557ay) ? $arr362203557ay : []); $i362203557terator++ ) {
+	$scope->i = \Saml::Array2Object ($arr362203557ay[ $i362203557terator ]);
 
           
 
- Capsule::PartialRender ('div', ['class' => "col-lg-3 footer-col"], Capsule::CreateElement ('strong', [], 'Column - ', function($args, CapsuleScopeContext $scope){return $scope->i;}), Capsule::CreateElement ('ul', [], function ($args, CapsuleScopeContext $scope) {$arr1219060222ay = range(1, 9); for ( $i1219060222terator = 0; $i1219060222terator < count (is_array ($arr1219060222ay) ? $arr1219060222ay : []); $i1219060222terator++ ) {
-	$scope->n = \Saml::Array2Object ($arr1219060222ay[ $i1219060222terator ]);
+ Capsule::PartialRender ('div', ['class' => "col-lg-3 footer-col"], Capsule::CreateElement ('strong', [], 'Column - ', function($args, CapsuleScopeContext $scope){return $scope->i;}), Capsule::CreateElement ('ul', [], function ($args, CapsuleScopeContext $scope) {$arr5923203557ay = range(1, 9); for ( $i5923203557terator = 0; $i5923203557terator < count (is_array ($arr5923203557ay) ? $arr5923203557ay : []); $i5923203557terator++ ) {
+	$scope->n = \Saml::Array2Object ($arr5923203557ay[ $i5923203557terator ]);
 
                 
 

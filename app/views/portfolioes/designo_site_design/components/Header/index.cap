@@ -1,0 +1,138 @@
+@import Image, FlatImage from 'capsule'
+
+@from './styles.css' import (
+  MenuBody,
+  HeaderBody,
+  LogoWrapper,
+  MenuWrapper,
+  IconsWrapper,
+  NavigationMenu,
+  HeaderContainer,
+  HeaderBannerLabel,
+  BannerCaptionTitle,
+  HeaderMenuContainer,
+  HeaderBannerContainer,
+  HeaderBannerImageWrapper,
+  HeaderBannerContentWrapper
+)
+
+@def Header
+  <HeaderContainer>
+    <HeaderMenuContainer>
+      <LogoWrapper>
+        <div>
+          <Image src="designo_site_design/logo-dark.svg" alt="Designo" />
+        </div>
+      </LogoWrapper>
+      <MenuBody>
+        <MenuWrapper>
+          <div>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Collection</a>
+              </li>
+              <li>
+                <a href="#">Shop</a>
+              </li>
+              <li>
+                <a href="#">Journal</a>
+              </li>
+              <li>
+                <a href="#">Lookbook</a>
+              </li>
+            </ul>
+          </div>
+        </MenuWrapper>
+        <IconsWrapper>
+          <div>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-search" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-user-o" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-heart-o" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-shopping-bag" />
+                </a>
+              </li>
+              <li>
+                <a href="#" class="menu-button">
+                  <i class="fa fa-bars" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </IconsWrapper>
+        <NavigationMenu id="data-navigation-menu">
+          <div>
+            /*
+              <ul>
+                @for $u in range(1, 6)
+                  <li>
+                    <a href="#">Page %{$u}</a>
+                  </li>
+                @end
+              </ul>
+            */
+            <hr />
+            <ol>
+              <li>
+                <a href="#">Help center</a>
+              </li>
+              <li>
+                <a href="#">Data policy</a>
+              </li>
+              <li>
+                <a href="#">Privacy</a>
+              </li>
+              <li>
+                <a href="#">Terms and Conditions</a>
+              </li>
+            </ol>
+          </div>
+        </NavigationMenu>
+      </MenuBody>
+    </HeaderMenuContainer>
+    <HeaderBody>
+      <HeaderBannerContainer>
+
+        <BannerCaptionTitle>
+          <code>Season</code>
+        </BannerCaptionTitle>
+
+        <HeaderBannerContentWrapper>
+          <strong>Summer %{ date('Y') }</strong>
+          <h1>Hello new season</h1>
+          <p>Limited time offer - Up to 60% off & Free shipping</p>
+          <a href="#" role="button">
+            <span>Discover Now</span>
+          </a>
+        </HeaderBannerContentWrapper>
+
+        <HeaderBannerLabel>
+          Scroll
+        </HeaderBannerLabel>
+
+        <HeaderBannerImageWrapper>
+          <FlatImage src="designo_site_design/header-banner-background.jpg">
+            <Image src="designo_site_design/model.png" alt="Designo - Model" />
+          </FlatImage>
+        </HeaderBannerImageWrapper>
+      </HeaderBannerContainer>
+    </HeaderBody>
+  </HeaderContainer>
+@end

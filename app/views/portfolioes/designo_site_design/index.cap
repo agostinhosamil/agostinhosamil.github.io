@@ -1,0 +1,302 @@
+@import Title as DocumentTitle, Image, Script from 'capsule'
+
+@import Header from './components/Header'
+@import Footer from './components/Footer'
+@import AdSection from './components/AdSection'
+@import BlogPreviewSection from './components/BlogPreviewSection'
+
+@from './styles.css' import (
+  Title,
+  GlobalSyles,
+  DesignoSiteDesignContainer,
+  TrendingSectionBody,
+  TrendingSectionContainer,
+  TrendingSectionCategoryList,
+  TrendingSectionRow,
+  TrendingSectionCol,
+  TrendingSectionColsWrapper,
+
+  TestimonialsSectionContainer,
+  TestimonialsSectionBody,
+  TestimonialsSectionNavigation,
+  TestimonialsSectionPagination,
+
+  ServiceDetailsContainer,
+  ServiceDetail
+)
+
+@def DesignoSiteDesign
+  <DesignoSiteDesignContainer>
+    <GlobalSyles />
+    <DocumentTitle>
+      Designo - Model Agency
+    </DocumentTitle>
+
+    <head>
+      <Script src="designo_site_design/main.js" />
+    </head>
+
+    <Header />
+
+    <TrendingSectionContainer>
+      <Title>
+        <h1>Trending</h1>
+      </Title>
+      <TrendingSectionCategoryList>
+        <li class="selected">
+          <a href="#" role="button">All</a>
+        </li>
+        <li>
+          <a href="#" role="button">Kids</a>
+        </li>
+        <li>
+          <a href="#" role="button">Men</a>
+        </li>
+        <li>
+          <a href="#" role="button">Women</a>
+        </li>
+      </TrendingSectionCategoryList>
+      <TrendingSectionBody>
+        <ul>
+          @for $i in range(1, 12)
+            <li>
+              <a href="#">
+                <Image src="designo_site_design/1.jpg" alt="Product" />
+                <h6>
+                  Dresses
+                </h6>
+                <h4>
+                  Black Jaquet
+                </h4>
+                <strong>
+                  $%{ $i }00
+                </strong>
+              </a>
+            </li>
+          @end
+        </ul>
+      </TrendingSectionBody>
+
+      <TrendingSectionColsWrapper>
+        <TrendingSectionCol>
+          <TrendingSectionRow imageWidth="1280">
+            <ul>
+              <li>
+                <strong>Basic collections</strong>
+              </li>
+              <li>
+                <h4>New Arrivals</h4>
+              </li>
+              <li>
+                <a href="#">Shop Now</a>
+              </li>
+            </ul>
+            <div>
+              <data>
+                <Image src="designo_site_design/model1.png" />
+              </data>
+            </div>
+          </TrendingSectionRow>
+          <TrendingSectionRow height="220" backgroundColor="#eceaed">
+            <ul>
+              <li>
+                <strong>Basic collections</strong>
+              </li>
+              <li>
+                <h4>New Arrivals</h4>
+              </li>
+              <li>
+                <a href="#">Shop Now</a>
+              </li>
+            </ul>
+            <div>
+              <data>
+                <Image src="designo_site_design/model2.png" />
+              </data>
+            </div>
+          </TrendingSectionRow>
+        </TrendingSectionCol>
+        <TrendingSectionCol>
+          <TrendingSectionRow height="220" backgroundColor="#eceaed">
+            <ul>
+              <li>
+                <strong>Basic collections</strong>
+              </li>
+              <li>
+                <h4>New Arrivals</h4>
+              </li>
+              <li>
+                <a href="#">Shop Now</a>
+              </li>
+            </ul>
+            <div>
+              <data>
+                <Image src="designo_site_design/model3.png" />
+              </data>
+            </div>
+          </TrendingSectionRow>
+          <TrendingSectionRow imageWidth="590">
+            <ul>
+              <li>
+                <strong>Basic collections</strong>
+              </li>
+              <li>
+                <h4>New Arrivals</h4>
+              </li>
+              <li>
+                <a href="#">Shop Now</a>
+              </li>
+            </ul>
+            <div>
+              <data>
+                <Image src="designo_site_design/model4.png" />
+              </data>
+            </div>
+          </TrendingSectionRow>
+        </TrendingSectionCol>
+      </TrendingSectionColsWrapper>
+    </TrendingSectionContainer>
+
+    <TestimonialsSectionContainer>
+      <Title>
+        <h1>Testimonials</h1>
+      </Title>
+      <TestimonialsSectionBody>
+        <ul>
+          @for $testimonialId in range(1, 15)
+            <li data-id=%{ $testimonialId }>
+              <p>
+                Lorem %{ $testimonialId } ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <span>Lara Dorfill - Appril 2023</span>
+              <Image src="designo_site_design/1.jpg" alt="client" />
+            </li>
+          @end
+
+          <TestimonialsSectionNavigation>
+            <button type="button" class="btn-prev">
+              <i class="fa fa-angle-left" />
+            </button>
+            <button type="button" class="btn-next">
+              <i class="fa fa-angle-right" />
+            </button>
+          </TestimonialsSectionNavigation>
+        </ul>
+        <TestimonialsSectionPagination>
+          @for $i in range(1, 15)
+            <li>
+              @if $i == 1
+                <button class="selected" data-id=%{ $i } />
+              @else
+                <button data-id=%{ $i } />
+              @end
+            </li>
+          @end
+        </TestimonialsSectionPagination>
+      </TestimonialsSectionBody>
+    </TestimonialsSectionContainer>
+
+    <TrendingSectionContainer>
+      <Title>
+        <h1>The inside collection</h1>
+      </Title>
+      <TrendingSectionBody>
+        <ul>
+          @for $i in range(1, 4)
+            <li>
+              <a href="#">
+                <Image src="designo_site_design/1.jpg" alt="Product" />
+                <h6>
+                  Dresses
+                </h6>
+                <h4>
+                  Black Jaquet
+                </h4>
+                <strong>
+                  $%{ $i }00
+                </strong>
+              </a>
+            </li>
+          @end
+        </ul>
+      </TrendingSectionBody>
+    </TrendingSectionContainer>
+
+    <AdSection />
+
+    <TrendingSectionContainer>
+      <Title>
+        <h1>Limited Edition</h1>
+      </Title>
+      <TrendingSectionBody>
+        <ul>
+          @for $i in range(1, 4)
+            <li>
+              <a href="#">
+                <Image src="designo_site_design/1.jpg" alt="Product" />
+                <h6>
+                  Dresses
+                </h6>
+                <h4>
+                  Black Jaquet
+                </h4>
+                <strong>
+                  $%{ $i }00
+                </strong>
+              </a>
+            </li>
+          @end
+        </ul>
+      </TrendingSectionBody>
+    </TrendingSectionContainer>
+
+    <BlogPreviewSection />
+
+    <ServiceDetailsContainer>
+      <ul>
+        <ServiceDetail color="red">
+          <div class="icon-wrapper">
+            <div>
+              <i class="fa fa-truck" />
+            </div>
+          </div>
+          <div class="body">
+            <strong>Fast and free delivery</strong>
+            <span>Free delivery for all orders over $40</span>
+          </div>
+        </ServiceDetail>
+        <ServiceDetail color="teal">
+          <div class="icon-wrapper">
+            <div>
+              <i class="fa fa-headphones" />
+            </div>
+          </div>
+          <div class="body">
+            <strong>24/7 Customer Support</strong>
+            <span>Friendly 24/7 Customer support</span>
+          </div>
+        </ServiceDetail>
+        <ServiceDetail color="green">
+          <div class="icon-wrapper">
+            <div>
+              <i class="fa fa-money" />
+            </div>
+          </div>
+          <div class="body">
+            <strong>Money Guarantee</strong>
+            <span>We return money whithin 30 days</span>
+          </div>
+        </ServiceDetail>
+      </ul>
+    </ServiceDetailsContainer>
+
+    <Footer />
+  </DesignoSiteDesignContainer>
+@end
+
+@export default DesignoSiteDesign

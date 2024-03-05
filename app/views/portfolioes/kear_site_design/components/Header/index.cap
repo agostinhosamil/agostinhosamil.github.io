@@ -1,0 +1,88 @@
+@from 'capsule' import {
+  Image,
+  FlatImage
+}
+
+@from './styles.css' import {
+  Container,
+  MenuContainer,
+  MenuBody,
+  LogoWrapper,
+  MenuListWrapper,
+  BodyContainer,
+  CtaWrapper,
+  ImageWrapper,
+  Body,
+  Content
+}
+
+@def Header
+  <Container>
+    <MenuContainer>
+      <MenuBody>
+        <LogoWrapper>
+          <div>
+            <Image src="kear_site_design/logo-light.svg" />
+          </div>
+        </LogoWrapper>
+        <MenuListWrapper>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About us</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Contact us</a>
+            </li>
+          </ul>
+        </MenuListWrapper>
+        <CtaWrapper>
+          <ul>
+            <li>
+              <a href="#">Login</a>
+            </li>
+            <li class="menu-button">
+              <a href="#">
+                <i class="fa fa-bars" />
+              </a>
+            </li>
+          </ul>
+        </CtaWrapper>
+      </MenuBody>
+    </MenuContainer>
+    <BodyContainer>
+      <Body>
+        <Content>
+          <h1>A better life starts with a beautyful smile</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          </p>
+          <ul>
+            <li>
+              <a href="#">Book online</a>
+            </li>
+            <li>
+              <a class="outlined" href="#">Apointment</a>
+            </li>
+          </ul>
+        </Content>
+        <ImageWrapper>
+          <div class="content">
+            <FlatImage src="kear_site_design/doctor.jpg" />
+          </div>
+        </ImageWrapper>
+      </Body>
+    </BodyContainer>
+  </Container>
+@end

@@ -49,29 +49,29 @@
 
 <?php Capsule::Def ('ZirconSiteDesign', function ($args, CapsuleScopeContext $scope) {
 ?>
-<?php  Capsule::PartialRender ('Container', [], Capsule::CreateElement ('Styles', []), Capsule::CreateElement ('Header', []), Capsule::CreateElement ('InfoCardsWrapper', [], function ($args, CapsuleScopeContext $scope) {$arr3877060223ay = range(1, 3); for ( $i3877060223terator = 0; $i3877060223terator < count (is_array ($arr3877060223ay) ? $arr3877060223ay : []); $i3877060223terator++ ) {
-	$scope->i = \Saml::Array2Object ($arr3877060223ay[ $i3877060223terator ]);
+<?php  Capsule::PartialRender ('Container', [], Capsule::CreateElement ('Styles', []), Capsule::CreateElement ('Header', []), Capsule::CreateElement ('InfoCardsWrapper', [], function ($args, CapsuleScopeContext $scope) {$arr3028203559ay = range(1, 3); for ( $i3028203559terator = 0; $i3028203559terator < count (is_array ($arr3028203559ay) ? $arr3028203559ay : []); $i3028203559terator++ ) {
+	$scope->i = \Saml::Array2Object ($arr3028203559ay[ $i3028203559terator ]);
 
         
 
  Capsule::PartialRender ('InfoCard', [], Capsule::CreateElement ('InfoCardIcon', [], Capsule::CreateElement ('Image', ['src' => "icon-plan-m.svg"])), Capsule::CreateElement ('h3', [], 'Pricing Guide'), Capsule::CreateElement ('p', [], 'Lorem ipsum dolor sit amet, consectetur adipisicing elit,', 'sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'), Capsule::CreateElement ('div', ['class' => "button-wrapper"], Capsule::CreateElement ('a', ['role' => "button", 'href' => "#"], Capsule::CreateElement ('span', [], 'Learn more'), Capsule::CreateElement ('i', ['class' => "fa fa-arrow-right"]))));
 
-}}), Capsule::CreateElement ('FeaturesListContainer', [], Capsule::CreateElement ('FeaturesListBody', [], Capsule::CreateElement ('div', ['class' => "features-list-title-wrapper"], Capsule::CreateElement ('h1', [], 'Featues'), Capsule::CreateElement ('h3', [], 'User friendly easy')), Capsule::CreateElement ('FeaturesListsWrapper', [], Capsule::CreateElement ('FeaturesList', [], function ($args, CapsuleScopeContext $scope) {$arr6214060223ay = range(1, 5); for ( $i6214060223terator = 0; $i6214060223terator < count (is_array ($arr6214060223ay) ? $arr6214060223ay : []); $i6214060223terator++ ) {
-	$scope->i = \Saml::Array2Object ($arr6214060223ay[ $i6214060223terator ]);
+}}), Capsule::CreateElement ('FeaturesListContainer', [], Capsule::CreateElement ('FeaturesListBody', [], Capsule::CreateElement ('div', ['class' => "features-list-title-wrapper"], Capsule::CreateElement ('h1', [], 'Featues'), Capsule::CreateElement ('h3', [], 'User friendly easy')), Capsule::CreateElement ('FeaturesListsWrapper', [], Capsule::CreateElement ('FeaturesList', [], function ($args, CapsuleScopeContext $scope) {$arr8298203559ay = range(1, 5); for ( $i8298203559terator = 0; $i8298203559terator < count (is_array ($arr8298203559ay) ? $arr8298203559ay : []); $i8298203559terator++ ) {
+	$scope->i = \Saml::Array2Object ($arr8298203559ay[ $i8298203559terator ]);
 
               
 
  Capsule::PartialRender ('li', [], Capsule::CreateElement ('div', ['class' => "icon-container"], Capsule::CreateElement ('div', [], Capsule::CreateElement ('i', ['class' => "fa fa-cubes"]))), Capsule::CreateElement ('div', ['class' => "feature-details-content"], Capsule::CreateElement ('strong', [], 'Featues ', function($args, CapsuleScopeContext $scope){return $scope->i;}), Capsule::CreateElement ('p', [], 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod')));
 
-}}), Capsule::CreateElement ('FeaturesPreview', [], Capsule::CreateElement ('div', [], Capsule::CreateElement ('Image', ['src' => "phone-prev.png", 'alt' => "App Featues"]))), Capsule::CreateElement ('FeaturesList', [], function ($args, CapsuleScopeContext $scope) {$arr9055060223ay = range(1, 5); for ( $i9055060223terator = 0; $i9055060223terator < count (is_array ($arr9055060223ay) ? $arr9055060223ay : []); $i9055060223terator++ ) {
-	$scope->i = \Saml::Array2Object ($arr9055060223ay[ $i9055060223terator ]);
+}}), Capsule::CreateElement ('FeaturesPreview', [], Capsule::CreateElement ('div', [], Capsule::CreateElement ('Image', ['src' => "phone-prev.png", 'alt' => "App Featues"]))), Capsule::CreateElement ('FeaturesList', [], function ($args, CapsuleScopeContext $scope) {$arr5428203559ay = range(1, 5); for ( $i5428203559terator = 0; $i5428203559terator < count (is_array ($arr5428203559ay) ? $arr5428203559ay : []); $i5428203559terator++ ) {
+	$scope->i = \Saml::Array2Object ($arr5428203559ay[ $i5428203559terator ]);
 
               
 
  Capsule::PartialRender ('li', [], Capsule::CreateElement ('div', ['class' => "icon-container"], Capsule::CreateElement ('div', [], Capsule::CreateElement ('i', ['class' => "fa fa-cubes"]))), Capsule::CreateElement ('div', ['class' => "feature-details-content"], Capsule::CreateElement ('strong', [], 'Featues ', function($args, CapsuleScopeContext $scope){return $scope->i;}), Capsule::CreateElement ('p', [], 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod')));
 
-}})))), Capsule::CreateElement ('AppOverViewDetailsContainer', [], Capsule::CreateElement ('AppOverViewDetailsTitleWrapper', [], Capsule::CreateElement ('h1', [], 'App overview'), Capsule::CreateElement ('h3', [], 'Our App Featues')), Capsule::CreateElement ('AppOverViewDetailsBody', [], Capsule::CreateElement ('AppOverViewDetailsImageWrapper', [], Capsule::CreateElement ('div', [], Capsule::CreateElement ('Image', ['src' => "app-overview-image.png", 'alt' => "App overview"]))), Capsule::CreateElement ('AppOverViewDetailsContent', [], Capsule::CreateElement ('AppOverViewDetailsList', [], function ($args, CapsuleScopeContext $scope) {$arr2714060223ay = range(1, 4); for ( $i2714060223terator = 0; $i2714060223terator < count (is_array ($arr2714060223ay) ? $arr2714060223ay : []); $i2714060223terator++ ) {
-	$scope->i = \Saml::Array2Object ($arr2714060223ay[ $i2714060223terator ]);
+}})))), Capsule::CreateElement ('AppOverViewDetailsContainer', [], Capsule::CreateElement ('AppOverViewDetailsTitleWrapper', [], Capsule::CreateElement ('h1', [], 'App overview'), Capsule::CreateElement ('h3', [], 'Our App Featues')), Capsule::CreateElement ('AppOverViewDetailsBody', [], Capsule::CreateElement ('AppOverViewDetailsImageWrapper', [], Capsule::CreateElement ('div', [], Capsule::CreateElement ('Image', ['src' => "app-overview-image.png", 'alt' => "App overview"]))), Capsule::CreateElement ('AppOverViewDetailsContent', [], Capsule::CreateElement ('AppOverViewDetailsList', [], function ($args, CapsuleScopeContext $scope) {$arr3481203559ay = range(1, 4); for ( $i3481203559terator = 0; $i3481203559terator < count (is_array ($arr3481203559ay) ? $arr3481203559ay : []); $i3481203559terator++ ) {
+	$scope->i = \Saml::Array2Object ($arr3481203559ay[ $i3481203559terator ]);
 
               
 

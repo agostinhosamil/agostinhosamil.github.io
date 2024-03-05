@@ -12,8 +12,8 @@ $scope->title = !isset ($args['title']) ? null : $args [ 'title' ];
 $scope->paragraphs = !isset ($args['paragraphs']) ? null : $args [ 'paragraphs' ];
 $scope->rest = ArrayHelper::PropsBeyond (['children', 'title', 'paragraphs'], $args);
 ?>
-<?php  Capsule::PartialRender ('Container', [], Capsule::CreateElement ('TextSetSentence', array_merge ((is_array ($ref06021719026052e = $scope->rest) ? $ref06021719026052e : []), ['id' => base64_encode($scope->title)]), Capsule::CreateElement ('h1', [], function($args, CapsuleScopeContext $scope){return $scope->title;}), Capsule::CreateElement ('div', [], function ($args, CapsuleScopeContext $scope) {$arr8714060217ay = $scope->paragraphs; for ( $i8714060217terator = 0; $i8714060217terator < count (is_array ($arr8714060217ay) ? $arr8714060217ay : []); $i8714060217terator++ ) {
-	$scope->paragraph = \Saml::Array2Object ($arr8714060217ay[ $i8714060217terator ]);
+<?php  Capsule::PartialRender ('Container', [], Capsule::CreateElement ('TextSetSentence', array_merge ((is_array ($ref08354104036991e = $scope->rest) ? $ref08354104036991e : []), ['id' => base64_encode($scope->title)]), Capsule::CreateElement ('h1', [], function($args, CapsuleScopeContext $scope){return $scope->title;}), Capsule::CreateElement ('div', [], function ($args, CapsuleScopeContext $scope) {$arr8087203541ay = $scope->paragraphs; for ( $i8087203541terator = 0; $i8087203541terator < count (is_array ($arr8087203541ay) ? $arr8087203541ay : []); $i8087203541terator++ ) {
+	$scope->paragraph = \Saml::Array2Object ($arr8087203541ay[ $i8087203541terator ]);
 
           
 

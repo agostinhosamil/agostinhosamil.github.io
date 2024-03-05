@@ -1,0 +1,120 @@
+@from 'capsule' import Image
+
+@from './styles.css' import (
+  Container,
+  FooterBody,
+  FooterDetails
+)
+
+@def Footer
+  <Container>
+    <FooterBody>
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="company-data">
+            <div>
+              <Image src="kear_site_design/logo-light.svg" />
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="menu-lists-wrapper">
+            <div class="row">
+              <div class="col-md-4">
+                <h1>Company</h1>
+                <ul>
+                  <li>
+                    <a href="#">Home</a>
+                  </li>
+                  <li>
+                    <a href="#">About</a>
+                  </li>
+                  <li>
+                    <a href="#">Service</a>
+                  </li>
+                  <li>
+                    <a href="#">Contact us</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h1>Services</h1>
+                <ul>
+                  <li>
+                    <a href="#">Dental Care</a>
+                  </li>
+                  <li>
+                    <a href="#">Orat Surgery</a>
+                  </li>
+                  <li>
+                    <a href="#">Oral Hygiesrst</a>
+                  </li>
+                  <li>
+                    <a href="#">Teeth Cleaning</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-md-4">
+                <h1>Follow us</h1>
+                <ol>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-facebook" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-instagram" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-twitter" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-pinterest" />
+                    </a>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <FooterDetails>
+        <div>
+          <h3>Follow us</h3>
+        </div>
+        <div>
+          <span>
+            <i class="fa fa-ambulance" />
+          </span>
+          <data>
+            <strong>24 hours emergency</strong>
+            <p>
+              2-012-109
+            </p>
+          </data>
+        </div>
+        <div>
+          <span>
+            <i class="fa fa-medkit" />
+          </span>
+          <data>
+            <strong>Costumer services</strong>
+            <p>
+              3-112-109
+            </p>
+          </data>
+        </div>
+      </FooterDetails>
+    </FooterBody>
+  </Container>
+@end

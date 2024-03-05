@@ -1,0 +1,163 @@
+@import Image from 'capsule'
+
+@import Header from './components/Header'
+@import Footer from './components/Footer'
+
+@from './styles.css' import (
+  GlobalStyles,
+  Container,
+  Title,
+
+  WorkDetailsSectionContainer,
+  WorkDetailsSectionBody,
+
+  PageSectionContainer,
+  PageSectionBody,
+  PageSectionContentWrapper,
+
+  CardListWrapper
+)
+
+@def KearSiteDesign
+  <Container>
+    <GlobalStyles />
+    <Header />
+
+    <WorkDetailsSectionContainer>
+      <Title>
+        <h1>My skill depends on work</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        </p>
+      </Title>
+      <WorkDetailsSectionBody>
+        <ul>
+          @for $i in range(1, 6)
+            <li>
+              <div>
+                <span>
+                  <i class="fa fa-ambulance" />
+                </span>
+              </div>
+              <h4>Service Details %{ $i }</h4>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              </p>
+            </li>
+          @end
+        </ul>
+      </WorkDetailsSectionBody>
+    </WorkDetailsSectionContainer>
+
+    <PageSectionContainer>
+      <PageSectionBody>
+        <div class="row">
+          <div class="col-md-7 pr">
+            <PageSectionContentWrapper>
+              <h2>About us</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <a href="#" role="button">Lets talk</a>
+            </PageSectionContentWrapper>
+          </div>
+          <div class="col-md-5">
+            <div class="image-wrapper">
+              <div>
+                <Image src="kear_site_design/image1.jpg" alt="Service" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+    <PageSectionContainer>
+      <PageSectionBody>
+        <div class="row">
+          <div class="col-md-5">
+            <div class="image-wrapper">
+              <div>
+                <Image src="kear_site_design/image2.jpg" alt="Service" />
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 pl">
+            <PageSectionContentWrapper>
+              <h1>Fatest emergency departments</h1>
+              <p>
+                Lorem ipsum dolor sit amet, <b>consectetur</b> adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. <b>Excepteur</b> sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <a href="#" class="uncolored">
+                <i class="fa fa-play" />
+                <span>Watch video</span>
+              </a>
+            </PageSectionContentWrapper>
+          </div>
+        </div>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+
+    <PageSectionContainer>
+      <Title>
+        <h1>Our Doctors</h1>
+      </Title>
+      <PageSectionBody>
+        <CardListWrapper>
+          <ul>
+            <li>
+              <div>
+                <Image src="kear_site_design/doctor1.png" alt="Doctor" />
+              </div>
+              <strong>Michael Lee</strong>
+              <span>Neurology</span>
+              <p>
+                <i class="fa fa-phone" /> +61 234-3434-334
+              </p>
+            </li>
+            <li>
+              <div>
+                <Image src="kear_site_design/doctor2.png" alt="Doctor" />
+              </div>
+              <strong>Robert Ward</strong>
+              <span>Radiology</span>
+              <p>
+                <i class="fa fa-phone" /> +61 234-3434-354
+              </p>
+            </li>
+            <li>
+              <div>
+                <Image src="kear_site_design/doctor3.png" alt="Doctor" />
+              </div>
+              <strong>Fernanda Breei</strong>
+              <span>Cardiology</span>
+              <p>
+                <i class="fa fa-phone" /> +61 234-3434-335
+              </p>
+            </li>
+          </ul>
+        </CardListWrapper>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+    <Footer />
+  </Container>
+@end
+
+@export default KearSiteDesign

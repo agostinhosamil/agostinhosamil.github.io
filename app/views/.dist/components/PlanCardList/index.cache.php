@@ -17,16 +17,16 @@
 <?php Capsule::Def ('PlanCardList', function ($args, CapsuleScopeContext $scope) {
 $scope->plans = !isset ($args['plans']) ? [] : $args [ 'plans' ];
 ?>
-<?php  Capsule::PartialRender ('PlanCardListContainer', [], Capsule::CreateElement ('div', ['class' => "container"], Capsule::CreateElement ('div', ['class' => "x-product-wdgt"], Capsule::CreateElement ('div', ['class' => "container"], Capsule::CreateElement ('Title', [], Capsule::CreateElement ('span', [], 'Available plans if you wanna get in touch to talk about your project'), Capsule::CreateElement ('br', []), '👨🏾‍💻'), Capsule::CreateElement ('div', ['class' => "x-product-wdgt-row row wow bounceInLeft"], function ($args, CapsuleScopeContext $scope) {$arr1526060215ay = $scope->plans; for ( $i1526060215terator = 0; $i1526060215terator < count (is_array ($arr1526060215ay) ? $arr1526060215ay : []); $i1526060215terator++ ) {
-	$scope->line = \Saml::Array2Object ($arr1526060215ay[ $i1526060215terator ]);
+<?php  Capsule::PartialRender ('PlanCardListContainer', [], Capsule::CreateElement ('div', ['class' => "container"], Capsule::CreateElement ('div', ['class' => "x-product-wdgt"], Capsule::CreateElement ('div', ['class' => "container"], Capsule::CreateElement ('Title', [], Capsule::CreateElement ('span', [], 'Available plans if you wanna get in touch to talk about your project'), Capsule::CreateElement ('br', []), '👨🏾‍💻'), Capsule::CreateElement ('div', ['class' => "x-product-wdgt-row row wow bounceInLeft"], function ($args, CapsuleScopeContext $scope) {$arr8569203539ay = $scope->plans; for ( $i8569203539terator = 0; $i8569203539terator < count (is_array ($arr8569203539ay) ? $arr8569203539ay : []); $i8569203539terator++ ) {
+	$scope->line = \Saml::Array2Object ($arr8569203539ay[ $i8569203539terator ]);
 
               
 
- Capsule::PartialRender ('PlanCardRow', [], function ($args, CapsuleScopeContext $scope) {$arr5323060215ay = $scope->line; for ( $i5323060215terator = 0; $i5323060215terator < count (is_array ($arr5323060215ay) ? $arr5323060215ay : []); $i5323060215terator++ ) {
-	$scope->plan = \Saml::Array2Object ($arr5323060215ay[ $i5323060215terator ]);
+ Capsule::PartialRender ('PlanCardRow', [], function ($args, CapsuleScopeContext $scope) {$arr5138203539ay = $scope->line; for ( $i5138203539terator = 0; $i5138203539terator < count (is_array ($arr5138203539ay) ? $arr5138203539ay : []); $i5138203539terator++ ) {
+	$scope->plan = \Saml::Array2Object ($arr5138203539ay[ $i5138203539terator ]);
 
                   
-Capsule::PartialRender ('PlanCard', array_merge ((is_array ($ref06021519024343e = $scope->plan) ? $ref06021519024343e : []), []));
+Capsule::PartialRender ('PlanCard', array_merge ((is_array ($ref08353904036327e = $scope->plan) ? $ref08353904036327e : []), []));
 
 }});
 

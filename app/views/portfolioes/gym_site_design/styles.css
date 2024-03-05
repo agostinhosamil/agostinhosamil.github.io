@@ -1,0 +1,870 @@
+global.GlobalStyles {
+  *, *:after, *:before {
+    list-style: none;
+    list-style-type: none;
+    transition: all .3s ease-in-out;
+  }
+
+  img, svg {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+}
+
+Container {
+  width: 100%;
+}
+
+Title[color="#ffffff"] {
+  width: 100%;
+  height: auto;
+  padding: 70px 20% 45px;
+  text-align: center;
+
+  h5 {
+    color: #ff776f;
+    font-size: 17px;
+    font-weight: 600;
+    margin: 0px;
+    padding: 0px;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    color: var(--color);
+    font-weight: 800;
+    font-size: 32px;
+    line-height: 30px;
+    text-transform: uppercase;
+    margin-top: 15px;
+  }
+
+  p {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0% 0px;
+    font-weight: 300;
+    font-size: 14px;
+    color: #a9a9a9;
+  }
+
+  @media (max-width: 1030px) {
+    padding: 70px 8% 45px;
+  }
+
+  @media (max-width: 750px) {
+    padding-top: 30px;
+  }
+
+  @media (max-width: 480px) {
+    h5 {
+      font-size: 13px;
+    }
+
+    h2 {
+      font-size: 23px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+section.PageSectionContainer[background-color="#1a1a1a"] {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+PageSectionBody {
+  width: 70%;
+
+  @media (max-width: 1030px) {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+ul.ParthnersList {
+  width: 100%;
+  height: auto;
+  margin: 0px -30px;
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  li {
+    width: 25%;
+    padding: 30px;
+    opacity: .8;
+
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: 750px) {
+      width: calc(100% / 3);
+    }
+
+    @media (max-width: 550px) {
+      width: 50%;
+    }
+
+    @media (max-width: 400px) {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 1030px) {
+    margin: 0px;
+  }
+}
+
+AboutCompanySectionContentWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 180px 0px 130px;
+
+  div {
+    width: 100%;
+    max-width: 410px;
+    max-height: 410px;
+    position: relative;
+    background-color: #ff4a41;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin-left: 70px;
+
+    img {
+      width: 90%;
+      margin-right: -80px;
+      position: relative;
+      z-index: 1;
+    }
+
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 7px solid #ff4a41;
+      border-radius: 12px;
+      position: absolute;
+      top: -40px;
+      left: -70px;
+    }
+  }
+
+  ul {
+    padding: 0px 0px 0px 65px;
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    li {
+      margin: 8px 0px;
+
+      strong {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #ff4a41;
+        font-weight: 400;
+      }
+
+      h2 {
+        padding: 0px;
+        margin: 0px;
+        font-size: 43px;
+        font-weight: 700;
+        color: #ffffff;
+        line-height: 44px;
+      }
+
+      p {
+        padding: 10px px;
+        font-size: 13px;
+        color: #f9f9f9;
+        line-height: 15px;
+      }
+
+      a {
+        display: inline-block;
+        padding: 12px 24px;
+        font-weight: 400;
+        font-size: 13px;
+        color: #ffffff;
+        background-color: #ff4a41;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    padding: 100px 0px 50px;
+
+    div {
+      max-width: 250px;
+      max-height: 250px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    padding: 5px 0px 0px;
+
+    div {
+      max-width: 180px;
+      max-height: 180px;
+    }
+
+    ul li h2 {
+      font-size: 25px;
+      line-height: 26px;
+    }
+  }
+
+  @media (max-width: 550px) {
+    flex-direction: column-reverse;
+
+    * {
+      text-align: center;
+    }
+
+    div {
+      margin: 80px 0px 0px;
+
+      img {
+        margin-right: unset;
+      }
+
+      &:before {
+        top: -25px;
+        left: -47px;
+      }
+    }
+
+    ul {
+      padding: 0px;
+    }
+  }
+}
+
+ServiceSectionBody {
+  width: 100%;
+  padding: 110px 0px;
+
+  h1 {
+    display: block;
+    width: fit-content;
+    text-align: center;
+    font-size: 37px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    position: relative;
+    margin: auto;
+
+    b {
+      margin-left: 12px;
+      color: #ff4a41;
+    }
+
+    &:after {
+      content: '';
+      width: 52px;
+      display: block;
+      background-color: #ff4a41;
+      position: absolute;
+      right: -94px;
+      height: 2px;
+      top: calc(50% + 2px);
+    }
+
+    &:before {
+      content: '';
+      width: 52px;
+      display: block;
+      background-color: #ff4a41;
+      position: absolute;
+      right: -78px;
+      height: 2px;
+      top: calc(50% - 4px);
+    }
+  }
+
+  ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 45px -10px 0px;
+    flex-wrap: wrap;
+
+    li {
+      width: calc(100% / 3);
+      padding: 10px;
+
+      @media (max-width: 700px) {
+        width: 50%;
+      }
+
+      @media (max-width: 450px) {
+        width: 100%;
+      }
+    }
+
+    @media (max-width: 1030px) {
+      margin: 45px auto 0px;
+    }
+  }
+
+  @media (max-width: 830px) {
+    padding: 55px 0px;
+  }
+
+  @media (max-width: 550px) {
+    text-align: center;
+    padding: 25px 0px;
+
+    h1 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+ServiceCard {
+  width: 100%;
+  background-color: #000000;
+  border-radius: 8px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 25px;
+
+  div {
+    width: 100%;
+    margin-bottom: 25px;
+
+    img {
+      width: 100%;
+      border-top-right-radius: 8px;
+      border-top-left-radius: 8px;
+    }
+  }
+
+  strong {
+    display: block;
+    padding: 0px 25px 9px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #ffffff;
+  }
+
+  p {
+    display: -webkit-box;
+    padding: 0px 25px 25px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0px;
+    color: #7c7c7c;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    max-height: 70px;
+  }
+}
+
+ul.PlanCardList {
+  padding: 0px 0px 80px;
+  margin: 0px -20px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  li {
+    width: calc(100% / 3);
+    min-height: 440px;
+    position: relative;
+    padding: 20px;
+
+    div.colored {
+      background-color: #fd4b41;
+
+      div {
+        h5 {
+          color: #ffffff;
+        }
+
+        data {
+          border-color: #ff776f;
+
+          p i {
+            color: #ffffff;
+          }
+        }
+      }
+
+      a {
+        background-color: #ffffff;
+      }
+    }
+  }
+
+  @media (max-width: 900px) {
+    margin: 0px;
+
+    li {
+      width: 50%;
+    }
+  }
+
+  @media (max-width: 700px) {
+    li {
+      width: 100%;
+      padding: 20px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    padding: 0px;
+
+    li {
+      padding: 20px 0px;
+    }
+  }
+}
+
+PlanCard {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  background-color: #1a1a1a;
+  border-radius: 12px;
+  padding: 70px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h5 {
+      font-weight: 600;
+      color: #c9c9c9;
+      font-size: 23px;
+      line-height: 17px;
+    }
+
+    strong {
+      font-weight: 800;
+      color: #ffffff;
+      font-size: 29px;
+    }
+
+    data {
+      width: 100%;
+      padding: 20px 0px;
+      margin-top: 12px;
+      border-top: 1px solid #282828;
+      display: block;
+
+      p {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+       i {
+        color: #fd4b41;
+        font-size: 25px;
+       }
+
+       span {
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 13px;
+        display: inline-block;
+        margin-left: 13px;
+       }
+      }
+    }
+  }
+
+  a {
+    display: block;
+    width: max-content;
+    padding: 12px 24px;
+    border-radius: 4px;
+    border: 1px solid #fd4b41;
+    color: #fd4b41;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 0px auto;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+ul.TrainersCardList {
+  width: 100%;
+  padding: 0px 0px 70px;
+  margin: 0px -20px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  li {
+    width: calc(100% / 3);
+    padding: 20px;
+
+    div {
+      width: 100%;
+      background-color: #000000;
+      border-radius: 8px;
+      position: relative;
+
+      img {
+        width: 100%;
+        border-radius: inherit;
+      }
+
+      data {
+        position: absolute;
+        bottom: 5%;
+        width: 70%;
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        left: 0px;
+        right: 0px;
+        background-color: #191919;
+        padding: 11px 18px;
+        border-radius: 9px;
+        text-align: center;
+        color: #ffffff;
+
+        span {
+          font-weight: 100;
+          font-size: 12px;
+          display: block;
+          margin-top: 5px;
+        }
+
+        @media (max-width: 350px) {
+          padding: 5px 14px;
+          border-radius: 4;
+
+          data {
+            width: max-content;
+            padding: 14px;
+
+            span {
+              font-size: 10px;
+              margin-top: 1px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  li.colored div data {
+    background-color: #fd4b41;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+
+    * {
+      color: #ffffff;
+    }
+  }
+
+  @media (max-width: 1030px) {
+    margin: 0px;
+  }
+
+  @media (max-width: 800px) {
+    padding-bottom: 20px;
+
+    li {
+      width: 50%;
+      padding: 10px;
+    }
+  }
+
+  @media (max-width: 800px) {
+    padding-bottom: 15px;
+
+    li {
+      width: 100%;
+      padding: 10px 0px;
+    }
+  }
+}
+
+ScheduleListsWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding-bottom: 70px;
+
+  @media (max-width: 1030px) {
+    justify-content: flex-start;
+    overflow: scroll clip;
+    padding-bottom: 18px;
+
+    &::-webkit-scrollbar-track {
+      background: none transparent scroll repeat 0% 0%;
+    }
+
+    &::-webkit-scrollbar {
+      background-color: transparent;
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #ff776f;
+      border-radius: 15px;
+      height: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #E06058;
+    }
+  }
+}
+
+ScheduleList {
+  width: calc(100% / 7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1030px) {
+    min-width: 138px;
+  }
+}
+
+ScheduleListItem[color="#353334"] {
+  width: 100%;
+  padding: 10px;
+  height: auto;
+
+  * {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  div {
+    width: 100%;
+    background-color: var(--color);
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 8px;
+    color: rgb(255 255 255 / 83%);
+
+    i {
+      font-size: 17px;
+    }
+
+    span {
+      font-size: 12px;
+    }
+  }
+}
+
+ProductsCardListWrapper {
+  width: 100%;
+  position: relative;
+  padding: 30px 45px 70px;
+
+  @media (max-width: 830px) {
+    padding: 0px 45px 0px;
+  }
+}
+
+ul.ProductsCardList {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  padding: 10px;
+
+  li {
+    width: 310px;
+    margin: 0px 20px 0px 0px;
+
+    @media (max-width: 900px) {
+      width: 180px;
+    }
+  }
+}
+
+ProductCard {
+  width: 230px;
+  background-color: transparent;
+  box-shadow: 0px 0px 20px rgb(0 0 0 / 52%);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+
+  div {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 22px;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  strong {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 400;
+  }
+
+  span {
+    display: block;
+    width: 100%;
+    padding: 1px 0px 9px;
+    color: #f6473f;
+    font-size: 25px;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 14px;
+    color: #ffffff;
+  }
+
+  @media (max-width: 900px) {
+    width: 180px;
+  }
+}
+
+ProductsCardListNavigation {
+  width: 100%;
+  height: max-content;
+  position: absolute;
+  top: 0px;
+  margin: auto;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+
+  div {
+    width: max-content;
+    display: inline-block;
+    margin-top: -50px;
+
+    button {
+      background-color: transparent;
+      border: 0px;
+      outline: 0px;
+      font-size: 50px;
+      font-weight: 500;
+      color: #ffffff;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+GallerySectionBody {
+  width: 100%;
+  height: auto;
+  padding: 0px 0px 70px;
+
+  ul {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    li {
+      width: 25%;
+      padding: 8px;
+
+      div {
+        width: 100%;
+
+        img {
+          width: 100%;
+          border-radius: 12px;
+        }
+      }
+
+      @media (max-width: 750px) {
+        width: calc(100% / 3);
+      }
+
+      @media (max-width: 580px) {
+        padding: 5px;
+        width: 50%;
+
+        div img {
+          border-radius: 5px;
+        }
+      }
+
+      @media (max-width: 420px) {
+        padding: 5px 0px;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: 750px) {
+    padding-bottom: 30px;
+  }
+}

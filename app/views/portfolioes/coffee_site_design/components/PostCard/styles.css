@@ -1,0 +1,96 @@
+PostCardContainer {
+  width: 280px;
+
+  a {
+    width: 100%;
+    display: flex;
+    height: auto;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: #d7cfc2;
+    border-radius: 15px;
+
+    div {
+      width: 100%;
+      margin: 0px 0px 20px;
+
+      img {
+        width: 100%;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+    }
+
+    strong {
+      display: inline-block;
+      padding: 4px 11px 3px;
+      background-color: #6f544d;
+      color: #ffffff;
+      font-size: 11px;
+      font-weight: 600;
+      border-radius: 5px;
+      margin: 0px 22px;
+    }
+
+    h4 {
+      font-size: 18px;
+      font-weight: 700;
+      color: #320200;
+      display: -webkit-box;
+      margin: 8px 0px 13px;
+      padding: 0px 20px;
+      overflow: hidden;
+      height: 83px;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+    }
+
+    data {
+      width: 100%;
+      padding: 0px 20px 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      span {
+        display: inline-flex;
+        font-size: 11px;
+        color: #404040;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+
+        i {
+          margin-right: 7px;
+          font-size: 16px;
+          margin-top: -5px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    width: 220px;
+  }
+
+  @media (max-width: 400px) {
+    a h4 {
+      font-size: 13px;
+      line-height: 14px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    width: 170px;
+
+    a data {
+      flex-direction: column;
+
+      span {
+        margin: 7px 0px;
+      }
+    }
+  }
+}

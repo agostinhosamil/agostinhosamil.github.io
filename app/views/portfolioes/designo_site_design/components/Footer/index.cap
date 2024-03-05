@@ -1,0 +1,156 @@
+@import Image from 'capsule'
+
+@from './styles.css' import (
+  Container,
+  RegisterSectionContainer,
+  CompanyInfoWrapper,
+  MenuListsWrapper,
+  CopyData
+)
+
+@def Footer
+  <Container>
+    <RegisterSectionContainer>
+      <h1>Get 10% off</h1>
+      <p>Be the first to get the latest news about trends, promotions and much more!</p>
+      <div>
+        <form method="post" action="/">
+          <input type="text" placeholder="Enter your email" autocomplete="off" autocapitalize="off" spellcheck="false" />
+          <button type="submit">
+            <span>Join now</span>
+          </button>
+        </form>
+      </div>
+    </RegisterSectionContainer>
+    <div class="row">
+      <div class="col-lg-4">
+        <CompanyInfoWrapper>
+          <div>
+            <Image src="designo_site_design/logo-light.svg" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+          </p>
+          <span>designo@gmail.com</span>
+          <span>+244 923 285 171 - +244 946 185 297</span>
+          <ul>
+            <li>
+              <a href="#">
+                <i class="fa fa-facebook" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-instagram" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-twitter" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-youtube" />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i class="fa fa-pinterest" />
+              </a>
+            </li>
+          </ul>
+        </CompanyInfoWrapper>
+      </div>
+      <div class="col-lg-8">
+        <MenuListsWrapper>
+          <div class="row">
+            <div class="col-md-3">
+              <h1>Company</h1>
+              <ul class="x-menu">
+                <li>
+                  <a href="#">About us</a>
+                </li>
+                <li>
+                  <a href="#">Careers</a>
+                </li>
+                <li>
+                  <a href="#">Affiliate</a>
+                </li>
+                <li>
+                  <a href="#">Blogs</a>
+                </li>
+                <li>
+                  <a href="#">Contact us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h1>Shop</h1>
+              <ul class="x-menu">
+                <li>
+                  <a href="#">New arrivals</a>
+                </li>
+                <li>
+                  <a href="#">Accessories</a>
+                </li>
+                <li>
+                  <a href="#">Men</a>
+                </li>
+                <li>
+                  <a href="#">Women</a>
+                </li>
+                <li>
+                  <a href="#">Shop all</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h1>Help</h1>
+              <ul class="x-menu">
+                <li>
+                  <a href="#">Customer service</a>
+                </li>
+                <li>
+                  <a href="#">My account</a>
+                </li>
+                <li>
+                  <a href="#">Find a store</a>
+                </li>
+                <li>
+                  <a href="#">Legal & Privacy</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+                <li>
+                  <a href="#">Gift Card</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h1>Opening Time</h1>
+              <ul>
+                <li>
+                  <span>Mon - Fri, 8AM - 9MP</span>
+                </li>
+                <li>
+                  <span>Sat - Fri, 9AM - 8PM</span>
+                </li>
+                <li>
+                  <span>Sun, Closed</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </MenuListsWrapper>
+      </div>
+    </div>
+    <div class="row">
+      <CopyData>
+        <span>Designo - 2024, all rights reserved.</span>
+      </CopyData>
+    </div>
+  </Container>
+@end

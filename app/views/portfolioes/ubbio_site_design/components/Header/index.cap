@@ -1,0 +1,73 @@
+@import Image from 'capsule'
+
+@from './styles.css' import (
+  Body,
+  MenuList,
+  Container,
+  BodyContent,
+  LogoWrapper,
+  MenuContainer,
+  MenuIconsList
+)
+
+@def Header
+  <Container>
+    <MenuContainer>
+      <LogoWrapper>
+        <div>
+          <Image src="ubbio_site_design/logo-light.svg" alt="Logo" />
+        </div>
+      </LogoWrapper>
+
+      <MenuList>
+        <li class="collapse">
+          <button type="button">
+            <i class="fa fa-bars" />
+          </button>
+        </li>
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Furniture</a>
+        </li>
+        <li>
+          <a href="#">Shop</a>
+        </li>
+        <li>
+          <a href="#">Page</a>
+        </li>
+        <li>
+          <a href="#">Contact</a>
+        </li>
+      </MenuList>
+
+      <MenuIconsList>
+        <li>
+          <a href="#">
+            <i class="fa fa-search" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-heart" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fa fa-shopping-cart" />
+          </a>
+        </li>
+      </MenuIconsList>
+    </MenuContainer>
+    <Body>
+      <BodyContent>
+        <h1>Home Modern Furniture</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+        <a href="#" role="button">Shop Now</a>
+      </BodyContent>
+    </Body>
+  </Container>
+@end
+
+@export default Header

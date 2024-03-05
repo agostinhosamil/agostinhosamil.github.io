@@ -1,0 +1,48 @@
+@import Image from 'capsule'
+
+@from './styles.css' import (
+  Body,
+  Poster,
+  Container,
+  DataWrapper,
+  PlayerButton,
+  PlayerButtonWrapper
+)
+
+@def Ad ($subject, $title, $description, $link, $videoPoster)
+  <Container>
+    <Body>
+      <DataWrapper>
+        @if !empty(trim($subject))
+          <strong>
+            %{ $subject }
+          </strong>
+        @end
+        <h1>
+          %{ $title }
+        </h1>
+        <p>
+          %{ $description }
+        </p>
+        @if !empty(trim($link))
+          <a href=%{ $link } role="button" target="_blank">
+            <span>View property</span>
+            <i class="fa fa-long-arrow-right" />
+          </a>
+        @end
+      </DataWrapper>
+    </Body>
+    <Poster>
+      <div>
+        <Image src=%{ $videoPoster } alt="Property Ad" />
+      </div>
+    </Poster>
+    <PlayerButtonWrapper>
+      <PlayerButton>
+        <span>
+          <i class="fa fa-play" />
+        </span>
+      </PlayerButton>
+    </PlayerButtonWrapper>
+  </Container>
+@end

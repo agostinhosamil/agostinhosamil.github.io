@@ -10,8 +10,8 @@
 <?php Capsule::Def ('TextSetsLinks', function ($args, CapsuleScopeContext $scope) {
 $scope->sets = !isset ($args['sets']) ? null : $args [ 'sets' ];
 ?>
-<?php  Capsule::PartialRender ('Container', [], function ($args, CapsuleScopeContext $scope) {$arr730060217ay = $scope->sets; for ( $i730060217terator = 0; $i730060217terator < count (is_array ($arr730060217ay) ? $arr730060217ay : []); $i730060217terator++ ) {
-	$scope->set = \Saml::Array2Object ($arr730060217ay[ $i730060217terator ]);
+<?php  Capsule::PartialRender ('Container', [], function ($args, CapsuleScopeContext $scope) {$arr1988203541ay = $scope->sets; for ( $i1988203541terator = 0; $i1988203541terator < count (is_array ($arr1988203541ay) ? $arr1988203541ay : []); $i1988203541terator++ ) {
+	$scope->set = \Saml::Array2Object ($arr1988203541ay[ $i1988203541terator ]);
 
       
 

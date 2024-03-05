@@ -1,0 +1,92 @@
+@import Image from 'capsule'
+
+@from './styles.css' import {
+  Container,
+  MenuContainer,
+  LogoWrapper,
+  MenuListContainer,
+  CtaWrapper,
+  HeaderBody,
+  HeaderContentWrapper,
+  HeaderImageWrapper
+}
+
+@def Header
+  <Container>
+    <MenuContainer>
+      <LogoWrapper>
+        <div>
+          <Image src="gym_site_design/logo-primary.svg" />
+        </div>
+      </LogoWrapper>
+      <MenuListContainer>
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Programs</a>
+          </li>
+          <li>
+            <a href="#">Schedule</a>
+          </li>
+          <li>
+            <a href="#">Trainers</a>
+          </li>
+          <li>
+            <a href="#">Contact us</a>
+          </li>
+        </ul>
+      </MenuListContainer>
+      <CtaWrapper>
+        <ul>
+          <li>
+            <a class="uncolored" href="#">
+              <i class="fa fa-user" />
+              <span>Login</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span>Register</span>
+            </a>
+          </li>
+          <li class="menu-button-wrapper">
+            <a href="#">
+              <i class="fa fa-bars" />
+            </a>
+          </li>
+        </ul>
+      </CtaWrapper>
+    </MenuContainer>
+    <HeaderBody>
+      <HeaderContentWrapper>
+        <h1>Transform your body</h1>
+        <p>
+          We help you to create shape of your body and saty healthy
+        </p>
+        <a href="#" role="button">Join now</a>
+        <ul>
+          <li>
+            <strong>120 K</strong>
+            <span>Happy clients</span>
+          </li>
+          <li>
+            <strong>24</strong>
+            <span>Years experience</span>
+          </li>
+          <li>
+            <strong>45+</strong>
+            <span>Expert trainers</span>
+          </li>
+        </ul>
+      </HeaderContentWrapper>
+
+      <HeaderImageWrapper>
+        <div>
+          <Image src="gym_site_design/trainers.png" alt="Trainers" />
+        </div>
+      </HeaderImageWrapper>
+    </HeaderBody>
+  </Container>
+@end

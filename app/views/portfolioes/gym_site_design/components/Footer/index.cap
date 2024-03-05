@@ -1,0 +1,99 @@
+@import Image from 'capsule'
+
+@from './styles.css' import {
+  Container,
+  FooterBody,
+  DataWrapper,
+  FooterMenuListsWrapper,
+  FooterMenuListWrapper,
+  SocialMediaLinksWrapper
+}
+
+@def Footer
+  <Container>
+    <FooterBody>
+      <DataWrapper>
+        <div>
+          <Image src="gym_site_design/logo-primary-light.svg" alt="" />
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+        </p>
+      </DataWrapper>
+      <FooterMenuListsWrapper>
+        <FooterMenuListWrapper>
+          <h1>Menu</h1>
+          <ul>
+            <li>
+              <a href="#">Home page</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Community</a>
+            </li>
+            <li>
+              <a href="#">Progress</a>
+            </li>
+          </ul>
+        </FooterMenuListWrapper>
+        <FooterMenuListWrapper>
+          <h1>Services</h1>
+          <ul>
+            <li>
+              <a href="#">Home page</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Community</a>
+            </li>
+            <li>
+              <a href="#">Progress</a>
+            </li>
+          </ul>
+        </FooterMenuListWrapper>
+        <FooterMenuListWrapper>
+          <h1>Pricing</h1>
+          <ul>
+            <li>
+              <a href="#">Home page</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Community</a>
+            </li>
+            <li>
+              <a href="#">Progress</a>
+            </li>
+          </ul>
+        </FooterMenuListWrapper>
+      </FooterMenuListsWrapper>
+      <SocialMediaLinksWrapper>
+        <h1>Follow us:</h1>
+        <ul>
+          <li>
+            <a href="https://www.twitter.com/fitness-gym" target="_blank">
+              <i class="fa fa-twitter" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/fitness-gym" target="_blank">
+              <i class="fa fa-facebook" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/fitness-gym" target="_blank">
+              <i class="fa fa-instagram" />
+            </a>
+          </li>
+        </ul>
+      </SocialMediaLinksWrapper>
+    </FooterBody>
+  </Container>
+@end

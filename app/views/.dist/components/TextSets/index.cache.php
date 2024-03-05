@@ -10,11 +10,11 @@
 $scope->sets = !isset ($args['sets']) ? null : $args [ 'sets' ];
 ?>
 <?php  Capsule::PartialRender ('Fragment', [], function ($args, CapsuleScopeContext $scope) {if ( is_array ($scope->sets) && $scope->sets ) {
-Capsule::PartialRender ('Fragment', [], function ($args, CapsuleScopeContext $scope) {$arr848060217ay = $scope->sets; for ( $i848060217terator = 0; $i848060217terator < count (is_array ($arr848060217ay) ? $arr848060217ay : []); $i848060217terator++ ) {
-	$scope->set = \Saml::Array2Object ($arr848060217ay[ $i848060217terator ]);
+Capsule::PartialRender ('Fragment', [], function ($args, CapsuleScopeContext $scope) {$arr5299203541ay = $scope->sets; for ( $i5299203541terator = 0; $i5299203541terator < count (is_array ($arr5299203541ay) ? $arr5299203541ay : []); $i5299203541terator++ ) {
+	$scope->set = \Saml::Array2Object ($arr5299203541ay[ $i5299203541terator ]);
         
 
- Capsule::PartialRender ('Fragment', [], Capsule::CreateElement ('TextSet', array_merge ((is_array ($ref06021719028405e = $scope->set) ? $ref06021719028405e : []), [])), Capsule::CreateElement ('br', []));
+ Capsule::PartialRender ('Fragment', [], Capsule::CreateElement ('TextSet', array_merge ((is_array ($ref08354104034805e = $scope->set) ? $ref08354104034805e : []), [])), Capsule::CreateElement ('br', []));
 
 }});
 }}); ?>

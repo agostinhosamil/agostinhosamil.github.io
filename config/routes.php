@@ -26,10 +26,16 @@ namespace Application\Routes\Drawing {
   //   get ('register');
   // });
 
-  group('/portfolio/sites', '@portfolios', function () {
+  group('/portfolio/sites', '@portfolioes', function () {
     get('utk_site_design');
     get('zircon_site_design');
     get('banking_site_design');
+    get('ubbio_site_design');
+    get('fax_estate_site_design');
+    get('designo_site_design');
+    get('kear_site_design');
+    get('gym_site_design');
+    get('coffee_site_design');
   });
 
   // get ('/mytest', '@pages/mytest');

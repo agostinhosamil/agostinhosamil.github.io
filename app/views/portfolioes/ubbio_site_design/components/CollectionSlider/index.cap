@@ -1,0 +1,78 @@
+@import Image from 'capsule'
+
+@from './styles.css' import (
+  ListItem
+)
+
+@import SliderSection from '../SliderSection'
+
+@export ListItem
+
+/**
+@def CollectionSlider
+  <Container>
+    <Title>Our Collection</Title>
+    <ListWrapper>
+      <List>
+        @for $i in range(1, 10)
+          <ListItem>
+            <div class="slide-content">
+              <div class="image-wrapper">
+                <Image src="ubbio_site_design/tv.png" alt="Tv" />
+              </div>
+              <h5>HD Television</h5>
+              <ul>
+                @for $n in range(1, 5)
+                  <li>
+                    <span>
+                      <i class="fa fa-star" />
+                    </span>
+                  </li>
+                @end
+              </ul>
+              <h6>$40.00</h6>
+              <a href="#" role="button">Add to cart</a>
+            </div>
+          </ListItem>
+        @end
+      </List>
+      <ControllsWrapper>
+        <div>
+          <button class="left">
+            <i class="fa fa-angle-left" />
+          </button>
+          <button class="right">
+            <i class="fa fa-angle-right" />
+          </button>
+        </div>
+      </ControllsWrapper>
+    </ListWrapper>
+  </Container>
+@end
+*/
+
+@def CollectionSlider
+  <SliderSection title="Home SliderSection">
+    @for $i in range(1, 10)
+      <ListItem>
+        <div class="slide-content">
+          <div class="image-wrapper">
+            <Image src="ubbio_site_design/tv.png" alt="Tv" />
+          </div>
+          <h5>HD Television (%{ $i })</h5>
+          <ul>
+            @for $n in range(1, 5)
+              <li>
+                <span>
+                  <i class="fa fa-star" />
+                </span>
+              </li>
+            @end
+          </ul>
+          <h6>$40.00</h6>
+          <a href="#" role="button">Add to cart</a>
+        </div>
+      </ListItem>
+    @end
+  </SliderSection>
+@end

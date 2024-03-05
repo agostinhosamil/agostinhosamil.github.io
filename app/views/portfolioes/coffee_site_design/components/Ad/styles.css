@@ -1,0 +1,87 @@
+AdContainer {
+  width: 100%;
+  min-height: 750px;
+  position: relative;
+  margin: 70px 0px 0px;
+
+  div {
+    width: 100%;
+    min-height: inherit;
+    background-attachment: scroll;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    data {
+      width: 100%;
+      min-height: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(244 244  244 / 60%);
+      padding: 70px 0px;
+
+      * {
+        text-align: center;
+        color: #320200;
+      }
+
+      h1 {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        width: 60%;
+        font-size: 53px;
+        font-weight: 800;
+        line-height: 50px;
+      }
+
+      h2 {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        width: 60%;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 30px;
+        padding: 15px 0px 25px;
+      }
+
+      p {
+        display: inline-block;
+        margin: 0px;
+        padding: 0px;
+        width: 60%;
+        font-weight: 2s00;
+        font-size: 13px;
+        line-height: 22px;
+      }
+
+      a {
+        display: inline-block;
+        padding: 18px 32px;
+        border-radius: 32px;
+        background-color: #320200;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 600;
+        margin-top: 37px;
+      }
+
+      @media (max-width: 400px) {
+        padding: 130px 0px;
+
+        h1 {
+          font-size: 38px;
+          line-height: 38px;
+        }
+
+        a {
+          font-size: 11px;
+          padding: 7px 15px 6px;
+        }
+      }
+    }
+  }
+}

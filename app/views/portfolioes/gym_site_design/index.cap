@@ -1,0 +1,332 @@
+@import Image from 'capsule'
+
+@import Header from './components/Header'
+@import Footer from './components/Footer'
+
+@from './styles.css' import {
+  GlobalStyles,
+  Title,
+  Container,
+  PageSectionContainer,
+  PageSectionBody,
+  ParthnersList,
+  ServiceSectionBody,
+  ServiceCard,
+  PlanCardList,
+  PlanCard,
+  TrainersCardList,
+  AboutCompanySectionContentWrapper,
+
+  ScheduleListsWrapper,
+  ScheduleListItem,
+  ScheduleList,
+
+  ProductCard,
+  ProductsCardList,
+  ProductsCardListWrapper,
+  ProductsCardListNavigation,
+
+  GallerySectionBody
+}
+
+@def GymSiteDesign
+  <Container>
+    <GlobalStyles />
+    <Header />
+    <PageSectionContainer>
+      <PageSectionBody>
+        <ParthnersList>
+          @each $i in range(1, 8)
+            <li>
+              <Image src="gym_site_design/parthner.png" />
+            </li>
+          @end
+        </ParthnersList>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+    <PageSectionContainer backgroundColor="#000000">
+      <PageSectionBody>
+        <AboutCompanySectionContentWrapper>
+          <div>
+            <Image src="gym_site_design/trainer1.png" />
+          </div>
+          <ul>
+            <li>
+              <strong>About us</strong>
+            </li>
+            <li>
+              <h2>Welcome to our fitness gym</h2>
+            </li>
+            <li>
+              <p>
+                I made the right choise choosing the fitclub and by
+                choosing the right plan and program I already achieved my ideal body
+              </p>
+            </li>
+            <li>
+              <a href="#" role="button">
+                Explore more
+              </a>
+            </li>
+          </ul>
+        </AboutCompanySectionContentWrapper>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+    <PageSectionContainer>
+      <PageSectionBody>
+        <ServiceSectionBody>
+          <h1>Our <b>services</b></h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          </p>
+          <ul>
+            @for $i in range(1, 9)
+              <li>
+                <ServiceCard>
+                  <div>
+                    <Image src="gym_site_design/image1.jpg" />
+                  </div>
+                  <strong>Service Name %{ $i }</strong>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                  </p>
+                </ServiceCard>
+              </li>
+            @end
+          </ul>
+        </ServiceSectionBody>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+    <PageSectionContainer backgroundColor="#000000">
+      <PageSectionBody>
+        <Title>
+          <h5>Pricing plan</h5>
+          <h2>Member special plan</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          </p>
+        </Title>
+        <PlanCardList>
+          <li>
+            <PlanCard>
+              <div>
+                <h5>Daily Plan</h5>
+                <strong>$16</strong>
+                <data>
+                  <p>
+                    <i class="fa fa-check-circle-o" />
+                    <span>Connection with coach</span>
+                  </p>
+                  <p>
+                    <i class="fa fa-check-circle-o" />
+                    <span>3 hour of practice</span>
+                  </p>
+                </data>
+              </div>
+              <a href="#" role="button">Join now</a>
+            </PlanCard>
+          </li>
+          <li>
+            <PlanCard class="colored">
+              <div>
+                <h5>Weekly Plan</h5>
+                <strong>$24</strong>
+                <data>
+                  <p>
+                    <i class="fa fa-check-circle-o" />
+                    <span>Consultation with coach</span>
+                  </p>
+                  <p>
+                    <i class="fa fa-check-circle-o" />
+                    <span>6 hour of practice</span>
+                  </p>
+                  <p>
+                    <i class="fa fa-check-circle-o" />
+                    <span>Free Consultation</span>
+                  </p>
+                </data>
+              </div>
+              <a href="#" role="button">Join now</a>
+            </PlanCard>
+          </li>
+          <li>
+            <PlanCard>
+              <div>
+                <h5>Monthly Plan</h5>
+                <strong>$32</strong>
+                <data>
+                  <p>
+                    <i class="fa fa-check-circle-o" />
+                    <span>Free Consultation</span>
+                  </p>
+                  <p>
+                    <i class="fa fa-check-circle-o" />
+                    <span>Consultation with coach</span>
+                  </p>
+                  <p>
+                    <i class="fa fa-check-circle-o" />
+                    <span>3 hour of practice</span>
+                  </p>
+                  <p>
+                    <i class="fa fa-check-circle-o" />
+                    <span>Free fitness shifts</span>
+                  </p>
+                </data>
+              </div>
+              <a href="#" role="button">Join now</a>
+            </PlanCard>
+          </li>
+        </PlanCardList>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+    <PageSectionContainer>
+      <PageSectionBody>
+        <Title>
+          <h5>Meet our team</h5>
+          <h2>Expert trainers</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+          </p>
+        </Title>
+        <TrainersCardList>
+          @for $trainerId in range(1, 3)
+            <li class=%{ $trainerId == 1 ? "colored" : "default" }>
+              <div>
+                <Image
+                  src=%{ 'gym_site_design/trainer' . $trainerId . '.jpg' }
+                  alt="trainer"
+                />
+                <data>
+                  <strong>Trainer %{ $trainerId }</strong>
+                  <span>Trainer</span>
+                </data>
+              </div>
+            </li>
+          @end
+        </TrainersCardList>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+    <PageSectionContainer backgroundColor="#000000">
+      <PageSectionBody>
+        <Title>
+          <h5>Our schedule</h5>
+          <h2>Check Our class schedule</h2>
+        </Title>
+        <ScheduleListsWrapper>
+          <ScheduleList>
+            <ScheduleListItem>
+              <div>
+                <i class="fa fa-clock-o" />
+              </div>
+            </ScheduleListItem>
+            @for $t in range(7, 12)
+              <ScheduleListItem color="#fc4b43">
+                <div>
+                  <span>%{ $t }:30 AM</span>
+                </div>
+              </ScheduleListItem>
+            @end
+          </ScheduleList>
+          @for $day in $days
+            <ScheduleList>
+              <ScheduleListItem>
+                <div>
+                  <span>
+                    %{ $day }
+                  </span>
+                </div>
+              </ScheduleListItem>
+              @for $a in range(7, 12)
+                <ScheduleListItem color="#1a1a1a">
+                  <div>
+                    <span>Activity %{ $a }</span>
+                  </div>
+                </ScheduleListItem>
+              @end
+            </ScheduleList>
+          @end
+        </ScheduleListsWrapper>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+
+    <PageSectionContainer>
+      <PageSectionBody>
+        <Title color="#ff4a41">
+          <h2>Special products</h2>
+          <p>
+            Look for your favorite, free for the first month
+          </p>
+        </Title>
+        <ProductsCardListWrapper>
+          <ProductsCardList>
+            @for $productId in range(1, 50)
+              <li>
+                <ProductCard>
+                  <div>
+                    <Image src="gym_site_design/product.png" alt="products" />
+                  </div>
+                  <strong>ProductCard %{ $productId }</strong>
+                  <span>$72.00</span>
+                  <p>Some detail here</p>
+                </ProductCard>
+              </li>
+            @end
+          </ProductsCardList>
+          <ProductsCardListNavigation>
+            <div>
+              <button type="button" class="btn-prev">
+                <i class="fa fa-angle-left" />
+              </button>
+            </div>
+            <div>
+              <button type="button" class="btn-next">
+                <i class="fa fa-angle-right" />
+              </button>
+            </div>
+          </ProductsCardListNavigation>
+        </ProductsCardListWrapper>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+    <PageSectionContainer backgroundColor="#000000">
+      <PageSectionBody>
+        <Title>
+          <h5>Photo Gallery</h5>
+          <h2>Momments with customers</h2>
+        </Title>
+        <GallerySectionBody>
+          <ul>
+            @for $i in range(1, 12)
+              <li>
+                <div>
+                  <Image src="gym_site_design/trainer4.jpg" />
+                </div>
+              </li>
+            @end
+          </ul>
+        </GallerySectionBody>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+    <Footer />
+  </Container>
+@end
+
+@export default GymSiteDesign

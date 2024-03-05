@@ -1,0 +1,103 @@
+@import Image from 'capsule'
+
+@from './styles.css' import (
+  CopyData,
+  Container,
+  DataWrapper,
+  MenuListsWrapper
+)
+
+@def Footer
+  <Container>
+    <div class="row">
+      <div class="col-lg-4">
+        <DataWrapper>
+          <div>
+            <Image src="fax_estate_site_design/logo-light.svg" alt="Fax estate" />
+          </div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.
+          </p>
+          <span>
+            <i class="fa fa-envelope-o" /> info@fax-estate.co
+          </span>
+        </DataWrapper>
+      </div>
+      <div class="col-lg-8">
+        <MenuListsWrapper>
+          <div class="row">
+            <div class="col-md-4">
+              <h4>Important links</h4>
+              <ul>
+                <li>
+                  <a href="#">Themeforest</a>
+                </li>
+                <li>
+                  <a href="#">Themeforest</a>
+                </li>
+                <li>
+                  <a href="#">Themeforest</a>
+                </li>
+                <li>
+                  <a href="#">Themeforest</a>
+                </li>
+                <li>
+                  <a href="#">Themeforest</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Quick link</h4>
+              <ul>
+                <li>
+                  <a href="#">FAQ</a>
+                </li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
+                <li>
+                  <a href="#">Blog</a>
+                </li>
+                <li>
+                  <a href="#">Pricing</a>
+                </li>
+                <li>
+                  <a href="#">Categories</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Contact</h4>
+              <ul>
+                <li>
+                  <a href="#">+244 923-285-171</a>
+                </li>
+                <li>
+                  <a href="#">+244 923-285-171</a>
+                </li>
+                <li class="expanded">
+                  <div>
+                    <a href="#">
+                      <i class="fa fa-facebook" />
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-twitter" />
+                    </a>
+                    <a href="#">
+                      <i class="fa fa-pinterest" />
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </MenuListsWrapper>
+      </div>
+    </div>
+    <div class="row">
+      <CopyData>
+        <span>Fax Estate, ©2024 - All rights reserved</span>
+      </CopyData>
+    </div>
+  </Container>
+@end

@@ -1,0 +1,126 @@
+@import Image from 'capsule'
+
+@from './styles.css' import (
+  Container,
+  Content,
+  ServiceDetailsContainer
+)
+
+@def Footer
+  <Container>
+    <ServiceDetailsContainer>
+      <div class="details-list-wrapper">
+        <ul>
+          <li>
+            <div class="icon-wrapper">
+              <span>
+                <i class="fa fa-gift" />
+              </span>
+            </div>
+            <div class="content-wrapper">
+              <strong>
+                Free Shipping
+              </strong>
+              <p>
+                Free shipping for all the store products
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="icon-wrapper">
+              <span>
+                <i class="fa fa-whatsapp" />
+              </span>
+            </div>
+            <div class="content-wrapper">
+              <strong>
+                24H online support
+              </strong>
+              <p>
+                Free shipping for all the store products
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="icon-wrapper">
+              <span>
+                <i class="fa fa-money" />
+              </span>
+            </div>
+            <div class="content-wrapper">
+              <strong>
+                Money Return
+              </strong>
+              <p>
+                Free shipping for all the store products
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </ServiceDetailsContainer>
+    <Content>
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="company-data-wrapper">
+            <div class="logo-wrapper">
+              <Image src="ubbio_site_design/logo-light.svg" />
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-pinterest" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="footer-menu-lists-wrapper">
+            <div class="row">
+              @for $n in range(1, 3)
+                <div class="col-md-4">
+                  <h3>About the company</h3>
+                  <ul>
+                    <li>
+                      <a href="#">About US</a>
+                    </li>
+                    <li>
+                      <a href="#">Careers</a>
+                    </li>
+                    <li>
+                      <a href="#">Press</a>
+                    </li>
+                    <li>
+                      <a href="#">Investor relations</a>
+                    </li>
+                  </ul>
+                </div>
+              @end
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="footer-copy-data-wrapper">
+            <span>2024, Asam - All rights reserved</span>
+          </div>
+        </div>
+      </div>
+    </Content>
+  </Container>
+@end
+
+@export default Footer

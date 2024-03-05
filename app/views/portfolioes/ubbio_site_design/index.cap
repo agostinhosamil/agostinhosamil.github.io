@@ -1,0 +1,142 @@
+@import Image, Script from 'capsule'
+
+@import Header from './components/Header'
+@import Footer from './components/Footer'
+@import SliderSection from './components/SliderSection'
+@from './components/CollectionSlider' import (
+  CollectionSlider,
+  ListItem
+)
+
+@from './styles.css' import (
+  Title,
+  Container,
+  ArrivalsList,
+  ArrivalsSection,
+  AboutCompanySection,
+  ArrivalsSectionBody,
+  ProductsBannerContainer,
+  ServiceDescriptionContainer
+)
+
+@def UbbioSiteDesign
+  <Container>
+
+    <head>
+      <title>Ubbio</title>
+      <Script src="ubbio_site_design/main.js" />
+    </head>
+
+    <Header />
+    <CollectionSlider />
+    <ServiceDescriptionContainer>
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="content-wrapper">
+            <h2>Premium office Decor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+            <div>
+              <a href="#" role="button">Shop now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="image-wrapper">
+            <Image src="ubbio_site_design/room.jpg" alt="Decor" />
+          </div>
+        </div>
+      </div>
+      <div class="details-list-container">
+        <ul class="details-list">
+          @for $i in range(1, 3)
+            <li class="details-list-item">
+              <div class="details-list-item-container">
+                <div>
+                  <Image src="ubbio_site_design/tv.png" />
+                </div>
+                <h5>Premium office Decor</h5>
+                <ul>
+                  <li>
+                    <span><i class="fa fa-star" /></span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-star" /></span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-star" /></span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-star" /></span>
+                  </li>
+                  <li>
+                    <span><i class="fa fa-star" /></span>
+                  </li>
+                </ul>
+                <strong>$40.00</strong>
+              </div>
+            </li>
+          @end
+        </ul>
+      </div>
+    </ServiceDescriptionContainer>
+
+    <AboutCompanySection>
+      <div class="row">
+        <div class="col-lg-5">
+          <div class="content-wrapper">
+            <span>About us</span>
+            <h3>The company</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            </p>
+            <a href="#" role="button">Learn more</a>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="image-wrapper">
+            <Image src="ubbio_site_design/room2.png" />
+          </div>
+        </div>
+      </div>
+    </AboutCompanySection>
+
+    <ArrivalsSection>
+      <Title>New Arrivals</Title>
+      <ArrivalsSectionBody>
+        <ArrivalsList>
+          @for $i in range(1, 6)
+            <li>
+              <Image src="ubbio_site_design/mov.png" />
+              <div>
+                <span>
+                  Some Text - %{ $i }
+                </span>
+              </div>
+            </li>
+          @end
+        </ArrivalsList>
+      </ArrivalsSectionBody>
+    </ArrivalsSection>
+
+    <ProductsBannerContainer>
+      <Image src="ubbio_site_design/room3.jpg" />
+    </ProductsBannerContainer>
+
+    <SliderSection title="Best Seller">
+      @for $n in range(1, 50)
+        <ListItem>
+          <div class="slide-content">
+            <div class="image-wrapper">
+              <Image src="ubbio_site_design/tv.png" alt="Tv" />
+            </div>
+            <h5>HD Television (%{ $n })</h5>
+          </div>
+        </ListItem>
+      @end
+    </SliderSection>
+
+    <Footer />
+  </Container>
+@end
+
+@export default UbbioSiteDesign

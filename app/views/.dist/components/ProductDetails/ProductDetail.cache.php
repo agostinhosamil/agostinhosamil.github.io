@@ -28,8 +28,8 @@ $scope->skill = !isset ($args['skill']) ? null : $args [ 'skill' ];
 
  Capsule::PartialRender ('i', ['style' => ['color' => '#333333' ]], function($args, CapsuleScopeContext $scope){return $scope->skill->level;}, '%');
 
-}})), Capsule::CreateElement ('ProductDetailBody', [], Capsule::CreateElement ('ProductDetailTitle', [], Capsule::CreateElement ('span', [], function($args, CapsuleScopeContext $scope){return $scope->skill->title;})), Capsule::CreateElement ('ProductDetailDesc', [], Capsule::CreateElement ('ProductDetailDescList', [], function ($args, CapsuleScopeContext $scope) {$arr4585060216ay = $scope->skill->getDetails (); for ( $i4585060216terator = 0; $i4585060216terator < count (is_array ($arr4585060216ay) ? $arr4585060216ay : []); $i4585060216terator++ ) {
-	$scope->paragraph = \Saml::Array2Object ($arr4585060216ay[ $i4585060216terator ]);
+}})), Capsule::CreateElement ('ProductDetailBody', [], Capsule::CreateElement ('ProductDetailTitle', [], Capsule::CreateElement ('span', [], function($args, CapsuleScopeContext $scope){return $scope->skill->title;})), Capsule::CreateElement ('ProductDetailDesc', [], Capsule::CreateElement ('ProductDetailDescList', [], function ($args, CapsuleScopeContext $scope) {$arr1831203540ay = $scope->skill->getDetails (); for ( $i1831203540terator = 0; $i1831203540terator < count (is_array ($arr1831203540ay) ? $arr1831203540ay : []); $i1831203540terator++ ) {
+	$scope->paragraph = \Saml::Array2Object ($arr1831203540ay[ $i1831203540terator ]);
 
               
 

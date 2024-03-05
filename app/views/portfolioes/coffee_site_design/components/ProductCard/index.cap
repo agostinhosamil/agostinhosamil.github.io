@@ -1,0 +1,42 @@
+@import Image from 'capsule'
+
+@from './styles.css' import {
+  ProductCardContainer,
+  ImageWrapper,
+  DataWrapper
+}
+
+@def ProductCard ($name, $description, $price, $image)
+  <ProductCardContainer>
+    <ImageWrapper>
+      <div>
+        <Image src=%{ 'coffee_site_design/' . $image } alt="ProductCard" />
+      </div>
+    </ImageWrapper>
+    <DataWrapper>
+      <h4>
+        %{ $name }
+      </h4>
+      <p>
+        %{ $description }
+      </p>
+      <div class="card-options">
+        <ul>
+          <li>
+            <a href="#" role="button">
+              <i class="fa fa-cart-plus" />
+            </a>
+          </li>
+          <li>
+            <a class="uncolored" href="#" role="button">
+              <i class="fa fa-heart-o" />
+            </a>
+          </li>
+        </ul>
+        <strong>
+          %{ $price }
+        </strong>
+      </div>
+    </DataWrapper>
+  </ProductCardContainer>
+@end

@@ -1,0 +1,367 @@
+Container {
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+
+  * {
+    list-style: none;
+    list-style-type: none;
+  }
+}
+
+ServiceDescriptionContainer {
+  width: 100%;
+  padding: 120px;
+  margin-bottom: 220px;
+  position: relative;
+
+  div.content-wrapper {
+    width: 100%;
+    padding: 50px 30px 0px 0px;
+
+    h2 {
+      font-size: 35px;
+      font-family: serif;
+      font-weight: 700;
+      color: #05241d;
+    }
+
+    p {
+      font-size: 15px;
+      font-weight: 400;
+      color: #05241d;
+    }
+
+    div {
+      width: 100%;
+      padding: 25px 0px 0px;
+
+      a {
+        background-color: #30ac4a;
+        color: #ffffff;
+        display: inline-flex;
+        padding: 8px 21px;
+        border-radius: 6px;
+      }
+    }
+  }
+
+  div.image-wrapper {
+    width: 100%;
+
+    img {
+      width: 100%;
+      border-radius: 14px;
+    }
+  }
+
+  div.details-list-container {
+    position: absolute;
+    width: 80%;
+    padding: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    top: 70%;
+
+    ul.details-list {
+      width: 100%;
+      height: auto;
+      padding: 0px;
+      margin: 0px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      li.details-list-item {
+        width: 210px;
+        display: inline-flex;
+        flex-direction: column;
+        margin-right: 25px;
+
+        div.details-list-item-container {
+          width: inherit;
+          display: flex;
+          flex-direction: column;
+          background-color: #ffffff;
+          border: 1px solid #c8e1d9;
+          border-radius: 15px;
+          padding: 25px;
+
+          div {
+            width: 100%;
+            padding: 0px 10% 25px;
+
+            img {
+              width: 100%;
+            }
+          }
+
+          h5 {
+            font-weight: 500;
+            color: #444444;
+            text-align: center;
+          }
+
+          ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 0px;
+            margin: 0px 0px 15px;
+
+            li {
+              color: #f79d1d;
+            }
+          }
+
+          strong {
+            font-weight: 700;
+            color: #0d9d29;
+            font-size: 16px;
+            display: block;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1210px) {
+      width: 100%;
+      padding-top: 40px;
+      position: relative;
+
+      ul.details-list li.details-list-item {
+        width: 100%;
+        margin: 0px 13px;
+      }
+    }
+
+    @media (max-width: 650px) {
+      ul.details-list {
+        flex-direction: column;
+
+        li.details-list-item {
+          margin: 13px 0px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1210px) {
+    margin-bottom: 0px;
+
+    div.content-wrapper {
+      padding-top: 0px;
+    }
+  }
+
+  @media (max-width: 992px) {
+    padding: 40px;
+
+    div.content-wrapper {
+      padding: 0px 0px 60px;
+      text-align: center;
+    }
+  }
+}
+
+section.AboutCompanySection {
+  width: 100%;
+  height: auto;
+  background-color: #023429;
+
+  div.row {
+    margin: 0px;
+
+    div.content-wrapper {
+      width: 100%;
+      padding: 0px 20px 0px 120px;
+
+      span {
+        color: #fba01d;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 16px;
+      }
+
+      h3 {
+        font-size: 35px;
+        color: #ffffff;
+        font-weight: 500;
+        font-family: serif;
+      }
+
+      p {
+        font-size: 13px;
+        color: #ffffff;
+        font-weight: 400;
+        display: block;
+        margin: 15px 0px 25px;
+      }
+
+      a {
+        display: inline-block;
+        border-radius: 6px;
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        font-weight: 400;
+        font-size: 14px;
+        padding: 9px 23px;
+
+        &:hover {
+          background-color: #ffffff;
+          color: #023429;
+        }
+      }
+    }
+
+    div.image-wrapper {
+      width: 100%;
+      pointer-events: none;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    div.col-lg-5 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    div.col-lg-7 {
+      padding-right: 0px;
+    }
+  }
+
+  @media (max-width: 1110px) {
+    div.row {
+      div.content-wrapper {
+        padding: 0px 20px 0px;
+      }
+    }
+  }
+
+  @media (max-width: 991px) {
+    div.row {
+      div.content-wrapper {
+        padding: 40px 20px;
+
+        a {
+          font-size: 11px;
+          padding: 5px 15px 3px;
+        }
+      }
+
+      div.col-lg-7 {
+        padding: 0px;
+      }
+    }
+  }
+}
+
+h1.Title {
+  font-weight: 800;
+  font-size: 52px;
+  text-align: center;
+  font-family: serif;
+  padding: 90px 40px 50px;
+
+  @media (max-width: 810px) {
+    padding-top: 40px;
+  }
+}
+
+ArrivalsSection {
+  width: 100%;
+  padding: 30px 120px;
+
+  @media (max-width: 1100px) {
+    padding: 30px 20px;
+  }
+}
+
+ArrivalsSectionBody {
+  width: 100%;
+}
+
+ul.ArrivalsList {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  li {
+    width: calc(100% / 3);
+    border-radius: 5px;
+    position: relative;
+    border-radius: 12px;
+    padding: 10px;
+    transition: all .3s ease-in-out;
+
+    img {
+      width: 100%;
+      border-radius: inherit;
+    }
+
+    div {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      right: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 30px;
+
+      span {
+        background-color: #eaeae8;
+        padding: 12px 25px;
+        border-radius: 6px;
+        font-weight: 800;
+        color: #444444;
+        font-family: serif;
+        box-shadow: rgb(0 0 0 / 14%) 2px 2px 7px 18px;
+        user-select: none;
+
+        @media (max-width: 810px) {
+          font-size: 12px;
+          padding: 8px 15px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 930px) {
+    li {
+      width: calc(100% / 2);
+    }
+  }
+
+  @media (max-width: 630px) {
+    li {
+      width: 100%;
+    }
+  }
+}
+
+ProductsBannerContainer {
+  width: 100%;
+  padding: 50px 0px 0px;
+  position: relative;
+
+  img {
+    width: 100%;
+    pointer-events: none;
+    user-select: none;
+  }
+}

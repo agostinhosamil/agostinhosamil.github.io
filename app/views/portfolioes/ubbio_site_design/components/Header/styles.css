@@ -1,0 +1,180 @@
+header.Container {
+  width: 100%;
+  height: auto;
+  background-color: #023429;
+  position: relative;
+}
+
+Body {
+  width: 100%;
+  height: 720px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #084437;
+
+  @media (max-width: 970px) {
+    height: 380px;
+  }
+}
+
+BodyContent {
+  width: 100%;
+  max-width: 630px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+
+  * {
+    text-align: center;
+    transition: all .3s ease-in-out;
+  }
+
+  h1 {
+    font-size: 58px;
+    font-weight: 800;
+    color: #ffffff;
+    font-family: serif;
+    font-style: italic;
+  }
+
+  p {
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 26px;
+  }
+
+  a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    color: #084437;
+    font-weight: 500;
+    border-radius: 8px;
+  }
+
+  @media (max-width: 970px) {
+    padding: 0px 45px;
+
+    h1 {
+      font-size: 38px;
+      line-height: 30px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+
+    a {
+      font-size: 12px;
+    }
+  }
+}
+
+LogoWrapper {
+  width: 100%;
+  max-width: 160px;
+
+  div {
+    width: 100%;
+    position: relative;
+    pointer-events: none;
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  /*@media (max-width: 860px) {
+    display: none;
+  }*/
+}
+
+MenuContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 120px;
+
+  @media (max-width: 860px) {
+    padding: 20px;
+  }
+}
+
+ul.MenuList {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0px;
+  margin: 0px 12px;
+
+  li {
+    margin: 0px 15px;
+
+    a {
+      color: #ffffff;
+      font-size: 16px;
+    }
+  }
+
+  li.collapse {
+    display: none;
+    margin: 0px;
+
+    button {
+      background-color: transparent;
+      border: 0px;
+      outline: 0px;
+      font-size: 24px;
+      font-weight: 800;
+      color: #ffffff;
+    }
+  }
+
+  @media (max-width: 860px) {
+    position: relative;
+    justify-content: flex-start;
+
+    li {
+      display: none;
+    }
+
+    li.collapse {
+      display: inline-flex;
+    }
+  }
+}
+
+ul.MenuIconsList {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+
+  li {
+    margin: 0px 5px;
+
+    a {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: 700;
+    }
+  }
+}

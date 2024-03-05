@@ -1,0 +1,25 @@
+<?php namespace App\View; use Saml; use Sami;use Sammy\Packs\Samils\Capsule\CapsuleScopeContext; use Sammy\Packs\CapsuleHelper; use Sammy\Packs\CapsuleHelper\ArrayHelper; use Sammy\Packs\CapsuleHelper\ObjectHelper;
+# Capsule Body
+?>
+<?php
+	Capsule::Import ('Image', Capsule::RelativePathDecode (path ('capsule')));
+
+?>
+
+
+<?php
+	Capsule::Import ('FooterContainer', Capsule::RelativePathDecode (path ('./styles.css')));
+	Capsule::Import ('NewsletterFormContainer', Capsule::RelativePathDecode (path ('./styles.css')));
+	Capsule::Import ('FooterMenuListsWrapper', Capsule::RelativePathDecode (path ('./styles.css')));
+	Capsule::Import ('CompanyDataWrapper', Capsule::RelativePathDecode (path ('./styles.css')));
+	Capsule::Import ('LogoWrapper', Capsule::RelativePathDecode (path ('./styles.css')));
+	Capsule::Import ('CopyData', Capsule::RelativePathDecode (path ('./styles.css')));
+	Capsule::Import ('LinksWrapper', Capsule::RelativePathDecode (path ('./styles.css')));
+
+?>
+
+<?php Capsule::Def ('Footer', function ($args, CapsuleScopeContext $scope) {
+?>
+<?php  Capsule::PartialRender ('FooterContainer', [], Capsule::CreateElement ('div', ['class' => "row"], Capsule::CreateElement ('div', ['class' => "col-lg-8"], Capsule::CreateElement ('FooterMenuListsWrapper', [], Capsule::CreateElement ('div', ['class' => "row"], Capsule::CreateElement ('div', ['class' => "col-md-4"], Capsule::CreateElement ('h4', [], 'Links'), Capsule::CreateElement ('ul', [], Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Home')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Menu')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Promotions')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'About us')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Contact us')))), Capsule::CreateElement ('div', ['class' => "col-md-4"], Capsule::CreateElement ('h4', [], 'Comunity'), Capsule::CreateElement ('ul', [], Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Home')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Menu')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Promotions')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'About us')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "#"], 'Contact us')))), Capsule::CreateElement ('div', ['class' => "col-md-4"], Capsule::CreateElement ('h4', [], 'Contact us'), Capsule::CreateElement ('ol', [], Capsule::CreateElement ('li', [], Capsule::CreateElement ('i', ['class' => "fa fa-map-marker"]), Capsule::CreateElement ('span', [], 'Locaiton of our, street Number, Tokyo')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('i', ['class' => "fa fa-google-plus"]), Capsule::CreateElement ('span', [], 'anteiku@gmail.com')), Capsule::CreateElement ('li', [], Capsule::CreateElement ('i', ['class' => "fa fa-phone"]), Capsule::CreateElement ('span', [], '+244 923-285-171'))))))), Capsule::CreateElement ('div', ['class' => "col-lg-4"], Capsule::CreateElement ('NewsletterFormContainer', [], Capsule::CreateElement ('form', ['method' => "post", 'action' => "/newsletter/subscribe"], Capsule::CreateElement ('h2', [], 'Subscribe our newsletter'), Capsule::CreateElement ('div', [], Capsule::CreateElement ('input', ['name' => "mail-address", 'placeholder' => "Enter your email", 'autocomplete' => "off", 'spellcheck' => "false"]), Capsule::CreateElement ('button', ['type' => "submit"], Capsule::CreateElement ('i', ['class' => "fa fa-send"]))))))), Capsule::CreateElement ('div', ['class' => "row"], Capsule::CreateElement ('CompanyDataWrapper', [], Capsule::CreateElement ('LogoWrapper', [], Capsule::CreateElement ('div', [], Capsule::CreateElement ('Image', ['src' => "coffee_site_design/logo-primary.svg"]))), Capsule::CreateElement ('CopyData', [], Capsule::CreateElement ('span', [], '2024 Anteiku - All rights reserved')), Capsule::CreateElement ('LinksWrapper', [], Capsule::CreateElement ('ul', [], Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "https://www.facebook.com/anteiku"], Capsule::CreateElement ('i', ['class' => "fa fa-facebook"]))), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "https://www.twitter.com/anteiku"], Capsule::CreateElement ('i', ['class' => "fa fa-twitter"]))), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "https://www.youtube.com/anteiku"], Capsule::CreateElement ('i', ['class' => "fa fa-youtube"]))), Capsule::CreateElement ('li', [], Capsule::CreateElement ('a', ['href' => "https://www.instagram.com/anteiku"], Capsule::CreateElement ('i', ['class' => "fa fa-instagram"])))))))); ?>
+<?php }); ?>
+<?php Capsule::Export ('Footer'); ?><?php if (!(is_object ($module->exports) && $module->exports instanceof Capsule)) { $module->exports = Capsule::Create (function () {}); }?>

@@ -1,0 +1,301 @@
+@import Image, Script from 'capsule'
+
+@import Ad from './components/Ad'
+@import Header from './components/Header'
+@import Footer from './components/Footer'
+@import PostCard from './components/PostCard'
+@import ProductCard from './components/ProductCard'
+@import SliderSection from './components/SliderSection'
+
+@from './components/Accordion' import {
+  Accordion,
+  AccordionList
+}
+
+@from './styles.css' import {
+  Container,
+  GlobalStyles,
+  PageSectionContainer,
+  PageSectionBody,
+  HightlightContent,
+  HightlightList,
+  HightlightListItem,
+  PageSectionTitle,
+  SearchFormContainer,
+  ProductSlide,
+  ProductSlideWrapper,
+  ProductSlideSectionContaier,
+  ServiceInfoContent,
+  TestimonialCardContainer,
+  TestimonialSectionContainer,
+  TestimonialsList,
+  TestimonialContent,
+  PostCardContainer
+}
+
+@def CoffeeSiteDesign
+  <Container>
+    <GlobalStyles />
+    <Header />
+
+    <head>
+      <Script src='capsule/aplpha.js' />
+      <Script src='coffee_site_design/main.js' />
+    </head>
+
+    <PageSectionContainer>
+      <PageSectionBody>
+        <HightlightContent>
+          <HightlightList>
+            <HightlightListItem>
+              <ProductCard
+                name="Americano"
+                description="
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                "
+                price="$ 33.98"
+                image="coffee1.png"
+              />
+            </HightlightListItem>
+            <HightlightListItem>
+              <ProductCard
+                name="Cappuccino"
+                description="
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                "
+                price="$ 123.98"
+                image="coffee1.png"
+              />
+            </HightlightListItem>
+          </HightlightList>
+          <div class="content-wrapper">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            </p>
+            <a href="#" role="button">Learn more</a>
+          </div>
+        </HightlightContent>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+    <PageSectionContainer>
+      <PageSectionBody>
+        <PageSectionTitle>
+          <h1>Most popular coffee</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          </p>
+        </PageSectionTitle>
+        <SearchFormContainer>
+          <form method="get" action="/search">
+            <ul>
+              <li>
+                <strong>Location</strong>
+                <div>
+                  <i class="fa fa-location-arrow" />
+                  <select name="location" id="select">
+                    @for $i in range(1, 100)
+                      <option value=%{$i}>
+                        Location, City Nº - %{ $i }
+                      </option>
+                    @end
+                  </select>
+                </div>
+              </li>
+              <li class="outlined">
+                <strong>Availability</strong>
+                <div>
+                  <i class="fa fa-table" />
+                  <select name="availability" id="select">
+                    <option value="yes">
+                      Available
+                    </option>
+                    <option value="no">
+                      Not Available
+                    </option>
+                  </select>
+                </div>
+              </li>
+              <li>
+                <strong>Price Range</strong>
+                <div>
+                  <i class="fa fa-money" />
+                  <select name="price-range" id="select">
+                    @for $i in range(1, 6)
+                      <option value=%{$i}>
+                        Location, City Nº - %{ $i }
+                      </option>
+                    @end
+                  </select>
+                </div>
+              </li>
+              <li class="input">
+                <div>
+                  <data>
+                    <input
+                      type="text"
+                      name="query"
+                      autocomplete="off"
+                      placeholder="Search"
+                      />
+                    <i class="fa fa-search" />
+                  </data>
+                </div>
+              </li>
+            </ul>
+          </form>
+        </SearchFormContainer>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+    <ProductSlideSectionContaier>
+      <SliderSection>
+        @for $i in range(1, 50)
+          <ProductSlideWrapper>
+            <ProductSlide>
+              <ProductCard
+                name=%{ "Product " . $i }
+                description="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                image="coffee1.png"
+                price=%{ '$' . (10 * $i) }
+                />
+            </ProductSlide>
+          </ProductSlideWrapper>
+        @end
+      </SliderSection>
+    </ProductSlideSectionContaier>
+
+    <PageSectionContainer>
+      <PageSectionBody>
+        <ServiceInfoContent>
+          <div class="image-wrapper">
+            <div>
+              <Image src="coffee_site_design/coffee-seed.jpg" />
+            </div>
+          </div>
+          <div class="content-wrapper x-large">
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            </p>
+            <a href="#" role="button">Learn more</a>
+          </div>
+        </ServiceInfoContent>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+    <Ad
+      title="Get a free gift with purchase of $75 or more"
+      subTitle="Dont miss out on our flash sale"
+      content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+    />
+
+    <TestimonialSectionContainer>
+      <SliderSection
+        title="Our customer testimonials"
+        subTitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        >
+        @for $customer in $testimonials
+          <TestimonialCardContainer
+            data-customer-id=%{ $customer[:id] }
+            data=%{ $customer }
+            class=%{ $customer[:id] === 1 ? 'selected' : 'x-' }>
+            <div>
+              <Image
+                src=%{ 'coffee_site_design/' . $customer[:photo] }
+                alt=%{ $customer[:name] }
+              />
+            </div>
+          </TestimonialCardContainer>
+        @end
+      </SliderSection>
+      <TestimonialsList>
+        @for $customer in $testimonials
+          <TestimonialContent
+            data-customer-id=%{ $customer[:id] }
+            class=%{ $customer[:id] === 1 ? 'x-shown' : 'x-hidden' }>
+            <h5>
+              %{ $customer[:name] }
+            </h5>
+            <strong>Standard customer</strong>
+            <div>
+              @for $n in range(1, 5)
+                <span>
+                  <i class=%{ "fa " . ($customer[:rate] >= $n ? 'fa-star' : 'fa-star-o') } />
+                </span>
+              @end
+            </div>
+            <p>
+              %{ $customer[:message] }
+            </p>
+          </TestimonialContent>
+        @end
+      </TestimonialsList>
+    </TestimonialSectionContainer>
+
+    <SliderSection
+      title="Our latest blog & News"
+      subTitle="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      >
+      @for $postId in range(1, 100)
+        <PostCardContainer>
+          <PostCard
+            title=%{ "Post (" . $postId . ") - Lorem ipsum dolor sit amet, consectetur" }
+            image="image1.jpg"
+            />
+        </PostCardContainer>
+      @end
+    </SliderSection>
+
+    <PageSectionContainer>
+      <PageSectionBody>
+        <PageSectionTitle>
+          <h1>Question? Look here</h1>
+        </PageSectionTitle>
+        <AccordionList>
+          <Accordion
+            title="What payment methods does coffee app accept?"
+            content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          />
+          <Accordion
+            title="How can I save my favorite coffee as bookmark?"
+            content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          />
+          <Accordion
+            title="What are the benefits of using coffee shop app?"
+            content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          />
+          <Accordion
+            title="Is it possible to share coffee details with friend?"
+            content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          />
+          <Accordion
+            title="How to discover new coffee in the app?"
+            content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          />
+          <Accordion
+            title="Id app available on both IOS and Android?"
+            content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          />
+        </AccordionList>
+      </PageSectionBody>
+    </PageSectionContainer>
+
+    <Footer />
+  </Container>
+@end
+
+@export default CoffeeSiteDesign

@@ -1,0 +1,30 @@
+@from './styles.css' import (
+  Title,
+  Container,
+  ListWrapper,
+  ControllsWrapper,
+  List
+)
+
+@def SliderSection $title
+  <Container>
+    <Title>
+      %{ $title }
+    </Title>
+    <ListWrapper data-slider>
+      <List data-slider>
+        <Yield />
+      </List>
+      <ControllsWrapper>
+        <div>
+          <button class="prev">
+            <i class="fa fa-angle-left" />
+          </button>
+          <button class="next">
+            <i class="fa fa-angle-right" />
+          </button>
+        </div>
+      </ControllsWrapper>
+    </ListWrapper>
+  </Container>
+@end

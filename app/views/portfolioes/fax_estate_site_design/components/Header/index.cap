@@ -1,0 +1,70 @@
+@import Image from 'capsule'
+
+@from './styles.css' import (
+  Body,
+  Banner,
+  Content,
+  MenuBody,
+  Container,
+  LogoWrapper,
+  MenuContainer,
+  MenuCtaWrapper,
+  MenuListWrapper
+)
+
+@def Header
+  <Container>
+    <MenuContainer>
+      <LogoWrapper>
+        <div>
+          <Image src="fax_estate_site_design/logo-light.svg" alt="Fax Estate" />
+        </div>
+      </LogoWrapper>
+      <MenuBody>
+        <MenuListWrapper>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Portfolio</a>
+            </li>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+            <li class="menu">
+              <button type="button">
+                <i class="fa fa-bars" />
+              </button>
+            </li>
+          </ul>
+        </MenuListWrapper>
+        <MenuCtaWrapper>
+          <div>
+            <a href="#">Add living</a>
+          </div>
+        </MenuCtaWrapper>
+      </MenuBody>
+    </MenuContainer>
+    <Body>
+      <Content>
+        <div>
+          <h1>Unlock your dream home now!</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
+          <a href="#" role="button">Learn more</a>
+        </div>
+      </Content>
+      <Banner>
+        <div>
+          <Image src="fax_estate_site_design/home.jpg" alt="Banner of today" />
+        </div>
+      </Banner>
+    </Body>
+  </Container>
+@end

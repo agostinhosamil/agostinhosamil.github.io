@@ -1,0 +1,20 @@
+@from 'capsule' import { FlatImage }
+
+@from './styles.css' import {
+  AdContainer
+}
+
+@def Ad $title, $subTitle, $content, $link = '#post'
+  <AdContainer>
+    <FlatImage src="coffee_site_design/coffee-seed.jpg">
+      <data>
+        <h1>%{ $title }</h1>
+        @if $subTitle
+          <h2>%{ $subTitle }</h2>
+        @end
+        <p>%{ $content }</p>
+        <a href=%{ $link }>Leran more</a>
+      </data>
+    </FlatImage>
+  </AdContainer>
+@end

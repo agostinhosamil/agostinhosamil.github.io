@@ -1,0 +1,77 @@
+@import Image from 'capsule'
+
+@from './styles.css' import {
+  HeaderContainer,
+  MenuContainer,
+  LogoWrapper,
+  MenuBody,
+  CtaWrapper,
+  HeaderBody,
+  Content,
+  ImageWrapper
+}
+
+@def Header
+  <HeaderContainer>
+    <MenuContainer>
+      <LogoWrapper>
+        <div>
+          <Image src="coffee_site_design/logo-primary.svg" />
+        </div>
+      </LogoWrapper>
+      <MenuBody>
+        <ul>
+          <li>
+            <a class="selected" href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Menu</a>
+          </li>
+          <li>
+            <a href="#">About us</a>
+          </li>
+          <li>
+            <a href="#">Promotions</a>
+          </li>
+          <li>
+            <a href="#">Contact us</a>
+          </li>
+        </ul>
+      </MenuBody>
+      <CtaWrapper>
+        <ul>
+          <li>
+            <a class="outlined" href="#">Sign in</a>
+          </li>
+          <li>
+            <a href="#">Sign up</a>
+          </li>
+          <li class="menu-button-wrapper">
+            <button type="button">
+              <i class="fa fa-bars" />
+            </button>
+          </li>
+        </ul>
+      </CtaWrapper>
+    </MenuContainer>
+    <HeaderBody>
+      <Content>
+        <h1>The best coffee for you</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        </p>
+        <a href="#">View menu</a>
+      </Content>
+      <ImageWrapper>
+        <div>
+          <Image
+            src="coffee_site_design/coffee.png"
+            alt="Coffee - The best for you"
+            />
+        </div>
+      </ImageWrapper>
+    </HeaderBody>
+  </HeaderContainer>
+@end

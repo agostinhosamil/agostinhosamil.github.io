@@ -1,0 +1,29 @@
+@import Image from 'capsule'
+
+@from './styles.css' import {
+  PostCardContainer
+}
+
+@def PostCard $title, $image, $subject = 'Coffee Shop App'
+  <PostCardContainer>
+    <a href="#">
+      <div>
+        <Image src=%{ 'coffee_site_design/' . $image } alt=%{ $title } />
+      </div>
+      <strong>
+        %{ $subject }
+      </strong>
+      <h4>
+        %{ $title }
+      </h4>
+      <data>
+        <span>
+          <i class="fa fa-user-o" /> By Admin
+        </span>
+        <span>
+          <i class="fa fa-calendar" /> Yesterday
+        </span>
+      </data>
+    </a>
+  </PostCardContainer>
+@end

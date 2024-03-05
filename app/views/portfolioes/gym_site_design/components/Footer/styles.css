@@ -1,0 +1,164 @@
+footer.Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1a1a1a;
+  padding: 70px 0px 40px;
+
+  @media (max-width: 700px) {
+    padding: 25px 0px 15px;
+  }
+}
+
+FooterBody {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+
+  @media (max-width: 1030px) {
+    width: 100%;
+    padding: 30px;
+  }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+}
+
+DataWrapper {
+  width: 100%;
+  max-width: 250px;
+  padding-right: 50px;
+
+  div {
+    width: 100%;
+    max-width: 170px;
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  p {
+    display: block;
+    width: 100%;
+    height: auto;
+    font-size: 11px;
+    color: #d0d0d0;
+    padding: 30px 0px;
+  }
+}
+
+FooterMenuListsWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+FooterMenuListWrapper {
+  width: 100%;
+
+  h1 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  ul {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+
+    li {
+      margin: 12px 0px;
+
+      a {
+        color: #ffffff;
+        font-weight: 200;
+        font-size: 12px;
+        white-space: nowrap;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    @media (max-width: 480px) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+
+      li {
+        margin: 0px 8px 8px 0px;
+      }
+    }
+  }
+}
+
+SocialMediaLinksWrapper {
+  width: max-content;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+
+  h1 {
+    font-weight: 600;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-right: 7px;
+  }
+
+  ul {
+    width: 100%;
+    margin: 0px 0px 0px 12px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+
+    li {
+      margin: 0px 0px 0px 14px;
+
+      a {
+        display: block;
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 20px;
+
+        &:hover {
+          transform: scale(1.6);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 700px) {
+    align-items: center;
+    width: 100%;
+    padding: 20px 0px 0px;
+    border-top: 1px solid #2c2c2c;
+    margin-top: 20px;
+
+    ul {
+      justify-content: center;
+      align-items: center;
+
+      li {
+        margin: 0px 14px 0px 0px;
+      }
+    }
+  }
+}
